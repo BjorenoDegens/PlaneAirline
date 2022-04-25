@@ -3,3 +3,36 @@
   margin: 0;
   border: 0;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+}
+
+
+
+
+
+header .box-left {
+  background-color: red;
+  width: 20%
+}
+
+header .box-main {
+  background-color: blue;
+  width: 60%
+}
+
+header .box-right {
+  background-color: green;
+  width: 20%
+}
+
+header .box-left .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
