@@ -28,16 +28,17 @@ header .box-main {
 
 header .box-main .box{
   display: flex;
-
+  flex-direction: column;
 }
 
 header .box-main .box .text{
   display: flex;
   width: 100%;
   margin-top: 25px;
+  justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 header .box-right {
@@ -53,6 +54,131 @@ header .box-left .logo {
   align-items: center;
   height: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+.search{
+  margin-top: 5px;
+  position: relative;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.search .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before
+{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #287dfc;
+  border-radius: 50%;
+  transform: translate(-4px,-4px);
+}
+
+.search .icon::after
+{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  background: #287dfc;
+  transform: translate(6px,6px) rotate(315deg);
+}
+
+.search .input{
+  position: relative;
+  width: 300px;
+  height: 30px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .input input 
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.clear{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(45deg);
+}
+
+.clear::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(315deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main .container{
   margin-top: 50px;

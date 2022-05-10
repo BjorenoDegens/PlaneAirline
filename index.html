@@ -19,6 +19,23 @@
       </div>
       <div class="box-main">
         <div class="box">
+          <div class="search">
+            <div class="icon"></div>
+            <div class="input">
+              <input type="text" placeholder="Search" id="mysearch" />
+            </div>
+            <span
+              class="clear"
+              onclick="document.getElementById
+              ('mysearch').value = ''"></span>
+          </div>
+          <script>
+            const icon = document.querySelector(".icon");
+            const search = document.querySelector(".search");
+            icon.addEventListener("click", () => {
+              search.classList.toggle("active");
+            });
+          </script>
           <div class="text">
             <p> Reizen - </p>
             <p> Bestellen - </p>
