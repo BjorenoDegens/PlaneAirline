@@ -50,9 +50,12 @@ header .box-right {
 
 header .box-left .logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
+  margin-left: 50px;
+  text-align: center;
 }
 
 
@@ -65,10 +68,8 @@ header .box-left .logo {
 
 
 .search{
-  margin-top: 5px;
+  margin-top: 25px;
   position: relative;
-  height: 60px;
-  background: #fff;
   border-radius: 60px;
   transition: 0.5s;
   overflow: hidden;
@@ -80,7 +81,6 @@ header .box-left .logo {
   left: 0;
   width: 60px;
   height: 30px;
-  background: #fff;
   border-radius: 60px;
   display: flex;
   justify-content: center;
@@ -114,7 +114,7 @@ header .box-left .logo {
   position: relative;
   width: 300px;
   height: 30px;
-  left: 60px;
+  right: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,7 @@ header .box-left .logo {
 {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 20%;
   border: none;
   outline: none;
   font-size: 18px;
@@ -137,7 +137,7 @@ header .box-left .logo {
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  right: 15px;
+  right: 50px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -149,8 +149,8 @@ header .box-left .logo {
   content: '';
   width: 1px;
   height: 15px;
-  background: #999;
   transform: rotate(45deg);
+  background-color: black;
 }
 
 .clear::after {
@@ -158,11 +158,16 @@ header .box-left .logo {
   content: '';
   width: 1px;
   height: 15px;
-  background: #999;
   transform: rotate(315deg);
+  background-color: black;
 }
 
-
+.input  ::placeholder{
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+  color: black;
+}
 
 
 
@@ -531,7 +536,7 @@ main .container .box-main-up .box-up-right p {
 	color: rgba(255, 255, 255, 0.8);
 }
 
-::placeholder {
+input .form-control ::placeholder {
   font-family: 'Josefin Sans', sans-serif;
 	font-size: 17px;
   color:black;
