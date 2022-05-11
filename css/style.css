@@ -12,7 +12,7 @@ header {
 }
 
 header .box-left {
-  background-color: yellow;
+  background-color: white;
   width: 20%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -20,7 +20,7 @@ header .box-left {
 header .box-main {
   display: flex;
   justify-content: center;
-  background-color: #00ECFF;
+  background-color: white;
   width: 60%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -42,7 +42,7 @@ header .box-main .box .text{
 }
 
 header .box-right {
-  background-color: yellow;
+  background-color: white;
   width: 20%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -354,7 +354,7 @@ main .container .box-main-up .box-up-right p {
 }
 
 #booking {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	background-image: url('/Afbeeldingen/Bestelform\ achtergrond\ foto.jpg');
 	background-size: cover;
 	background-position: center;
@@ -362,6 +362,7 @@ main .container .box-main-up .box-up-right p {
 }
 
 #booking::before {
+  font-family: 'Josefin Sans', sans-serif;
 	content: '';
 	position: absolute;
 	left: 0;
@@ -378,6 +379,8 @@ main .container .box-main-up .box-up-right p {
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	border-radius: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
 }
 
 
@@ -406,21 +409,7 @@ main .container .box-main-up .box-up-right p {
 	font-size: 14px;
 }
 
-.booking-form .form-control::-webkit-input-placeholder {
-	color: rgba(62, 72, 92, 0.3);
-}
 
-.booking-form .form-control:-ms-input-placeholder {
-	color: rgba(62, 72, 92, 0.3);
-}
-
-.booking-form .form-control::placeholder {
-	color: rgba(62, 72, 92, 0.3);
-}
-
-.booking-form input[type="date"].form-control:invalid {
-	color: rgba(62, 72, 92, 0.3);
-}
 
 .booking-form select.form-control {
 	-webkit-appearance: none;
@@ -452,7 +441,9 @@ main .container .box-main-up .box-up-right p {
 	display: inline-block;
 	color: #3e485c;
 	font-weight: 700;
-  margin-top: 30px;
+  margin-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
 }
 
 .submit-btn {
@@ -468,14 +459,34 @@ main .container .box-main-up .box-up-right p {
 	border: none;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
 .submit-btn1 {
+  color: black;
+  left: 0;
+  top: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.submit-btn2 {
   left: 0;
   top: 0;
 	display: inline-block;
 	color: #fff;
+	background-color: #1e62d8;
+	font-weight: 700;
+  font-size: 15px;
+	padding: 14px 30px;
+	border-radius: 4px;
+	border: none;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+  width: 200px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -490,6 +501,7 @@ main .container .box-main-up .box-up-right p {
 	border: none;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -500,11 +512,13 @@ main .container .box-main-up .box-up-right p {
 }
 
 .booking-cta {
+  font-family: 'Josefin Sans', sans-serif;
 	margin-top: 80px;
 	margin-bottom: 30px;
 }
 
 .booking-cta h1 {
+  font-family: 'Josefin Sans', sans-serif;
 	font-size: 52px;
 	text-transform: uppercase;
 	color: #fff;
@@ -512,14 +526,17 @@ main .container .box-main-up .box-up-right p {
 }
 
 .booking-cta p {
-	font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
 	color: rgba(255, 255, 255, 0.8);
 }
 
-
-
-
-
+::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 17px;
+  color:black;
+  opacity: 1;
+}
 
 
 
@@ -541,6 +558,7 @@ main .container .box-main-up .box-up-right p {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   max-width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .fcf-form-group {
@@ -627,6 +645,7 @@ label.fcf-label {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
