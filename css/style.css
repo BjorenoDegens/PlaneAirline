@@ -213,13 +213,13 @@ main .container .box-main-up{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .container .box-main-up .box-up-left{
-  background-color: yellow;
+  background-color: white;
   width: 33%;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .container .box-main-up .box-up-right{
-  background-color: #00ECFF;
+  background-color: #287dfc;
   width: 33%;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -241,7 +241,7 @@ main .container .box-main-down .box-up-moreleft{
 }
 
 main .container .box-main-down .box-up-left{
-  background-color: yellow;
+  background-color: #287dfc;
   width: 25%;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -318,7 +318,7 @@ main .container .box-main-up .box-up-right p {
 
 .example_f {
   border-radius: 4px;
-  background: linear-gradient(to right, #67b26b, black) !important;
+  background: linear-gradient(to right, #287dfc, #287dfc) !important;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -488,7 +488,6 @@ main .container .box-main-up .box-up-right p {
 }
 
 
-
 .submit-btn2 {
   left: 0;
   top: 0;
@@ -499,6 +498,7 @@ main .container .box-main-up .box-up-right p {
   font-size: 15px;
 	padding: 14px 30px;
 	border-radius: 4px;
+  margin: 20px;
 	border: none;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
@@ -556,9 +556,42 @@ input .form-control ::placeholder {
 }
 
 
+.form-btn1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+
+.section1 {
+	position: relative;
+	height: 100vh;
+}
+
+.section1  {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#contact {
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: url('/Afbeeldingen/Contact_telefoon_mail.jpg');
+	background-size: cover;
+	background-position: center;
+  z-index: -1;
+  
+}
+
+
+
 
 #fcf-form {
   display:block;
+  
 }
 
 .fcf-body {
@@ -571,15 +604,20 @@ input .form-control ::placeholder {
   text-align: left;
   background-color: #fff;
   padding: 30px;
+  margin-top: 20px;
   padding-bottom: 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   max-width: 100%;
+  width: 30%;
+  margin-left: 30px;
   font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 .fcf-form-group {
   margin-bottom: 1rem;
+  
 }
 
 .fcf-input-group {
@@ -592,6 +630,9 @@ input .form-control ::placeholder {
   align-items: stretch;
   width: 100%;
 }
+
+
+
 
 .fcf-form-control {
   display: block;
