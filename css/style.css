@@ -857,7 +857,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   color: white;
   border: none;
   font-size: 1rem;
-  padding: .5em, .75em;
+  padding: 2px;
   border-radius: .25em;
   cursor: pointer;
 }
@@ -878,6 +878,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 .btn + .btn {
   margin-left: .25rem;
+  padding: 2px;
 }
 
 
