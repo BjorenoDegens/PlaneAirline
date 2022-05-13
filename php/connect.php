@@ -15,7 +15,7 @@ $opt = [
 
 try {
     $connect = new PDO($dns, $user, $pass, $opt);
-    echo "Je bent verboden";
+    echo "Je bent verbonden";
 } 
 catch (PDOException $e)
 {
