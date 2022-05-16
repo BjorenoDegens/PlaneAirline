@@ -14,10 +14,9 @@
 <input type="password" name="password">
 <br><br>
 <input type="submit" name="login" value="Submit">
-<<<<<<< HEAD
+
 </form> 
-=======
 </form>
->>>>>>> d12276114663c5848d8ac1a23422a03e8ae36e1f
+
 </body>
 </html>
