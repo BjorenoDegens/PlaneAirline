@@ -9,14 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <link href="contact-form.css" rel="stylesheet">
   </head>
 
 <body>
-
-<link href="contact-form.css" rel="stylesheet">
-
-
 
 <header>
     <div class="box-left">
@@ -63,45 +59,46 @@
     </div>
   </header> 
 
-
-  <div id="contact" class="section1">
-        <div class="form-btn1">
-            <a class="submit-btn2" href="./index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
-        </div>
-<div class="fcf-body">
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contacteer ons</h3>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Uw Voornaam en Achternaam</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+<main>
+<div class="container-contact">
+      <div id="contact" class="section1">
+            <div class="form-btn2">
+                <a class="submit-btn2" href="./index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
             </div>
-        </div>
+    <div class="fcf-body">
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contacteer ons</h3>
 
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Uw E-Mail Adres</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Uw Voornaam en Achternaam</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
             </div>
-        </div>
 
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Type hier uw bericht</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Uw E-Mail Adres</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
             </div>
-        </div>
 
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Verstuur Bericht</button>
-        </div>
-    </form>
-    </div>
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Type hier uw bericht</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
 
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Verstuur Bericht</button>
+            </div>
+        </form>
+        </div>
+      </div>
 </div>
-
+</main>
 </body>
 </html>
