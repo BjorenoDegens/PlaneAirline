@@ -1,6 +1,11 @@
 <?php 
 $message="";
-
+$PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/php/inlog.php'){
+    $message="";
+} else {
+    $message="Invalid Username or Password!";
+}
 ?>
 <html>
     <head>
