@@ -13,43 +13,61 @@
   </head>
   <body>
     <header>
+
+      
+
       <div class="box-left">
-        <img class = "logo" src = "/Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
+        <img class = "logo"  src = "/Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
           
       </div>
       <div class="box-main">
         <div class="box">
-          <div class="search">
-            <div class="icon"></div>
-            <div class="input">
-              <input type="text" placeholder="Zoeken" id="mysearch" />
-            </div>
-            <span
-              class="clear"
-              onclick="document.getElementById
-              ('mysearch').value = ''"></span>
-          </div>
-          <script>
-            const icon = document.querySelector(".icon");
-            const search = document.querySelector(".search");
-            icon.addEventListener("click", () => {
-              search.classList.toggle("active");
-            });
-          </script>
           <div class="text">
-            <p> Reizen - </p>
-            <p> Bestellen - </p>
-            <p> Info - </p>
-            <p> Contact</p>
+            <p> Over Ons - </p>
+            <p> Informatie over locaties - </p>
+            <p></p>
+            <div class="form-btn">
+              <a class="submit-btn1" href="./contact.html" target="_parent" rel="nofollow">Contact</a>
+          </div>
           </div>
         </div>
       </div>
       <div class="box-right">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+          <div class="search">
+            <div class="icon"></div>
+              <div class="input">
+                <input type="text" placeholder="Zoeken" id="mysearch" />
+              </div>
+            <span
+            class="clear"
+            onclick="document.getElementById
+            ('mysearch').value = ''"></span>
+        </div>
+        </div>
+        <div class="box"> 
+          <div class="box-logo-login">
+            <a href = "inlog.html"> <img src="/Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
+           </div>
+        </div>
       </div>
-    </header>
+    </header> 
     <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class = "image-slideshow" src="/Afbeeldingen/CBC_Photos6.png" style="width:100%">
+        </div>  
+        <div class="mySlides fade">
+          <img class = "image-slideshow" src="/Afbeeldingen/header-detox.jpg" style="width:100%">
+        </div>
+ 
+        <div class="mySlides fade">
+          <img class = "image-slideshow" src="/Afbeeldingen/sunny-tropical-beach-vacation-background-K73XYTP.jpg" style="width:100%">
+        </div>    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>   
+        <br>   
+      </div>
       <div class="container">
         <div class="box-main-up">
           <div class="box-up-left"><p>Reserveringen</p>
@@ -58,33 +76,98 @@
               <a class="example_f" href="reserveer.html" target="_blank" rel="nofollow"><span>Reserveer hier</a>
 =======
             <div class="button_cont" align="center">
+<<<<<<< HEAD
               <a class="example_f" href="/reserveer.html" target="_blank" rel="nofollow"><span>Reserveer hier</a>
 >>>>>>> d12276114663c5848d8ac1a23422a03e8ae36e1f
+=======
+              <a class="example_f" href="/reserveer.html" target="_parent">Reserveren</a>
+>>>>>>> ce347e78b903dc47f2e3e9261430d8552f75c178
             </div>
           </div>
           <div class="box-up-right"><p>Vliegtickets bestellen</p>
           </div>
         </div>
-        <div class="box-main-down">
-          <div class="box-up-moreleft"></div>
+        <div class="card-grid">
+          <div class="box-up-moreleft">
+            <div class="card card-shadow">
+              <div class="card-header card-image">
+                  <img src="/Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg" />
+              </div>
+              <div class="card-body">
+                <p>Italië</p>
+                <Br></Br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="card-footer">
+              <button class = "btn">Info</button>
+              <a class = "btn btn-outline" href ="/reserveer.html" target="_parent" >Reserveren</a>
+          </div>
+          </div>
+          </div>
           <div class="box-up-left">
-            <div class="box-up-left-text">
-              <p class = "Titel">"Vliegen naar Turkije?" </p>
-              <br>
-              <p class = "Beschrijving">Vliegen naar Turkije is weer mogelijk!
-              <br>  
-                De Corona regels zijn opgeheven en het is weer een groen gebied.
-              <br>
-                Vanaf 16-05-2022 is het weer mogelijk om te gaan reizen naar Turkije.</p>
-            </div>
+            <div class="card card-shadow">
+              <div class="card-header card-image">
+                  <img src="/Afbeeldingen/karol-stefanski-APjr3A0xsHM-unsplash.jpg" />
+              </div>
+              <div class="card-body">
+                <p>Portugal</p>
+                <Br></Br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="card-footer">
+              <button class = "btn">Info</button>
+              <a class = "btn btn-outline" href ="/reserveer.html" target="_parent" >Reserveren</a>
+          </div>
+          </div>
           </div>
           <div class="box-up-right">
+<<<<<<< HEAD
             <img src="C:\xampp\htdocs\Crud\PlaneAirline\Afbeeldingen\Vakantiefoto1.jpg" alt="">
+=======
+            <div class="card card-shadow">
+              <div class="card-header card-image">
+                  <img src="/Afbeeldingen/drew-dizzy-graham-cB4Uqoc9D9k-unsplash.jpg" />
+              </div>
+              <div class="card-body">
+                <p>Turkije</p>
+                <Br></Br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
-          <div class="box-up-moreright"></div>
+          <div class="card-footer">
+              <button class = "btn">Info</button>
+              <a class = "btn btn-outline" href ="/reserveer.html" target="_parent" >Reserveren</a>
+          </div>
+          </div>
+          </div>
+          <div class="box-up-moreright">
+            <div class="card card-shadow">
+              <div class="card-header card-image">
+                  <img src="/Afbeeldingen/reiseuhu-58MWgP3SsmY-unsplash.jpg" />
+              </div>
+              <div class="card-body">
+                <p>Spanje</p>
+                <Br></Br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="card-footer">
+              <button class = "btn">Info</button>
+              <a class = "btn btn-outline" href ="/reserveer.html" target="_parent" >Reserveren</a>
+          </div>
+          </div>
+>>>>>>> ce347e78b903dc47f2e3e9261430d8552f75c178
+          </div>
         </div>
-      </div>
+
     </main>
     <footer></footer>
+    <script src="/main.js"></script>
   </body>
 </html>
