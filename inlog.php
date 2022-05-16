@@ -63,18 +63,18 @@
           <div class="shape2"></div>
           <div class="shape2"></div>
       </div>
-      <form class ="login-pagina">
+      <form class ="login-pagina" methode="post" action="/php/inlogcheck.php">
           <h3>Login hier</h3>
 
-          <label class="label-fout" for="inlog-fout">Uw inloggegevens zijn onjuist</label>
+          <label class="label-fout" for="inlog-fout"><?php if($message!="") { echo $message; } ?></label>
 
-          <label class="label-login" for="username">Gebruikersnaam:</label>
-          <input class="input-login" type="text2" placeholder="Voer hier uw Gebruikersnaam in" id="username">
+          <label class="label-login" name="name">Gebruikersnaam:</label>
+          <input class="input-login" name="name" type="text2" placeholder="Voer hier uw Gebruikersnaam in" id="username">
 
-          <label class="label-login" for="username">Wachtwoord:</label>
-          <input class="input-login" placeholder="Voer hier uw Wachtwoord in" id="password">
+          <label class="label-login" name="password">Wachtwoord:</label>
+          <input class="input-login" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
-          <button class="button-login">Inloggen</button>
+          <button class="button-login" name="submit">Inloggen</button>
           <button class="button-vergeten">Wachtwoord vergeten</button>
           <button class="button-registeer">Registreer hier</button>
       </form>
