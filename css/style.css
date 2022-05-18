@@ -212,7 +212,6 @@ main .container .box-main-up{
   flex-direction: row;
   justify-content: space-evenly;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .container .box-main-up .box-up-left{
   background-color: white;
@@ -220,6 +219,10 @@ main .container .box-main-up .box-up-left{
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
+
+
 main .container .box-main-up .box-up-right{
   background-color: #287dfc;
   width: 33%;
@@ -318,7 +321,7 @@ main .container .box-main-up .box-up-right p {
 
 
 
-.example_f {
+.button-reserveer {
   border-radius: 4px;
   background: linear-gradient(to right, #287dfc, #287dfc) !important;
   border: none;
@@ -331,28 +334,16 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
+  
 }
-.example_f span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.4s;
+
+
+
+.button-hover-reserveer:hover{
+  transform: scale(1.025);
 }
-.example_f span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.example_f:hover span {
-  padding-right: 25px;
-}
-.example_f:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+
+
 
 
 
@@ -374,7 +365,7 @@ main .container .box-main-up .box-up-right p {
 
 #booking {
 	font-family: 'Josefin Sans', sans-serif;
-	background-image: url('/Afbeeldingen/Bestelform\ achtergrond\ foto.jpg');
+	background-image: url('../Afbeeldingen/Bestelform-achtergrond-foto.jpg');
 	background-size: cover;
 	background-position: center;
   max-height: 89.3vh;
@@ -594,19 +585,20 @@ input .form-control ::placeholder {
 }
 
 body .container-contact{
-  background-image: url(/Afbeeldingen/Contact_telefoon_mail.jpg);
   min-height: 86.7vh;
   background-size: cover;
 	background-position: center;
+  background-image: url('../Afbeeldingen/Contact_telefoon_mail.jpg');
 }
 
 
 body .container-login{
-  background-image: url(/Afbeeldingen/hills.jpg);
   min-height:89.3vh;
   background-size: cover;
 	background-position: center;
+  background-image: url('../Afbeeldingen/hills.jpg');
 }
+
 
 
 
@@ -631,7 +623,6 @@ body .container-login{
   padding-bottom: 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  max-width: 100%;
   width: 30%;
   margin-left: 30px;
   font-family: 'Josefin Sans', sans-serif;
@@ -808,6 +799,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin-bottom: 20px;
   width: 100%;
   align-items: flex-start;
+  
 }
 
 .card {
@@ -856,8 +848,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   transition: 200ms transform ease-in-out;
 }
 
-.card:hover .card-header.card-image > img{
+.card:hover {
   transform: scale(1.025);
+  
 }
 
 .card-body{
@@ -1000,8 +993,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
-
-
 
 
 
