@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>logout</title>
     <style>
         .mid{
             height:700px;
@@ -39,14 +39,6 @@
             height:175px;
         }
 
-<?php
-session_start();
-    if($_SESSION["name"]) {
-?> <h1>u bent ingelogt als <?php echo $_SESSION["name"]?></h1><br>
-<a href="uitlog.php">uitloggen</a>
-<?php
-}else header('Location: inlog.php');
-?>
     </style>
 </head>
 <body style="display: flex;align-content: center;justify-content: center;">
