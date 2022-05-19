@@ -121,7 +121,7 @@ header .box .box-logo-login a{
   width: 3px;
   height: 6px;
   background: #287dfc;
-  transform: translate(6px,6px) rotate(315deg);
+  transform: translate(3px,3px) rotate(315deg);
 }
 
 .search .input{
@@ -346,6 +346,11 @@ main .container .box-main-up .box-up-right p {
 
 
 
+.form-btn{
+  display: flex;
+  margin: 10px;
+  white-space: pre-line;
+}
 
 
 
@@ -478,6 +483,7 @@ main .container .box-main-up .box-up-right p {
   left: 0;
   top: 0;
   font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 
@@ -624,7 +630,7 @@ body .container-login{
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   width: 30%;
-  margin-left: 30px;
+  margin-left: 545px;
   font-family: 'Josefin Sans', sans-serif;
   
 }
@@ -1157,3 +1163,48 @@ button.button-registeer{
     text-decoration:underline;
     }
     
+
+
+
+.button-show button{
+  margin-left: 670px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  background-color: #287dfc;
+  width: 150px;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-hide button{
+  margin-left: 670px;
+  margin-top: 50px;
+  background-color: #287dfc;
+  width: 150px;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+block1{
+  display:block;  
+  }
+block1.a{
+  display:none;  
+  }
