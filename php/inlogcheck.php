@@ -3,7 +3,7 @@
     session_start();
     
     if (isset($_POST['inloggen'])){
-        $sql = "SELECT * FROM inlogpage WHERE inlogname = :name AND password = :password";
+        $sql = "SELECT * FROM user WHERE gebruikersnaam = :name AND password = :password";
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(':name', $_POST['name']);
         $stmt->bindParam(':password', $_POST['password']);
@@ -11,10 +11,14 @@
         $result = $stmt->fetch();
 
         if($result) {
-            $_SESSION["ID"] = $result['ID'];
+            $_SESSION["UserID"] = $result['UserID'];
             $_SESSION["name"] = $result['name'];
-
-            header("Location:adminpage.php");
+            $_SESSION['admin'] = $result['admin'];
+            if ($result['admin'] === 0){
+                header("Location:userpage.php");
+            }else if ($result['admin'] === 1){
+                header("Location:admin.php");
+            }else header("Location:../inlog.php?message=problem");
         } else {
             header("Location:../inlog.php?message=invalid");
         }

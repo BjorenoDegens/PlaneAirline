@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if($_SESSION["name"]) {
+?> <h1>u bent ingelogt als <?php echo $_SESSION["name"]?></h1><br>
+<a href="uitlog.php">uitloggen</a>
+<?php
+}else header('Location: inlog.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,15 +46,6 @@
             background-color:darkyellow;
             height:175px;
         }
-
-<?php
-session_start();
-    if($_SESSION["name"]) {
-?> <h1>u bent ingelogt als <?php echo $_SESSION["name"]?></h1><br>
-<a href="uitlog.php">uitloggen</a>
-<?php
-}else header('Location: inlog.php');
-?>
     </style>
 </head>
 <body style="display: flex;align-content: center;justify-content: center;">

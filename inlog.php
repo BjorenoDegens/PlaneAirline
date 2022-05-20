@@ -1,10 +1,17 @@
 <?php 
 $message="";
 $PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
-if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php'){
-    $message="";
-} else {
-    $message="Onjuiste gebruikersnaam en/of wachtwoord!";
+if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
+{
+  $message="";
+} 
+else if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php?message=problem')
+{
+  $message="neem contact op met de servicedesk";
+}
+else
+{
+  $message="Onjuiste gebruikersnaam en/of wachtwoord!";
 }
 ?>
 <!DOCTYPE html>
