@@ -46,8 +46,7 @@ if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/php/inlog.php'){
     <input type="submit" name="login" value="Submit">
     </form>
     </body>
->>>>>>> ce347e78b903dc47f2e3e9261430d8552f75c178
-=======
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,5 +132,4 @@ if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/php/inlog.php'){
 </div>
 </div>
   </body>
->>>>>>> bcf59b816800586bb55ba04098bbc354fd531799
 </html>
