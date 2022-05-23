@@ -39,17 +39,20 @@ else
 
     </div>
     <div class="box-main">
-      <div class="box">
-        <div class="text">
-          <p> Over Ons - </p>
-          <p> Informatie over locaties - </p>
-          <p></p>
-          <div class="form-btn">
-            <a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
-        </div>
-        </div>
-      </div>
-    </div>
+		  <div class="box">
+			<div class="text">
+				<div class="form-btn">
+					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+				</div>
+				<div class="form-btn">
+					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+				</div>
+			  <div class="form-btn">
+				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+			</div>
+			</div>
+		  </div>
+		</div>
     <div class="box-right">
       <div class="box">
         <div class="search">
