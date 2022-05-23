@@ -13,7 +13,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 70px;
   width: 100%;
   
 }
@@ -61,7 +61,7 @@ header .box-left .logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 90px;
   margin-left: 50px;
   text-align: center;
 }
@@ -72,7 +72,7 @@ header .box-left .logo {
 header .box .box-logo-login a{
   display: flex;
   flex-direction: column;
-  height: 85px;
+  height: 75px;
   width: 40px;
   position: relative;
   justify-content: center;
@@ -224,7 +224,7 @@ main .container .box-main-up .box-up-left{
 
 
 main .container .box-main-up .box-up-right{
-  background-color: #287dfc;
+  background-color: white;
   width: 33%;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -1212,3 +1212,102 @@ block1.a{
   }
 
 
+  .row-overons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+  }
+  
+  .column {
+    float: left;
+    width: 31.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card-overons {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      --padding: 1rem;
+      background: white;
+      border: 1px solid #777;
+      border-radius: .25rem;
+      max-width: 300px;
+      padding: 5px;
+      overflow: hidden;
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+ 
+  
+  .about-section {
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+  
+  .card-overons img{
+    width: 100%;
+    height: 390px;
+  }
+
+   .container-overons{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .container-overons::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  .button-overons {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .button-overons  {
+        transition: none;
+    }
+  }
+  
+  .button-overons:hover {
+    color: #212529;
+    text-decoration: none;
+  }
+  
