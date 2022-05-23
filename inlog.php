@@ -1,3 +1,19 @@
+<?php 
+$message="";
+$PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
+{
+  $message="";
+} 
+else if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php?message=problem')
+{
+  $message="neem contact op met de servicedesk";
+}
+else
+{
+  $message="Onjuiste gebruikersnaam en/of wachtwoord!";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +68,7 @@
       </div>
       <div class="box"> 
         <div class="box-logo-login">
-         <a href = "inlog.html"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
+         <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
         </div>
       </div>
     </div>
@@ -65,18 +81,18 @@
             <div class="shape2"></div>
             <div class="shape2"></div>
         </div>
-        <form class ="login-pagina" methode="post" action="/php/inlogcheck.php">
+        <form class="login-pagina" method="post" action="php/inlogcheck.php">
             <h3>Login hier</h3>
 
             <label class="label-fout" for="inlog-fout"><?php if($message!="") { echo $message; } ?></label>
 
-            <label class="label-login" name="name">Gebruikersnaam:</label>
-            <input class="input-login" name="name" type="text2" placeholder="Voer hier uw Gebruikersnaam in" id="username">
+            <label class="label-login" >Gebruikersnaam:</label>
+            <input class="input-login" name="name" type="text" placeholder="Voer hier uw Gebruikersnaam in" id="username">
 
-            <label class="label-login" name="password">Wachtwoord:</label>
-            <input class="input-login" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
+            <label class="label-login" >Wachtwoord:</label>
+            <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
-            <button class="button-login" name="submit">Inloggen</button>
+            <button class="button-login" type="submit" name="inloggen">Inloggen</button>
             <button class="button-vergeten">Wachtwoord vergeten</button>
             <button class="button-registeer">Registreer hier</button>
         </form>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if($_SESSION["name"]) {
+?> <h1>u bent ingelogt als <?php echo $_SESSION["name"]?></h1><br>
+<a href="uitlog.php">uitloggen</a>
+<?php
+}else header('Location: inlog.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,6 +103,7 @@
     align-items: center;
     align-content: flex-end;
         }
+<<<<<<< HEAD:php/adminpage.php
         #button4{
             border: 2px solid #04AA6D;
     padding: 0px 0px;
@@ -107,6 +116,8 @@
     margin-bottom: 4px;
 
         }
+=======
+>>>>>>> 8beacb9fcafa1dc3208067fc671356a08712f1cc:php/userpage.php
     </style>
 </head>
 <body style="display: flex;align-content: center;justify-content: center;">
