@@ -7,15 +7,12 @@ body, div, form, input, select, p {
     font-size: 16px;
     color: #eee;
     }
-    body {
-    background: url("Afbeeldingen/Strand.jpg") no-repeat center;
-    background-size: cover;
-    }
-    h1, h2 {
+
+h1, h2 {
     text-transform: uppercase;
     font-weight: 400;
     }
-    h2 {
+h2 {
     margin: 0 0 0 8px;
     }
     .main-block {
@@ -35,22 +32,25 @@ body, div, form, input, select, p {
     }
     .fa-graduation-cap {
     font-size: 72px;
+    text-align: center;
     }
 
-    form {
+form {
     background: rgba(0, 0, 0, 0.7); 
+    margin-bottom: 100px;
     }
 
     .title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: center;
     }
     .info {
     display: flex;
     flex-direction: column;
     }
-    input, select {
+input, select {
     padding: 5px;
     margin-bottom: 30px;
     background: transparent;
@@ -92,21 +92,29 @@ body, div, form, input, select, p {
     display: inline-block;
     margin: 20px 5px 0;
     }
-    button {
+button {
     width: 100%;
     }
-    button:hover, .btn-item:hover {
+button:hover, .btn-item:hover {
     background: #85d6de;
     }
-    @media (min-width: 568px) {
-    html, body {
-    height: 100%;
-    }
-    .main-block {
-    height: calc(100% - 50px);
-    }
-    .left-part, form {
-    flex: 1;
-    height: auto;
-    }
-    }
+@media (min-width: 568px) {
+html, body {
+height: 100%;
+}
+.main-block {
+height: calc(100% - 50px);
+}
+.left-part, form {
+flex: 1;
+height: auto;
+}
+}
+
+
+body .main-block {
+    min-height: 90.6vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../Afbeeldingen/Strand.jpg");
+  }
