@@ -4,7 +4,6 @@
   border: 0;
 }
 
-
 body {
   min-height: 100vh;
   width: 100%;
@@ -15,13 +14,14 @@ header {
   flex-direction: row;
   height: 70px;
   width: 100%;
-  
 }
 
 header .box-left {
   background-color: white;
   width: 20%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header .box-main {
@@ -29,22 +29,23 @@ header .box-main {
   justify-content: center;
   background-color: white;
   width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-header .box-main .box{
+header .box-main .box {
   display: flex;
   flex-direction: column;
 }
 
-header .box-main .box .text{
+header .box-main .box .text {
   display: flex;
   width: 100%;
   margin-top: 25px;
   justify-content: center;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
 }
 
@@ -52,8 +53,9 @@ header .box-right {
   display: flex;
   background-color: white;
   width: 20%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header .box-left .logo {
@@ -66,10 +68,7 @@ header .box-left .logo {
   text-align: center;
 }
 
-
-
-
-header .box .box-logo-login a{
+header .box .box-logo-login a {
   display: flex;
   flex-direction: column;
   height: 75px;
@@ -78,9 +77,7 @@ header .box .box-logo-login a{
   justify-content: center;
 }
 
-
-
-.search{
+.search {
   margin-top: 25px;
   position: relative;
   border-radius: 60px;
@@ -89,7 +86,7 @@ header .box .box-logo-login a{
   width: 250px;
 }
 
-.search .icon{
+.search .icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,28 +100,26 @@ header .box .box-logo-login a{
   cursor: pointer;
 }
 
-.search .icon::before
-{
-  content: '';
+.search .icon::before {
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   border: 3px solid #287dfc;
   border-radius: 50%;
-  transform: translate(-4px,-4px);
+  transform: translate(-4px, -4px);
 }
 
-.search .icon::after
-{
-  content: '';
+.search .icon::after {
+  content: "";
   position: absolute;
   width: 3px;
   height: 6px;
   background: #287dfc;
-  transform: translate(3px,3px) rotate(315deg);
+  transform: translate(3px, 3px) rotate(315deg);
 }
 
-.search .input{
+.search .input {
   position: relative;
   width: 300px;
   height: 30px;
@@ -134,8 +129,7 @@ header .box .box-logo-login a{
   align-items: center;
 }
 
-.search .input input 
-{
+.search .input input {
   position: absolute;
   top: 0;
   width: 30%;
@@ -145,7 +139,7 @@ header .box .box-logo-login a{
   padding: 5px 0;
 }
 
-.clear{
+.clear {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -160,7 +154,7 @@ header .box .box-logo-login a{
 
 .clear::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 1px;
   height: 15px;
   transform: rotate(45deg);
@@ -169,37 +163,21 @@ header .box .box-logo-login a{
 
 .clear::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 1px;
   height: 15px;
   transform: rotate(315deg);
   background-color: black;
 }
 
-.input  ::placeholder{
+.input ::placeholder {
   display: flex;
-  font-family: 'Josefin Sans', sans-serif;
-	font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
   color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main .container{
+main .container {
   background-color: aliceblue;
   min-height: 80vh;
   width: 100%;
@@ -207,27 +185,28 @@ main .container{
   flex-direction: column;
   justify-content: center;
 }
-main .container .box-main-up{
+main .container .box-main-up {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   height: 200px;
 }
-main .container .box-main-up .box-up-left{
+main .container .box-main-up .box-up-left {
   background-color: white;
   width: 33%;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-
-
-main .container .box-main-up .box-up-right{
+main .container .box-main-up .box-up-right {
   background-color: white;
   width: 33%;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 main .container .box-main-down {
   display: flex;
@@ -235,25 +214,30 @@ main .container .box-main-down {
   flex-direction: row;
   background-color: aliceblue;
   height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-main .container .box-main-down .box-up-moreleft{
+main .container .box-main-down .box-up-moreleft {
   background-color: aliceblue;
   width: 25%;
   height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-main .container .box-main-down .box-up-left{
+main .container .box-main-down .box-up-left {
   background-color: #287dfc;
   width: 25%;
   height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-main .container .box-main-down .box-up-left .box-up-left-text{
+main .container .box-main-down .box-up-left .box-up-left-text {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -262,41 +246,44 @@ main .container .box-main-down .box-up-left .box-up-left-text{
   justify-content: center;
 }
 
-main .container .box-main-down .box-up-left .box-up-left-text .Titel{
-  font-family: 'Josefin Sans', sans-serif;
+main .container .box-main-down .box-up-left .box-up-left-text .Titel {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
 }
 
-main .container .box-main-down .box-up-left .box-up-left-text .Beschrijving{
-  font-family: 'Josefin Sans', sans-serif;
+main .container .box-main-down .box-up-left .box-up-left-text .Beschrijving {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
 
-main .container .box-main-down .box-up-right{
+main .container .box-main-down .box-up-right {
   background-color: aliceblue;
   width: 25%;
   height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*vakantie foto1 in box-up-right*/
 
-main .container .box-main-down .box-up-right img{
+main .container .box-main-down .box-up-right img {
   display: flex;
   height: 300px;
   width: 100%;
 }
 
-main .container .box-main-down .box-up-moreright{
+main .container .box-main-down .box-up-moreright {
   background-color: aliceblue;
   width: 25%;
   height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
 main .container .box-main-up .box-up-left p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
   display: flex;
   flex-direction: column;
@@ -308,7 +295,7 @@ main .container .box-main-up .box-up-left p {
 }
 
 main .container .box-main-up .box-up-right p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
   display: flex;
   flex-direction: column;
@@ -318,14 +305,11 @@ main .container .box-main-up .box-up-right p {
   justify-content: center;
 }
 
-
-
-
 .button-reserveer {
   border-radius: 4px;
   background: linear-gradient(to right, #287dfc, #287dfc) !important;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   font-size: 22px;
@@ -334,70 +318,61 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-  
 }
 
-
-
-.button-hover-reserveer:hover{
+.button-hover-reserveer:hover {
   transform: scale(1.025);
 }
 
-
-
-
-.form-btn{
+.form-btn {
   display: flex;
   margin: 10px;
   white-space: pre-line;
 }
 
-
-
 .section {
-	position: relative;
-	height: 100vh;
+  position: relative;
+  height: 100vh;
 }
 
 .section .section-center {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #booking {
-	font-family: 'Josefin Sans', sans-serif;
-	background-image: url('../Afbeeldingen/Bestelform-achtergrond-foto.jpg');
-	background-size: cover;
-	background-position: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("../Afbeeldingen/Bestelform-achtergrond-foto.jpg");
+  background-size: cover;
+  background-position: center;
   max-height: 89.3vh;
 }
 
 #booking::before {
-  font-family: 'Josefin Sans', sans-serif;
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	background: rgba(47, 103, 177, 0.6);
+  font-family: "Josefin Sans", sans-serif;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(47, 103, 177, 0.6);
   z-index: -1;
 }
 
 .booking-form {
-	background-color: #fff;
-	padding: 50px 20px;
-	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
-	border-radius: 4px;
-  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  padding: 50px 20px;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
 }
-
 
 .booking-form img {
   display: flex;
@@ -409,210 +384,189 @@ main .container .box-main-up .box-up-right p {
 }
 
 .booking-form .form-group {
-	position: relative;
+  position: relative;
   margin-top: 20px;
 }
 
 .booking-form .form-control {
-	background-color: #ebecee;
-	border-radius: 4px;
-	border: none;
-	height: 40px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #3e485c;
-	font-size: 14px;
+  background-color: #ebecee;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #3e485c;
+  font-size: 14px;
 }
-
-
 
 .booking-form select.form-control {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.booking-form select.form-control+.select-arrow {
-	position: absolute;
-	right: 0px;
-	bottom: 4px;
-	width: 32px;
-	line-height: 32px;
-	height: 32px;
-	text-align: center;
-	pointer-events: none;
-	color: rgba(62, 72, 92, 0.3);
-	font-size: 14px;
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: rgba(62, 72, 92, 0.3);
+  font-size: 14px;
 }
 
-.booking-form select.form-control+.select-arrow:after {
-	content: '\279C';
-	display: block;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+.booking-form select.form-control + .select-arrow:after {
+  content: "\279C";
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .booking-form .form-label {
-	display: inline-block;
-	color: #3e485c;
-	font-weight: 700;
+  display: inline-block;
+  color: #3e485c;
+  font-weight: 700;
   margin-top: 10px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
 
 .submit-btn {
   left: 0;
   top: 0;
-	display: inline-block;
-	color: #fff;
-	background-color: #1e62d8;
+  display: inline-block;
+  color: #fff;
+  background-color: #1e62d8;
   margin: 5px;
-	font-weight: 700;
-	padding: 14px 30px;
-	border-radius: 4px;
-	border: none;
-	-webkit-transition: 0.2s all;
-	transition: 0.2s all;
-  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  font-family: "Josefin Sans", sans-serif;
 }
-
 
 .submit-btn1 {
   color: black;
   left: 0;
   top: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
 }
-
-
-
 
 .submit-btn2 {
   left: 0;
   top: 0;
-	display: inline-block;
-	color: #fff;
-	background-color: #1e62d8;
-	font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  background-color: #1e62d8;
+  font-weight: 700;
   font-size: 15px;
-	padding: 14px 30px;
-	border-radius: 4px;
+  padding: 14px 30px;
+  border-radius: 4px;
   margin: 20px;
-	border: none;
-	-webkit-transition: 0.2s all;
-	transition: 0.2s all;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
   width: 250px;
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .submit-btn3 {
   left: 0;
   top: 0;
-	display: inline-block;
-	color: #fff;
-	background-color: #1e62d8;
-	font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  background-color: #1e62d8;
+  font-weight: 700;
   font-size: 15px;
-	padding: 14px 30px;
-	border-radius: 4px;
-	border: none;
-	-webkit-transition: 0.2s all;
-	transition: 0.2s all;
+  padding: 14px 30px;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
   width: 250px;
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
 }
-
-
 
 .booking-form .submit-btn {
-	display: inline-block;
-	color: #fff;
-	background-color: #1e62d8;
-	font-weight: 700;
-	padding: 14px 30px;
-	border-radius: 4px;
-	border: none;
-	-webkit-transition: 0.2s all;
-	transition: 0.2s all;
-  font-family: 'Josefin Sans', sans-serif;
+  display: inline-block;
+  color: #fff;
+  background-color: #1e62d8;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-
 
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
-	opacity: 0.9;
+  opacity: 0.9;
 }
 
 .booking-cta {
-  font-family: 'Josefin Sans', sans-serif;
-	margin-top: 80px;
-	margin-bottom: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 .booking-cta h1 {
-  font-family: 'Josefin Sans', sans-serif;
-	font-size: 52px;
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
 }
 
 .booking-cta p {
-  font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
-	color: rgba(255, 255, 255, 0.8);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 input .form-control ::placeholder {
-  font-family: 'Josefin Sans', sans-serif;
-	font-size: 17px;
-  color:black;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: black;
   opacity: 1;
 }
 
-
-.submit-btn2{
+.submit-btn2 {
   display: flex;
   flex-direction: column;
 }
 
-.submit-btn3{
+.submit-btn3 {
   display: flex;
   flex-direction: column;
 }
 
 .section1 {
-	position: relative;
+  position: relative;
 }
 
-body .container-contact{
+body .container-contact {
   min-height: 86.7vh;
   background-size: cover;
-	background-position: center;
-  background-image: url('../Afbeeldingen/Contact_telefoon_mail.jpg');
+  background-position: center;
+  background-image: url("../Afbeeldingen/Contact_telefoon_mail.jpg");
 }
 
-
-body .container-login{
-  min-height:89.3vh;
+body .container-login {
+  min-height: 89.3vh;
   background-size: cover;
-	background-position: center;
-  background-image: url('../Afbeeldingen/hills.jpg');
+  background-position: center;
+  background-image: url("../Afbeeldingen/hills.jpg");
 }
-
-
-
-
-
 
 #fcf-form {
-  display:block;
-  
+  display: block;
 }
 
 .fcf-body {
@@ -629,13 +583,11 @@ body .container-login{
   border-radius: 0.25rem;
   width: 30%;
   margin-left: 545px;
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .fcf-form-group {
   margin-bottom: 1rem;
-  
 }
 
 .fcf-input-group {
@@ -648,9 +600,6 @@ body .container-login{
   align-items: stretch;
   width: 100%;
 }
-
-
-
 
 .fcf-form-control {
   display: block;
@@ -673,7 +622,8 @@ body .container-login{
   border: 1px solid #313131;
 }
 
-select.fcf-form-control[size], select.fcf-form-control[multiple] {
+select.fcf-form-control[size],
+select.fcf-form-control[multiple] {
   height: auto;
 }
 
@@ -720,13 +670,14 @@ label.fcf-label {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  font-family: 'Josefin Sans', sans-serif;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .fcf-btn {
-      transition: none;
+    transition: none;
   }
 }
 
@@ -735,7 +686,8 @@ label.fcf-label {
   text-decoration: none;
 }
 
-.fcf-btn:focus, .fcf-btn.focus {
+.fcf-btn:focus,
+.fcf-btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -752,14 +704,16 @@ label.fcf-label {
   border-color: #0062cc;
 }
 
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+.fcf-btn-primary:focus,
+.fcf-btn-primary.focus {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+.fcf-btn-lg,
+.fcf-btn-group-lg > .fcf-btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -771,28 +725,20 @@ label.fcf-label {
   width: 100%;
 }
 
-.fcf-btn-block+.fcf-btn-block {
+.fcf-btn-block + .fcf-btn-block {
   margin-top: 0.5rem;
 }
 
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+input[type="submit"].fcf-btn-block,
+input[type="reset"].fcf-btn-block,
+input[type="button"].fcf-btn-block {
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-*, *::before, *::after {
-  font-family: 'Josefin Sans', sans-serif;
+*,
+*::before,
+*::after {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .card-grid {
@@ -803,41 +749,37 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin-bottom: 20px;
   width: 100%;
   align-items: flex-start;
-  
 }
 
 .card {
   --padding: 1rem;
   background: white;
   border: 1px solid #777;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   max-width: 300px;
   overflow: hidden;
   margin-top: 20px;
   margin-left: 50px;
 }
 
-
-.card-body p{
+.card-body p {
   font-size: 25px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
-.card.card-shadow{
+.card.card-shadow {
   border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.card-header{
+.card-header {
   font-size: 1.5rem;
   padding: var(--padding);
   padding-bottom: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.card-header.card-image{
+.card-header.card-image {
   padding: 0;
   overflow: hidden;
 }
@@ -854,35 +796,32 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 .card:hover {
   transform: scale(1.025);
-  
 }
 
-.card-body{
-  font-size: .9rem;
+.card-body {
+  font-size: 0.9rem;
   padding: 0 var(--padding);
 }
 
-
-.card-footer{
+.card-footer {
   margin-top: 1rem;
   padding: var(--padding);
   padding-top: 0;
 }
 
-
-
 .btn {
-  --color: hsl(200,50%, 50%);
+  --color: hsl(200, 50%, 50%);
   background: var(--color);
   color: white;
   border: none;
   font-size: 1rem;
   padding: 2px;
-  border-radius: .25em;
+  border-radius: 0.25em;
   cursor: pointer;
 }
 
-.btn:hover, .btn-focus{
+.btn:hover,
+.btn-focus {
   background: hsl(200, 50%, 60%);
 }
 
@@ -892,19 +831,15 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   color: var(--color);
 }
 
-.btn.btn-outline:hover, .btn.btn-outline:focus{
-  background: hsl(200,50%, 90%);
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  background: hsl(200, 50%, 90%);
 }
 
 .btn + .btn {
-  margin-left: .25rem;
+  margin-left: 0.25rem;
   padding: 2px;
 }
-
-
-
-
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -913,7 +848,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -935,8 +871,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -971,200 +908,188 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 3.0s;
+  animation-duration: 3s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
 
 .image-slideshow {
   margin-top: 20px;
   height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-
-
 
 *,
 *:before,
-:after{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
- 
-body.contact  {
+
+body.contact {
   background: aliceblue;
 }
 
-.background2{
-width: 430px;
-height: 520px;
-position: absolute;
-transform: translate(-50%,-50%);
-left: 50%;
-top: 50%;
+.background2 {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
-.background2 .shape2{
-height: 200px;
-width: 200px;
-position: absolute;
-border-radius: 50%;
+.background2 .shape2 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
 }
-.shape2:first-child{
+.shape2:first-child {
   margin-top: 60px;
-background: linear-gradient(
-  #1845ad,
-  #23a2f6
-);
-left: -80px;
-top: -80px;
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
 }
-.shape2:last-child{
+.shape2:last-child {
   margin-top: 45px;
-background: linear-gradient(
-  to right,
-  #ff512f,
-  #f09819
-);
-right: -60px;
-bottom: -100px;
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -60px;
+  bottom: -100px;
 }
-form.login-pagina{
+form.login-pagina {
   margin-top: 45px;
-height: 520px;
-width: 400px;
-background-color: rgba(255,255,255,0.13);
-position: absolute;
-transform: translate(-50%,-50%);
-top: 50%;
-left: 50%;
-border-radius: 10px;
-backdrop-filter: blur(10px);
-border: 2px solid rgba(255,255,255,0.1);
-box-shadow: 0 0 40px rgba(8,7,16,0.6);
-padding: 50px 35px;
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
 }
-form.login-pagina{
-font-family: 'Poppins',sans-serif;
-color: #ffffff;
-letter-spacing: 0.5px;
-outline: none;
-border: none;
+form.login-pagina {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
 }
-form.login-pagina h3{
+form.login-pagina h3 {
   color: black;
-font-size: 32px;
-font-weight: 500;
-line-height: 42px;
-text-align: center;
-font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
-label.label-fout{
-  margin-left: 60px;
+label.label-fout {
   width: 100%;
-color: red;
-display: block;
-margin-top: 3px;
-font-size: 16px;
-font-weight: 500;
+  color: red;
+  display: block;
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-
-label.label-login{
+label.label-login {
   color: black;
-display: block;
-margin-top: 30px;
-font-size: 16px;
-font-weight: 500;
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }
-input.input-login{
+input.input-login {
   color: black;
-display: block;
-height: 50px;
-width: 100%;
-border-radius: 3px;
-padding: 0 10px;
-margin-top: 8px;
-font-size: 14px;
-font-weight: 300;
-font-family: 'Josefin Sans', sans-serif;
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.input-login::placeholder{
-color: grey;
+.input-login::placeholder {
+  color: grey;
 }
 
-button.button-login{
-margin-top: 50px;
-width: 100%;
-background-color: #287dfc;
-color: #080710;
-padding: 15px 0;
-font-size: 18px;
-font-weight: 600;
-border-radius: 5px;
-cursor: pointer;
-font-family: 'Josefin Sans', sans-serif;
+button.button-login {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #287dfc;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
-
-button.button-registeer{
+button.button-registeer {
   margin-top: 5px;
   width: 200px;
   margin-left: 65px;
-  background: linear-gradient(
-  to right,
-  #ff512f,
-  #f09819
-  );
+  background: linear-gradient(to right, #ff512f, #f09819);
   color: #080710;
   padding: 15px 0;
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  button.button-vergeten{
-    margin-top: 5px;
-    width: 100%;
-    background-color: transparent;
-    color: aliceblue;
-    padding: 15px 0;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Josefin Sans', sans-serif;
-    text-decoration:underline;
-    }
-    
+button.button-vergeten {
+  margin-top: 5px;
+  width: 100%;
+  background-color: transparent;
+  color: aliceblue;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: underline;
+}
 
-
-
-.button-show button{
+.button-show button {
   margin-left: 670px;
   margin-top: 50px;
   margin-bottom: 10px;
@@ -1176,17 +1101,13 @@ button.button-registeer{
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-
-
-
-
-.button-hide button{
+.button-hide button {
   margin-left: 670px;
   margin-bottom: 50px;
   background-color: #287dfc;
@@ -1197,117 +1118,112 @@ button.button-registeer{
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
+block1 {
+  display: block;
+}
+block1.a {
+  display: none;
+}
 
-block1{
-  display:block;  
-  }
-block1.a{
-  display:none;  
-  }
+.row-overons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+}
 
+.column {
+  float: left;
+  width: 31.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-  .row-overons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 35px;
-  }
-  
+.card-overons {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  --padding: 1rem;
+  background: white;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+  max-width: 300px;
+  padding: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.about-section {
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.card-overons img {
+  width: 100%;
+  height: 390px;
+}
+
+.container-overons {
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-overons::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
   .column {
-    float: left;
-    width: 31.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .card-overons {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      --padding: 1rem;
-      background: white;
-      border: 1px solid #777;
-      border-radius: .25rem;
-      max-width: 300px;
-      padding: 5px;
-      overflow: hidden;
-      margin-top: 20px;
-      margin-left: 50px;
-    }
- 
-  
-  .about-section {
-    text-align: center;
-    background-color: white;
-    color: black;
-  }
-  
-  .card-overons img{
     width: 100%;
-    height: 390px;
+    display: block;
   }
+}
 
-   .container-overons{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .container-overons::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+.button-overons {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: "Josefin Sans", sans-serif;
+}
 
-
+@media (prefers-reduced-motion: reduce) {
   .button-overons {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    font-family: 'Josefin Sans', sans-serif;
+    transition: none;
   }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .button-overons  {
-        transition: none;
-    }
-  }
-  
-  .button-overons:hover {
-    color: #212529;
-    text-decoration: none;
-  }
-  
+}
+
+.button-overons:hover {
+  color: #212529;
+  text-decoration: none;
+}
