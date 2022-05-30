@@ -94,7 +94,7 @@ else
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
             <button class="button-vergeten">Wachtwoord vergeten</button>
-            <button class="button-registeer">Registreer hier</button>
+            <button class="button-registeer" href="">Registreer hier</button>
         </form>
       </div>
     </div>
