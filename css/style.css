@@ -8,6 +8,7 @@
 body {
   min-height: 100vh;
   width: 100%;
+  background-color: aliceblue;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
 }
 
 header .box-left {
-  background-color: white;
+  background-color: aliceblue;
   width: 20%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -27,7 +28,7 @@ header .box-left {
 header .box-main {
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: aliceblue;
   width: 60%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -41,7 +42,7 @@ header .box-main .box{
 header .box-main .box .text{
   display: flex;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
   justify-content: center;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -50,7 +51,7 @@ header .box-main .box .text{
 
 header .box-right {
   display: flex;
-  background-color: white;
+  background-color: aliceblue;
   width: 20%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -87,6 +88,7 @@ header .box .box-logo-login a{
   transition: 0.5s;
   overflow: hidden;
   width: 250px;
+  background-color: aliceblue;
 }
 
 .search .icon{
@@ -132,6 +134,7 @@ header .box .box-logo-login a{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
 }
 
 .search .input input 
@@ -143,6 +146,7 @@ header .box .box-logo-login a{
   outline: none;
   font-size: 18px;
   padding: 5px 0;
+  background-color: aliceblue;
 }
 
 .clear{
@@ -204,6 +208,7 @@ main .container{
   min-height: 80vh;
   width: 100%;
   display: flex;
+  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
 }
@@ -216,6 +221,7 @@ main .container .box-main-up{
 main .container .box-main-up .box-up-left{
   background-color: white;
   width: 33%;
+  border-radius: 5px;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -224,8 +230,10 @@ main .container .box-main-up .box-up-left{
 
 
 main .container .box-main-up .box-up-right{
+  display: flex;
   background-color: white;
   width: 33%;
+  border-radius: 5px;
   height: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -308,10 +316,12 @@ main .container .box-main-up .box-up-left p {
 }
 
 main .container .box-main-up .box-up-right p {
+  
   font-family: 'Josefin Sans', sans-serif;
   font-size: 30px;
   display: flex;
   flex-direction: column;
+  
   width: 100%;
   margin-top: 25px;
   text-align: center;
@@ -334,7 +344,7 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-  
+  text-decoration: none;
 }
 
 
@@ -475,6 +485,7 @@ main .container .box-main-up .box-up-right p {
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
   font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
 }
 
 
@@ -483,7 +494,6 @@ main .container .box-main-up .box-up-right p {
   left: 0;
   top: 0;
   font-family: 'Josefin Sans', sans-serif;
-  
 }
 
 
@@ -505,7 +515,7 @@ main .container .box-main-up .box-up-right p {
 	transition: 0.2s all;
   width: 250px;
   font-family: 'Josefin Sans', sans-serif;
-  
+  text-decoration: none;
 }
 
 .submit-btn3 {
@@ -523,7 +533,7 @@ main .container .box-main-up .box-up-right p {
 	transition: 0.2s all;
   width: 250px;
   font-family: 'Josefin Sans', sans-serif;
-  
+  text-decoration: none;
 }
 
 
@@ -539,6 +549,7 @@ main .container .box-main-up .box-up-right p {
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
   font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
 }
 
 
@@ -546,6 +557,8 @@ main .container .box-main-up .box-up-right p {
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
 	opacity: 0.9;
+  color: white;
+  text-decoration: none;
 }
 
 .booking-cta {
@@ -560,6 +573,7 @@ main .container .box-main-up .box-up-right p {
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 700;
+  text-decoration: none;
 }
 
 .booking-cta p {
@@ -992,7 +1006,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .image-slideshow {
-  margin-top: 20px;
   height: 400px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -1079,7 +1092,6 @@ font-family: 'Josefin Sans', sans-serif;
 
 
 label.label-fout{
-  margin-left: 60px;
   width: 100%;
 color: red;
 display: block;
@@ -1165,12 +1177,12 @@ button.button-registeer{
 
 
 .button-show button{
-  margin-left: 670px;
+  margin-left: 688px;
   margin-top: 50px;
   margin-bottom: 10px;
   background-color: #287dfc;
   width: 150px;
-  color: #080710;
+  color: white;
   padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
@@ -1180,6 +1192,8 @@ button.button-registeer{
   text-align: center;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+
 }
 
 
@@ -1187,11 +1201,11 @@ button.button-registeer{
 
 
 .button-hide button{
-  margin-left: 670px;
+  margin-left: 688px;
   margin-bottom: 50px;
   background-color: #287dfc;
   width: 150px;
-  color: #080710;
+  color: white;
   padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
@@ -1219,6 +1233,18 @@ block1.a{
     margin-left: 35px;
   }
   
+
+.row-tussen{
+  border-bottom: black solid 1px;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  
+  }
+
+
   .column {
     float: left;
     width: 31.3%;
@@ -1240,11 +1266,7 @@ block1.a{
     }
  
   
-  .about-section {
-    text-align: center;
-    background-color: white;
-    color: black;
-  }
+ 
   
   .card-overons img{
     width: 100%;
@@ -1279,7 +1301,7 @@ block1.a{
   }
 
 
-  .button-overons {
+  .button-overons a{
     display: inline-block;
     font-weight: 400;
     color: #212529;
@@ -1298,7 +1320,9 @@ block1.a{
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
   }
+
   
   @media (prefers-reduced-motion: reduce) {
     .button-overons  {
@@ -1306,8 +1330,52 @@ block1.a{
     }
   }
   
-  .button-overons:hover {
+  .card-overons:hover {
     color: #212529;
     text-decoration: none;
+    transform: scale(1.025);
   }
   
+
+
+
+
+.weer {
+  background-color: aliceblue;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.box-up-right{
+  display: flex;
+}
+
+
+
+
+.bedrijfs-image{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 650px;
+}
+
+
+.overons-text h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+}
+
+.overons-text h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px;
+}
+

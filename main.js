@@ -59,3 +59,4 @@ butTwo.onclick = function () {
   document.getElementById("Sec").style.display = "none";
   document.getElementById("ID").style.display = "none";
 };
+

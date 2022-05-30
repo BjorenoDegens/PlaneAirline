@@ -12,32 +12,83 @@ main {
 
 .navbar {
   background-color: blue;
-  width: 10%;
+  width: 13.5%;
   min-height: 100vh;
 }
 
 .infobox {
-  background-color: orange;
+  background-color: aliceblue;
   width: 90%;
   min-height: 100vh;
 }
+
+.infobox h1 {
+  margin: 10px;
+}
+
 .barone {
-  background-color: black;
+  background-color: aliceblue;
   height: 25%;
   width: 100%;
 }
+
+.barone img{
+  height: 50px;
+  width: 50px;
+}
+
 .bartwo {
-  background-color: purple;
+  background-color: aliceblue;
   height: 25%;
-  width: 100%;
+  width: 110%;
 }
 .barthree {
-  background-color: green;
+  background-color: aliceblue;
+  height: 25%;
+  width: 110%;
+}
+.barfour {
+  background-color:aliceblue;
   height: 25%;
   width: 100%;
 }
-.barfour {
-  background-color: black;
-  height: 25%;
-  width: 100%;
+
+/* SIDEBAR */
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 200px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+  background-color:#287dfc;
+  transition: left 2s;
+  border-top: aliceblue solid 3px;
+  border-right: aliceblue solid 3px;
+  z-index: 0;
+}
+
+.sidebar.active {
+  left: -300px;
+}
+
+.sidebar h1 {
+  color: white;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+header .balkjes img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 }
