@@ -466,15 +466,6 @@ main .container .box-main-up .box-up-right p {
   color: #fff;
   background-color: #1e62d8;
   margin: 5px;
-<<<<<<< HEAD
-  font-weight: 700;
-  padding: 14px 30px;
-  border-radius: 4px;
-  border: none;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  font-family: "Josefin Sans", sans-serif;
-=======
 	font-weight: 700;
 	padding: 14px 30px;
 	border-radius: 4px;
@@ -483,18 +474,13 @@ main .container .box-main-up .box-up-right p {
 	transition: 0.2s all;
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .submit-btn1 {
   color: black;
   left: 0;
   top: 0;
-<<<<<<< HEAD
-  font-family: "Josefin Sans", sans-serif;
-=======
   font-family: 'Josefin Sans', sans-serif;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .submit-btn2 {
@@ -512,12 +498,8 @@ main .container .box-main-up .box-up-right p {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   width: 250px;
-<<<<<<< HEAD
-  font-family: "Josefin Sans", sans-serif;
-=======
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .submit-btn3 {
@@ -534,27 +516,11 @@ main .container .box-main-up .box-up-right p {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   width: 250px;
-<<<<<<< HEAD
-  font-family: "Josefin Sans", sans-serif;
-=======
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .booking-form .submit-btn {
-<<<<<<< HEAD
-  display: inline-block;
-  color: #fff;
-  background-color: #1e62d8;
-  font-weight: 700;
-  padding: 14px 30px;
-  border-radius: 4px;
-  border: none;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  font-family: "Josefin Sans", sans-serif;
-=======
 	display: inline-block;
 	color: #fff;
 	background-color: #1e62d8;
@@ -566,18 +532,13 @@ main .container .box-main-up .box-up-right p {
 	transition: 0.2s all;
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
-<<<<<<< HEAD
-  opacity: 0.9;
-=======
 	opacity: 0.9;
   color: white;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .booking-cta {
@@ -587,20 +548,12 @@ main .container .box-main-up .box-up-right p {
 }
 
 .booking-cta h1 {
-<<<<<<< HEAD
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 52px;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 700;
-=======
   font-family: 'Josefin Sans', sans-serif;
 	font-size: 52px;
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 700;
   text-decoration: none;
->>>>>>> c2681a31ae6fcee5900bd15295fa00ff5039e2c4
 }
 
 .booking-cta p {
