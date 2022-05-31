@@ -89,9 +89,7 @@
           >Vlieg Terug Naar HomePage</a
         >
       </div>
-      <div class="about-section">
-        <h1>Over Ons</h1>
-      </div>
+      
 
       <h2 style="text-align: center">Ons Team</h2>
       <div class="row-overons">
