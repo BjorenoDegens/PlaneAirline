@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,13 +39,13 @@
 		  <div class="box">
 			<div class="text">
 				<div class="form-btn">
-					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
 				<div class="form-btn">
-					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
 				</div>
 			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 			</div>
 			</div>
 		  </div>
@@ -81,7 +82,7 @@
 
 	<div id="booking" class="section">
         <div class="form-btn">
-            <a class="submit-btn" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+            <a class="submit-btn" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
         </div>
 		<div class="section-center">
 			<div class="container">
@@ -98,7 +99,7 @@
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
                             <img src="Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
-							<form>
+							<form action="php/inlogcheck.php" method="post">
 								<div class="form-group">
 									<span class="form-label">Uw bestemming</span>
 									<input class="form-control" type="text" placeholder="Voer uw vliegbestemming in">
@@ -145,7 +146,7 @@
 									</div>
 								</div>
 								<div class="form-btn">
-									<a class="submit-btn" href="registeer.html">Reserveer</a>
+									<button class="submit-btn" type="submit" name="reserveer">Reserveer</button>
 								</div>
 							</form>
 						</div>

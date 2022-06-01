@@ -23,13 +23,13 @@
 		  <div class="box">
 			<div class="text">
 				<div class="form-btn">
-					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
 				<div class="form-btn">
-					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
 				</div>
 			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 			</div>
 			</div>
 		  </div>
@@ -65,7 +65,7 @@
   <div class="container-contact">
     <div id="contact" class="section1">
       <div class="form-btn2">
-            <a class="submit-btn2" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+            <a class="submit-btn2" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
               <div class="fcf-body">
                   <div id="fcf-form">
                     <h3 class="fcf-h3">Contacteer ons</h3>

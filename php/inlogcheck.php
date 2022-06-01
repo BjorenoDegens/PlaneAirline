@@ -25,4 +25,14 @@
     } else { 
         header("Location:../inlog.php");
     }
+
+    if (isset($_POST['reserveer'])){
+        if($_SESSION["name"]) {
+            header("Location:../res.php");
+        }else {
+            header("Location:../inlog.php");
+        }
+    }
 ?>
+
+ingelogt verder naar  niet inlogt naar inlogpage

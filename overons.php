@@ -28,7 +28,7 @@
             <div class="form-btn">
               <a
                 class="submit-btn1"
-                href="overons.html"
+                href="overons.php"
                 target="_parent"
                 rel="nofollow"
               >
@@ -38,7 +38,7 @@
             <div class="form-btn">
               <a
                 class="submit-btn1"
-                href="contact.html"
+                href="contact.php"
                 target="_parent"
                 rel="nofollow"
               >
@@ -48,7 +48,7 @@
             <div class="form-btn">
               <a
                 class="submit-btn1"
-                href="contact.html"
+                href="contact.php"
                 target="_parent"
                 rel="nofollow"
                 >Contact</a
@@ -73,7 +73,7 @@
         </div>
         <div class="box">
           <div class="box-logo-login">
-            <a href="inlog.html"
+            <a href="inlog.php"
               ><img
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
@@ -85,7 +85,7 @@
     </header>
     <main>
       <div class="form-btn">
-        <a class="submit-btn" href="index.html" target="_parent" rel="nofollow"
+        <a class="submit-btn" href="index.php" target="_parent" rel="nofollow"
           >Vlieg Terug Naar HomePage</a
         >
       </div>

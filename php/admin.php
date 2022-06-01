@@ -1,5 +1,6 @@
 <?php
 session_start();
+if($_SESSION["name"]) {
     if($_SESSION["admin"] == 1) {
 ?>
     <!DOCTYPE html>
@@ -25,4 +26,6 @@ session_start();
         </main>
     </body>
     </html>
-<?php }else header("Location:../inlog.php") ?>
+<?php 
+    }else header("Location:../inlog.php");
+}else header('Location: ../inlog.php'); ?>

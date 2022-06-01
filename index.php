@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,13 +27,13 @@
         <div class="box">
         <div class="text">
           <div class="form-btn">
-            <a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+            <a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
           </div>
           <div class="form-btn">
-            <a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+            <a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
           </div>
           <div class="form-btn">
-          <a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+          <a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
         </div>
         </div>
         </div>
@@ -104,7 +105,7 @@
           <div class="box-up-left">
             <p>Reserveringen</p>
             <div class="button-hover-reserveer" align="center">
-              <a class="button-reserveer" href="reserveer.html" target="_parent"
+              <a class="button-reserveer" href="reserveer.php" target="_parent"
                 >Reserveren</a
               >
             </div>
@@ -129,7 +130,7 @@
                 <button class="btn">Info</button>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.html"
+                  href="reserveer.php"
                   target="_parent"
                   >Reserveren</a
                 >
@@ -154,7 +155,7 @@
                 <button class="btn">Info</button>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.html"
+                  href="reserveer.php"
                   target="_parent"
                   >Reserveren</a
                 >
@@ -181,7 +182,7 @@
                 <button class="btn">Info</button>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.html"
+                  href="reserveer.php"
                   target="_parent"
                   >Reserveren</a
                 >
@@ -204,7 +205,7 @@
                 <button class="btn">Info</button>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.html"
+                  href="reserveer.php"
                   target="_parent"
                   >Reserveren</a>
               </div>
@@ -234,7 +235,7 @@
             <button class="btn">Info</button>
             <a
               class="btn btn-outline"
-              href="reserveer.html"
+              href="reserveer.php"
               target="_parent"
               >Reserveren</a
             >
@@ -259,7 +260,7 @@
             <button class="btn">Info</button>
             <a
               class="btn btn-outline"
-              href="reserveer.html"
+              href="reserveer.php"
               target="_parent"
               >Reserveren</a
             >
@@ -284,7 +285,7 @@
             <button class="btn">Info</button>
             <a
               class="btn btn-outline"
-              href="reserveer.html"
+              href="reserveer.php"
               target="_parent"
               >Reserveren</a
             >
@@ -307,7 +308,7 @@
             <button class="btn">Info</button>
             <a
               class="btn btn-outline"
-              href="reserveer.html"
+              href="reserveer.php"
               target="_parent"
               >Reserveren</a>
           </div>

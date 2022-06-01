@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 $message="";
 $PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
@@ -42,13 +43,13 @@ else
 		  <div class="box">
 			<div class="text">
 				<div class="form-btn">
-					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
 				<div class="form-btn">
-					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
 				</div>
 			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 			</div>
 			</div>
 		  </div>
@@ -76,7 +77,7 @@ else
   <main>
     <div class="container-login"> 
       <div class="form-btn3">
-          <a class="submit-btn3" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>  
+          <a class="submit-btn3" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>  
         <div class ="background2">
             <div class="shape2"></div>
             <div class="shape2"></div>
