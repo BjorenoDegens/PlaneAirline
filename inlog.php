@@ -6,13 +6,17 @@ if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
 {
   $message="";
 } 
-else if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php?message=problem')
+else if ($PageUrl == 'Location: inlog.php?message=problem')
 {
   $message="neem contact op met de servicedesk";
 }
-else
+else if ($PageUrl == 'Location: inlog.php?message=invalid')
 {
   $message="Onjuiste gebruikersnaam en/of wachtwoord!";
+}
+else
+{
+  $message="Error";
 }
 ?>
 <!DOCTYPE html>
@@ -95,7 +99,7 @@ else
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
             <button class="button-vergeten">Wachtwoord vergeten</button>
-            <button class="button-registeer" href="">Registreer hier</button>
+            <button class="button-registeer" name="registeer">Registreer hier</button>
         </form>
       </div>
     </div>
