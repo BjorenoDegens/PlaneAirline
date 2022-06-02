@@ -99,7 +99,7 @@
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Bjoreno Degens</span>
+        <span class="admin_name"><?php echo $_SESSION["name"]?></span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
