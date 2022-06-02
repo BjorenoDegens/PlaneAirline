@@ -1,23 +1,18 @@
 <?php
 session_start();
 $message="";
-$PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
-if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
-{
-  $message="";
-} 
-else if ($PageUrl == 'Location: inlog.php?message=problem')
-{
-  $message="neem contact op met de servicedesk";
+
+if (isset($_GET['message'])) {
+  if ($_GET['message'] == 'problem')
+  {
+    $message="neem contact op met de servicedesk";
+  }
+  else if ($_GET['message'] == 'invalid')
+  {
+    $message="Onjuiste gebruikersnaam en/of wachtwoord!";
+  }
 }
-else if ($PageUrl == 'Location: inlog.php?message=invalid')
-{
-  $message="Onjuiste gebruikersnaam en/of wachtwoord!";
-}
-else
-{
-  $message="Error";
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

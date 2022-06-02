@@ -272,8 +272,7 @@ main .container .box-main-down .box-up-right {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-.card-grid .box-up-right{
+.card-grid .box-up-right {
   display: flex;
 }
 /*vakantie foto1 in box-up-right*/
@@ -329,14 +328,13 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-  text-decoration: none;
 
+  text-decoration: none;
 }
 
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
-
 
 .button-hover-reserveer:hover {
   transform: scale(1.025);
@@ -524,7 +522,6 @@ main .container .box-main-up .box-up-right p {
   border: 1px solid white;
 }
 
-
 .submit-btn4 {
   left: 0;
   top: 0;
@@ -579,7 +576,6 @@ main .container .box-main-up .box-up-right p {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-
 }
 
 .booking-cta p {
@@ -610,7 +606,7 @@ input .form-control ::placeholder {
 }
 
 body .container-contact {
-  min-height: 88.0vh;
+  min-height: 88vh;
   background-size: cover;
   background-position: center;
   background-image: url("../Afbeeldingen/Contact_telefoon_mail.jpg");
@@ -1196,7 +1192,7 @@ block1.a {
   margin-left: 35px;
 }
 
-.row-tussen{
+.row-tussen {
   border-bottom: 1px solid black;
 }
 
@@ -1289,14 +1285,12 @@ block1.a {
   text-decoration: none;
 }
 
-
 .bedrijfs-image img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 600px;
 }
-
 
 button.button-login {
   margin-top: 50px;
@@ -1357,7 +1351,6 @@ button.button-vergeten {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
 .button-hide button {
@@ -1391,7 +1384,7 @@ block1.a {
   margin-left: 35px;
 }
 
-.row-tussen{
+.row-tussen {
   border-bottom: 1px solid black;
 }
 
@@ -1483,7 +1476,6 @@ block1.a {
   color: #212529;
   text-decoration: none;
 }
-
 
 .bedrijfs-image img {
   display: flex;
