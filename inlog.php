@@ -119,13 +119,8 @@ else
             <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
-<<<<<<< HEAD
             <button class="button-vergeten">Wachtwoord vergeten</button>
             <button class="button-registeer" name="registeer">Registreer hier</button>
-=======
-            <button class="button-vergeten"><a href="wachtwoordvergeten.php">Wachtwoord vergeten</a></button>
-            <button class="button-registreer"><a href="registeer.html">Registreer</a></button>
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
         </form>
       </div>
       </main>

@@ -2,10 +2,7 @@
     require_once('connect.php');
     session_start();
     
-<<<<<<< HEAD
     // inlog
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
     if (isset($_POST['inloggen'])){
         $sql = "SELECT * FROM user WHERE gebruikersnaam = :name AND password = :password";
         $stmt = $connect->prepare($sql);
@@ -29,7 +26,6 @@
     } else { 
         header("Location:../inlog.php");
     }
-<<<<<<< HEAD
 
     // Registeer
     if (isset($_POST['registeer']))
@@ -48,7 +44,3 @@
 ?>
 
 ingelogt verder naar  niet inlogt naar inlogpage
-=======
-?>
-
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
