@@ -95,8 +95,8 @@ else
             <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
-            <button class="button-vergeten">Wachtwoord vergeten</button>
-            <button class="button-registeer" name="registeer">Registreer hier</button>
+            <button class="button-vergeten" name= "wachtwoord vergeten"href="/wachtwoordvergeten.php">Wachtwoord vergeten</button>
+            <button class= "button-registreer" name="registeer" href="/registeer.php">Registreer hier</button>
         </form>
       </div>
       </main>

@@ -30,60 +30,49 @@
 
 
 
-	<header>
-		<div class="box-left">
-		  <img class = "logo"  src = "Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
-			
-		</div>
-		<div class="box-main">
-		  <div class="box">
-			<div class="text">
-				<div class="form-btn">
-					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
-				</div>
-				<div class="form-btn">
-					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-				</div>
-			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
-					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
-				</div>
-				<div class="form-btn">
-					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-				</div>
-			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
+<header>
+
+
+
+<div class="box-left">
+  <img class = "logo"  src = "Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
+
+</div>
+<div class="box-main">
+	  <div class="box">
+		<div class="text">
+			<div class="form-btn">
+				<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 			</div>
+			<div class="form-btn">
+				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
 			</div>
-		  </div>
+		  <div class="form-btn">
+			<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 		</div>
-		<div class="box-right">
-		  <div class="box">
-			<div class="search">
-			  <div class="icon"></div>
-				<div class="input">
-				  <input type="text" placeholder="Zoeken" id="mysearch" />
-				</div>
-			  <span
-			  class="clear"
-			  onclick="document.getElementById
-			  ('mysearch').value = ''"></span>
-		  </div>
-		  <script>
-			const icon = document.querySelector(".icon");
-			const search = document.querySelector(".search");
-			icon.addEventListener("click", () => {
-			  search.classList.toggle("active");
-			});
-		  </script>
-		  </div>
-		  <div class="box"> 
-			<div class="box-logo-login">
-				<a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
-			   </div>
-		  </div>
 		</div>
-	  </header> 
+	  </div>
+	</div>
+<div class="box-right">
+  <div class="box">
+	<div class="search">
+	  <div class="icon"></div>
+		<div class="input">
+		  <input type="text" placeholder="Zoeken" id="mysearch" />
+		</div>
+	  <span
+	  class="clear"
+	  onclick="document.getElementById
+	  ('mysearch').value = ''"></span>
+  </div>
+  </div>
+  <div class="box"> 
+	<div class="box-logo-login">
+	 <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
+	</div>
+  </div>
+</div>
+</header> 
 
 
 
