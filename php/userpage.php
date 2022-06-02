@@ -103,21 +103,6 @@ session_start();
     align-items: center;
     align-content: flex-end;
         }
-<<<<<<< HEAD:php/adminpage.php
-        #button4{
-            border: 2px solid #04AA6D;
-    padding: 0px 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin-left: 0px;
-    width: 186px;
-    margin-bottom: 4px;
-
-        }
-=======
->>>>>>> 8beacb9fcafa1dc3208067fc671356a08712f1cc:php/userpage.php
     </style>
 </head>
 <body style="display: flex;align-content: center;justify-content: center;">
