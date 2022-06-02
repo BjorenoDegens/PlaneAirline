@@ -206,13 +206,7 @@ main .container .box-main-up .box-up-left {
 }
 
 main .container .box-main-up .box-up-right {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   background-color: white;
   width: 33%;
   border-radius: 5px;
@@ -316,11 +310,6 @@ main .container .box-main-up .box-up-right p {
   font-size: 30px;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   width: 100%;
   margin-top: 25px;
   text-align: center;
@@ -340,8 +329,6 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
 }
 
@@ -356,7 +343,6 @@ main .container .box-main-up .box-up-right p {
   transform: scale(1.025);
 }
 
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 .form-btn {
   display: flex;
   margin: 10px;
