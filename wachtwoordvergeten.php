@@ -25,39 +25,6 @@
       </div>
       <div class="box-main">
         <div class="box">
-<<<<<<< HEAD
-          <div class="text">
-            <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="overons.html"
-                target="_parent"
-                rel="nofollow"
-              >
-                Over ons
-              </a>
-            </div>
-            <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="contact.html"
-                target="_parent"
-                rel="nofollow"
-              >
-                Informatie over locaties
-              </a>
-            </div>
-            <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="contact.html"
-                target="_parent"
-                rel="nofollow"
-                >Contact</a
-              >
-            </div>
-          </div>
-=======
         <div class="text">
           <div class="form-btn">
             <a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
@@ -69,7 +36,6 @@
           <a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
         </div>
         </div>
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
         </div>
       </div>
       <div class="box-right">
@@ -100,51 +66,6 @@
     </header>
 
     <main>
-<<<<<<< HEAD
-      <div class="main-block">
-        <div class="form-btn">
-          <a
-            class="submit-btn4"
-            href="index.html"
-            target="_parent"
-            rel="nofollow"
-            >Vlieg Terug Naar HomePage</a
-          >
-        </div>
-        <div class="left-part">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <form action="/">
-          <div class="title">
-            <i class="fas fa-pencil-alt"></i>
-            <h2>Registeer hier</h2>
-          </div>
-          <div class="info">
-            <input
-              class="fname"
-              type="text"
-              name="name"
-              placeholder="Volledige naam"
-            />
-            <input type="text" name="name" placeholder="E-mail" />
-            <input type="text" name="name" placeholder="Telefoonnummer" />
-            <input type="password" name="name" placeholder="Wachtwoord" />
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox" /><span
-              >Ik ga akkoord met de
-              <a href="https://www.w3docs.com/privacy-policy"
-                >Privacy Policy van PlaneAirline.</a
-              ></span
-            >
-          </div>
-          <button type="submit" href="/inlog.php">Registreren</button>
-        </form>
-      </div>
-    </main>
-  </body>
-</html>
-=======
             <div class="main-block">
               <div class="form-btn">
                 <a class="submit-btn4" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
@@ -156,21 +77,17 @@
               <form action="/">
                 <div class="title">
                   <i class="fas fa-pencil-alt"></i> 
-                  <h2>Registeer hier</h2>
+                  <h2>Wachtwoord vergeten</h2>
                 </div>
                 <div class="info">
-                  <input class="fname" type="text" name="name" placeholder="Volledige naam">
                   <input type="text" name="name" placeholder="E-mail">
-                  <input type="text" name="name" placeholder="Telefoonnummer">
                   <input type="password" name="name" placeholder="Wachtwoord">
+                  <input type="password" name="name" placeholder="Herhaal wachtwoord">
                 </div>
-                <div class="checkbox">
-                  <input type="checkbox" name="checkbox"><span>Ik ga akkoord met de  <a href="https://www.w3docs.com/privacy-policy">Privacy Policy van PlaneAirline.</a></span>
-                </div>
-                <button type="submit" href="/inlog.php">Registreren</button>
+              
+                <button type="submit" href="/inlog.php">Wachtwoord bevestigen</button>
               </form>
             </div>
     </main>
     </body>
     </html>
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e

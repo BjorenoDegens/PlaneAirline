@@ -39,6 +39,7 @@
 		  <div class="box">
 			<div class="text">
 				<div class="form-btn">
+<<<<<<< HEAD:reserveer.php
 					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
 				<div class="form-btn">
@@ -46,6 +47,15 @@
 				</div>
 			  <div class="form-btn">
 				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
+=======
+					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
+				</div>
+				<div class="form-btn">
+					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+				</div>
+			  <div class="form-btn">
+				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
+>>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e:reserveer.html
 			</div>
 			</div>
 		  </div>
@@ -82,7 +92,11 @@
 
 	<div id="booking" class="section">
         <div class="form-btn">
+<<<<<<< HEAD:reserveer.php
             <a class="submit-btn" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+=======
+            <a class="submit-btn" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+>>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e:reserveer.html
         </div>
 		<div class="section-center">
 			<div class="container">
@@ -99,7 +113,11 @@
 					<div class="col-md-4 col-md-pull-7">
 						<div class="booking-form">
                             <img src="Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png" alt="">
+<<<<<<< HEAD:reserveer.php
 							<form action="php/inlogcheck.php" method="post">
+=======
+							<form>
+>>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e:reserveer.html
 								<div class="form-group">
 									<span class="form-label">Uw bestemming</span>
 									<input class="form-control" type="text" placeholder="Voer uw vliegbestemming in">
@@ -146,7 +164,11 @@
 									</div>
 								</div>
 								<div class="form-btn">
+<<<<<<< HEAD:reserveer.php
 									<button class="submit-btn" type="submit" name="reserveer">Reserveer</button>
+=======
+									<a class="submit-btn" href="/registeer.html">Reserveer</a>
+>>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e:reserveer.html
 								</div>
 							</form>
 						</div>
