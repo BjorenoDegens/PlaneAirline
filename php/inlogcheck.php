@@ -26,7 +26,6 @@
     } else { 
         header("Location:../inlog.php");
     }
-<<<<<<< HEAD
 
     // Registeer
     if (isset($_POST['registeer']))
@@ -45,7 +44,3 @@
 ?>
 
 ingelogt verder naar  niet inlogt naar inlogpage
-=======
-?>
-
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74

@@ -1171,11 +1171,7 @@ button.button-vergeten {
 }
 
 .button-show button {
-<<<<<<< HEAD
-  margin-left: 688px;
-=======
   margin-left: 670px;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   margin-top: 50px;
   margin-bottom: 10px;
   background-color: #287dfc;
@@ -1194,11 +1190,7 @@ button.button-vergeten {
 }
 
 .button-hide button {
-<<<<<<< HEAD
-  margin-left: 688px;
-=======
   margin-left: 670px;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   margin-bottom: 50px;
   background-color: #287dfc;
   width: 150px;
@@ -1239,32 +1231,6 @@ block1.a {
   padding: 0 8px;
 }
 
-<<<<<<< HEAD
-.row-overons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 35px;
-}
-
-.row-tussen {
-  border-bottom: black solid 1px;
-  display: flex;
-  width: auto;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.column {
-  float: left;
-  width: 31.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 .card-overons {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   --padding: 1rem;
@@ -1278,11 +1244,6 @@ block1.a {
   margin-left: 50px;
 }
 
-<<<<<<< HEAD
-.card-overons img {
-  width: 100%;
-  display: block;
-=======
 .about-section {
   text-align: center;
   color: black;
@@ -1317,7 +1278,6 @@ block1.a {
     width: 100%;
     display: block;
   }
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .button-overons {
@@ -1342,82 +1302,12 @@ block1.a {
   font-family: "Josefin Sans", sans-serif;
 }
 
-<<<<<<< HEAD
-.button-overons a {
-  display: inline-block;
-  font-weight: 400;
-  color: #212529;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  font-family: "Josefin Sans", sans-serif;
-  text-decoration: none;
-}
-
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 @media (prefers-reduced-motion: reduce) {
   .button-overons {
     transition: none;
   }
 }
 
-<<<<<<< HEAD
-.card-overons:hover {
-  color: #212529;
-  text-decoration: none;
-  transform: scale(1.025);
-}
-
-.weer {
-  background-color: aliceblue;
-  margin: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.box-up-right {
-  display: flex;
-}
-
-.bedrijfs-image {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 650px;
-}
-
-.overons-text h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 30px;
-  text-align: center;
-  color: black;
-}
-
-.overons-text h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 30px;
-}
-=======
 .button-overons:hover {
   color: #212529;
   text-decoration: none;
@@ -1430,4 +1320,3 @@ block1.a {
   align-items: center;
   margin-left: 600px;
 }
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74

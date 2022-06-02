@@ -81,16 +81,8 @@ else
   <main>
     <div class="container-login"> 
       <div class="form-btn3">
-<<<<<<< HEAD
-          <a class="submit-btn3" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>  
-        <div class ="background2">
-            <div class="shape2"></div>
-            <div class="shape2"></div>
-        </div>
-=======
           <a class="submit-btn3" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
       </div>  
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
         <form class="login-pagina" method="post" action="php/inlogcheck.php">
             <h3>Login hier</h3>
 
@@ -104,11 +96,7 @@ else
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
             <button class="button-vergeten">Wachtwoord vergeten</button>
-<<<<<<< HEAD
             <button class="button-registeer" name="registeer">Registreer hier</button>
-=======
-            <button class="button-registreer"><a href="registeer.html">Registreer</a></button>
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
         </form>
       </div>
       </main>

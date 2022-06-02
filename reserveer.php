@@ -146,11 +146,7 @@
 									</div>
 								</div>
 								<div class="form-btn">
-<<<<<<< HEAD:reserveer.php
 									<button class="submit-btn" type="submit" name="reserveer">Reserveer</button>
-=======
-									<a class="submit-btn" href="/registeer.html">Reserveer</a>
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74:reserveer.html
 								</div>
 							</form>
 						</div>
