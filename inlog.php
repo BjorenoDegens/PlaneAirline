@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 <?php
 session_start();
-=======
-<?php 
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 $message="";
 $PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
 {
   $message="";
 } 
-<<<<<<< HEAD
 else if ($PageUrl == 'Location: inlog.php?message=problem')
 {
   $message="neem contact op met de servicedesk";
@@ -22,15 +17,6 @@ else if ($PageUrl == 'Location: inlog.php?message=invalid')
 else
 {
   $message="Error";
-=======
-else if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php?message=problem')
-{
-  $message="neem contact op met de servicedesk";
-}
-else
-{
-  $message="Onjuiste gebruikersnaam en/of wachtwoord!";
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 ?>
 <!DOCTYPE html>
@@ -61,7 +47,6 @@ else
 		  <div class="box">
 			<div class="text">
 				<div class="form-btn">
-<<<<<<< HEAD
 					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
 				<div class="form-btn">
@@ -69,15 +54,6 @@ else
 				</div>
 			  <div class="form-btn">
 				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
-=======
-					<a class="submit-btn1" href="overons.html" target="_parent" rel="nofollow">	Over ons </a>
-				</div>
-				<div class="form-btn">
-					<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-				</div>
-			  <div class="form-btn">
-				<a class="submit-btn1" href="contact.html" target="_parent" rel="nofollow">Contact</a>
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 			</div>
 			</div>
 		  </div>

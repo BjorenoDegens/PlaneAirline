@@ -2,7 +2,6 @@
     require_once('connect.php');
     session_start();
     
-    // inlog
     if (isset($_POST['inloggen'])){
         $sql = "SELECT * FROM user WHERE gebruikersnaam = :name AND password = :password";
         $stmt = $connect->prepare($sql);
