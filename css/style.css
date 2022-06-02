@@ -186,7 +186,6 @@ main .container {
   min-height: 80vh;
   width: 100%;
   display: flex;
-  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
 }
@@ -207,7 +206,10 @@ main .container .box-main-up .box-up-left {
 }
 
 main .container .box-main-up .box-up-right {
+<<<<<<< HEAD
   display: flex;
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   background-color: white;
   width: 33%;
   border-radius: 5px;
@@ -273,6 +275,10 @@ main .container .box-main-down .box-up-right {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+
+.card-grid .box-up-right{
+  display: flex;
+}
 /*vakantie foto1 in box-up-right*/
 
 main .container .box-main-down .box-up-right img {
@@ -327,7 +333,10 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .button-hover-reserveer:hover {
@@ -337,7 +346,6 @@ main .container .box-main-up .box-up-right p {
 .form-btn {
   display: flex;
   margin: 10px;
-  white-space: pre-line;
 }
 
 .section {
@@ -449,22 +457,38 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   display: inline-block;
   color: #fff;
+<<<<<<< HEAD
   background-color: #1e62d8;
   margin: 5px;
+=======
+  background-color: gray;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   font-weight: 700;
+  font-size: 15px;
   padding: 14px 30px;
   border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 1250px;
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  width: 250px;
   font-family: "Josefin Sans", sans-serif;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  border: 1px solid white;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .submit-btn1 {
   color: black;
   left: 0;
   top: 0;
+<<<<<<< HEAD
+=======
+  font-size: 25px;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -473,18 +497,23 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   display: inline-block;
   color: #fff;
-  background-color: #1e62d8;
+  background-color: gray;
   font-weight: 700;
   font-size: 15px;
   padding: 14px 30px;
   border-radius: 4px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 1250px;
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  border: 1px solid white;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .submit-btn3 {
@@ -492,17 +521,44 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   display: inline-block;
   color: #fff;
-  background-color: #1e62d8;
+  background-color: gray;
   font-weight: 700;
   font-size: 15px;
   padding: 14px 30px;
   border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 1250px;
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  border: 1px solid white;
+}
+
+
+.submit-btn4 {
+  left: 0;
+  top: 0;
+  display: inline-block;
+  color: #fff;
+  background-color: gray;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 30px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-right: 1250px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  width: 250px;
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid white;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .booking-form .submit-btn {
@@ -516,14 +572,20 @@ main .container .box-main-up .box-up-right p {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   font-family: "Josefin Sans", sans-serif;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
   opacity: 0.9;
+<<<<<<< HEAD
   color: white;
   text-decoration: none;
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .booking-cta {
@@ -538,7 +600,10 @@ main .container .box-main-up .box-up-right p {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .booking-cta p {
@@ -569,7 +634,7 @@ input .form-control ::placeholder {
 }
 
 body .container-contact {
-  min-height: 86.7vh;
+  min-height: 88.0vh;
   background-size: cover;
   background-position: center;
   background-image: url("../Afbeeldingen/Contact_telefoon_mail.jpg");
@@ -1076,7 +1141,7 @@ button.button-login {
   font-family: "Josefin Sans", sans-serif;
 }
 
-button.button-registeer {
+.button-registreer {
   margin-top: 5px;
   width: 200px;
   margin-left: 65px;
@@ -1106,7 +1171,11 @@ button.button-vergeten {
 }
 
 .button-show button {
+<<<<<<< HEAD
   margin-left: 688px;
+=======
+  margin-left: 670px;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   margin-top: 50px;
   margin-bottom: 10px;
   background-color: #287dfc;
@@ -1125,7 +1194,11 @@ button.button-vergeten {
 }
 
 .button-hide button {
+<<<<<<< HEAD
   margin-left: 688px;
+=======
+  margin-left: 670px;
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
   margin-bottom: 50px;
   background-color: #287dfc;
   width: 150px;
@@ -1155,6 +1228,10 @@ block1.a {
   margin-left: 35px;
 }
 
+.row-tussen{
+  border-bottom: 1px solid black;
+}
+
 .column {
   float: left;
   width: 31.3%;
@@ -1162,6 +1239,7 @@ block1.a {
   padding: 0 8px;
 }
 
+<<<<<<< HEAD
 .row-overons {
   display: flex;
   justify-content: center;
@@ -1185,6 +1263,8 @@ block1.a {
   padding: 0 8px;
 }
 
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 .card-overons {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   --padding: 1rem;
@@ -1198,9 +1278,46 @@ block1.a {
   margin-left: 50px;
 }
 
+<<<<<<< HEAD
 .card-overons img {
   width: 100%;
   display: block;
+=======
+.about-section {
+  text-align: center;
+  color: black;
+}
+
+.card-overons img {
+  width: 100%;
+  height: 390px;
+}
+
+.container-overons {
+  background-color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-overons::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .button-overons {
@@ -1225,6 +1342,7 @@ block1.a {
   font-family: "Josefin Sans", sans-serif;
 }
 
+<<<<<<< HEAD
 .button-overons a {
   display: inline-block;
   font-weight: 400;
@@ -1248,12 +1366,15 @@ block1.a {
   text-decoration: none;
 }
 
+=======
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 @media (prefers-reduced-motion: reduce) {
   .button-overons {
     transition: none;
   }
 }
 
+<<<<<<< HEAD
 .card-overons:hover {
   color: #212529;
   text-decoration: none;
@@ -1296,3 +1417,17 @@ block1.a {
   font-weight: 600;
   margin: 30px;
 }
+=======
+.button-overons:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+
+.bedrijfs-image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+}
+>>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
