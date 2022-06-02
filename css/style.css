@@ -206,13 +206,7 @@ main .container .box-main-up .box-up-left {
 }
 
 main .container .box-main-up .box-up-right {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   background-color: white;
   width: 33%;
   border-radius: 5px;
@@ -278,8 +272,7 @@ main .container .box-main-down .box-up-right {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-.card-grid .box-up-right{
+.card-grid .box-up-right {
   display: flex;
 }
 /*vakantie foto1 in box-up-right*/
@@ -316,11 +309,6 @@ main .container .box-main-up .box-up-right p {
   font-size: 30px;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   width: 100%;
   margin-top: 25px;
   text-align: center;
@@ -340,25 +328,18 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   text-decoration: none;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
 }
 
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
 
-=======
-}
-
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
 
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 .form-btn {
   display: flex;
   margin: 10px;
@@ -473,16 +454,9 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   display: inline-block;
   color: #fff;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-color: #1e62d8;
   margin: 5px;
-=======
   background-color: gray;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
-  background-color: gray;
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   font-weight: 700;
   font-size: 15px;
   padding: 14px 30px;
@@ -494,29 +468,15 @@ main .container .box-main-up .box-up-right p {
   transition: 0.2s all;
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
-=======
   border: 1px solid white;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
-  border: 1px solid white;
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .submit-btn1 {
   color: black;
   left: 0;
   top: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   font-size: 25px;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
-  font-size: 25px;
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -537,15 +497,8 @@ main .container .box-main-up .box-up-right p {
   transition: 0.2s all;
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
-=======
   border: 1px solid white;
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
-  border: 1px solid white;
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .submit-btn3 {
@@ -565,15 +518,9 @@ main .container .box-main-up .box-up-right p {
   transition: 0.2s all;
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
-=======
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
   border: 1px solid white;
 }
-
 
 .submit-btn4 {
   left: 0;
@@ -593,10 +540,6 @@ main .container .box-main-up .box-up-right p {
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
   border: 1px solid white;
-<<<<<<< HEAD
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .booking-form .submit-btn {
@@ -610,26 +553,14 @@ main .container .box-main-up .box-up-right p {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   font-family: "Josefin Sans", sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
   opacity: 0.9;
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: white;
   text-decoration: none;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .booking-cta {
@@ -644,13 +575,7 @@ main .container .box-main-up .box-up-right p {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: none;
-=======
->>>>>>> 909d64e2b0a9efa18b0f7de63b6ac160123f2f74
-=======
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
 }
 
 .booking-cta p {
@@ -681,7 +606,7 @@ input .form-control ::placeholder {
 }
 
 body .container-contact {
-  min-height: 88.0vh;
+  min-height: 88vh;
   background-size: cover;
   background-position: center;
   background-image: url("../Afbeeldingen/Contact_telefoon_mail.jpg");
@@ -1173,7 +1098,6 @@ input.input-login {
 
 .input-login::placeholder {
   color: grey;
-<<<<<<< HEAD
 }
 
 button.button-login {
@@ -1268,7 +1192,7 @@ block1.a {
   margin-left: 35px;
 }
 
-.row-tussen{
+.row-tussen {
   border-bottom: 1px solid black;
 }
 
@@ -1361,14 +1285,11 @@ block1.a {
   text-decoration: none;
 }
 
-
 .bedrijfs-image img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 600px;
-}
-=======
 }
 
 button.button-login {
@@ -1430,7 +1351,6 @@ button.button-vergeten {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
 }
 
 .button-hide button {
@@ -1464,7 +1384,7 @@ block1.a {
   margin-left: 35px;
 }
 
-.row-tussen{
+.row-tussen {
   border-bottom: 1px solid black;
 }
 
@@ -1557,11 +1477,9 @@ block1.a {
   text-decoration: none;
 }
 
-
 .bedrijfs-image img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 600px;
 }
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
