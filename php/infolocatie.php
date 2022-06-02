@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="contact-form.css" rel="stylesheet">
+   
   </head>
-</head>
 <body>
 <header>
       <div class="box-left">
@@ -29,7 +27,7 @@
             <a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
           </div>
           <div class="form-btn">
-            <a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
           </div>
           <div class="form-btn">
           <a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
