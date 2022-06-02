@@ -76,7 +76,7 @@ if (isset($_GET['message'])) {
   <main>
     <div class="container-login"> 
       <div class="form-btn3">
-          <a class="submit-btn3" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+          <a class="submit-btn3" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
       </div>  
         <form class="login-pagina" method="post" action="php/inlogcheck.php">
             <h3>Login hier</h3>
