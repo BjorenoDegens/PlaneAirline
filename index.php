@@ -235,7 +235,7 @@
             <button class="btn">Info</button>
             <a
               class="btn btn-outline"
-              href="reserveer.php"
+              href="/reserveer.php"
               target="_parent"
               >Reserveren</a
             >
