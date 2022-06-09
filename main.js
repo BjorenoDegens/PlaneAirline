@@ -60,3 +60,8 @@ butTwo.onclick = function () {
   document.getElementById("ID").style.display = "none";
 };
 
+
+//   document.getElementById("PopUp");
+//   PopUp.onclick = function (){
+//   alert("I am an alert box!");
+// }

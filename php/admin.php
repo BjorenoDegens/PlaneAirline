@@ -80,12 +80,20 @@
           </a>
         </li>
         <li class="log_out">
-          <a href="../inlog.php">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Uitloggen</span>
-          </a>
+          
+              <script type="text/javascript">
+                function AlertIt() {
+                var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
+                if (answer)
+                window.location="http://www.continue.com";
+                }
+                </script>
+                
+                <span><a href="javascript:AlertIt();">Uitloggen</a></span>
+            
         </li>
       </ul>
+      
   </div>
   <section class="home-section">
     <nav>
@@ -99,11 +107,7 @@
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-<<<<<<< HEAD
-        <span class="admin_name">Bjoreno Degens</span>
-=======
         <span class="admin_name"><?php echo $_SESSION["name"]?></span>
->>>>>>> c3da689fa8c797e67f26cb894d89c7776493018e
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>

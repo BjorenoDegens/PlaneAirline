@@ -1,23 +1,18 @@
 <?php
 session_start();
 $message="";
-$PageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
-if ($PageUrl == 'http://localhost/CRUD%20p4/PlaneAirline/inlog.php')
-{
-  $message="";
-} 
-else if ($PageUrl == 'Location: inlog.php?message=problem')
-{
-  $message="neem contact op met de servicedesk";
+
+if (isset($_GET['message'])) {
+  if ($_GET['message'] == 'problem')
+  {
+    $message="neem contact op met de servicedesk";
+  }
+  else if ($_GET['message'] == 'invalid')
+  {
+    $message="Onjuiste gebruikersnaam en/of wachtwoord!";
+  }
 }
-else if ($PageUrl == 'Location: inlog.php?message=invalid')
-{
-  $message="Onjuiste gebruikersnaam en/of wachtwoord!";
-}
-else
-{
-  $message="Error";
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,8 +75,8 @@ else
   </header> 
   <main>
     <div class="container-login"> 
-      <div class="form-btn3">
-          <a class="submit-btn3" href="index.html" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+      <div class="form-btn2">
+      <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
       </div>  
         <form class="login-pagina" method="post" action="php/inlogcheck.php">
             <h3>Login hier</h3>
@@ -95,8 +90,8 @@ else
             <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
-            <button class="button-vergeten">Wachtwoord vergeten</button>
-            <button class="button-registeer" name="registeer">Registreer hier</button>
+            <button class="button-vergeten" name="registeer" href="/wachtwoordvergeten.php">Wachtwoord vergeten?</button>
+            <button class="button-registreer" name="registeer" href="/registeer.php">Registreer hier</button>
         </form>
       </div>
       </main>
