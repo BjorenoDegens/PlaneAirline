@@ -73,6 +73,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  background-color: #0056b3;
 }
 .home-section {
   position: relative;
@@ -439,3 +440,4 @@ nav .profile-details i {
     width: calc(100% - 60px);
   }
 }
+

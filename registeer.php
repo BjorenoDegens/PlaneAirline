@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/registeer.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,6 +88,7 @@
 
     <main>
       <div class="main-block">
+        <a class="pijltje-terug1" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
         <div class="left-part">
           <i class="fas fa-graduation-cap"></i>
         </div>
@@ -105,7 +107,7 @@
             <input type="text" name="name" placeholder="E-mail" />
             <input type="text" name="name" placeholder="Telefoonnummer" />
             <input type="password" name="name" placeholder="Wachtwoord" />
-            <select>
+            <!-- <select>
               <option value="course-type" selected>Course type*</option>
               <option value="short-courses">Short courses</option>
               <option value="featured-courses">Featured courses</option>
@@ -114,7 +116,7 @@
               <option value="certificate">Certificate</option>
               <option value="masters-degree">Masters degree</option>
               <option value="postgraduate">Postgraduate</option>
-            </select>
+            </select> -->
           </div>
           <div class="checkbox">
             <input type="checkbox" name="checkbox" /><span
