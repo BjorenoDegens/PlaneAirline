@@ -269,9 +269,7 @@
       <div class="box-up-moreleft">
         <div class="card card-shadow">
           <div class="card-header card-image">
-            <img
-              src="Afbeeldingen/canada.jpg"
-            />
+            <img src="Afbeeldingen/canada.jpg"/>
           </div>
           <div class="card-body">
             <p>Canada</p>

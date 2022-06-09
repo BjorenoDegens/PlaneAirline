@@ -75,8 +75,8 @@ if (isset($_GET['message'])) {
   </header> 
   <main>
     <div class="container-login"> 
-      <div class="form-btn3">
-          <a class="submit-btn3" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+      <div class="form-btn2">
+      <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
       </div>  
         <form class="login-pagina" method="post" action="php/inlogcheck.php">
             <h3>Login hier</h3>
@@ -90,8 +90,8 @@ if (isset($_GET['message'])) {
             <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
-            <button class="button-vergeten" name= "wachtwoord vergeten"href="/wachtwoordvergeten.php">Wachtwoord vergeten</button>
-            <button class= "button-registreer" name="registeer" href="/registeer.php">Registreer hier</button>
+            <button class="button-vergeten" name="registeer" href="/wachtwoordvergeten.php">Wachtwoord vergeten?</button>
+            <button class="button-registreer" name="registeer" href="/registeer.php">Registreer hier</button>
         </form>
       </div>
       </main>
