@@ -196,6 +196,7 @@ main .container .box-main-up {
   height: 200px;
 }
 main .container .box-main-up .box-up-left {
+  display: flex;
   background-color: white;
   width: 33%;
   border-radius: 5px;
@@ -203,6 +204,7 @@ main .container .box-main-up .box-up-left {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    flex-direction: column;
 }
 
 main .container .box-main-up .box-up-right {
@@ -803,7 +805,7 @@ input[type="button"].fcf-btn-block {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .card {
@@ -1293,4 +1295,27 @@ block1.a {
   justify-content: center;
   align-items: center;
   margin-left: 600px;
+}
+
+.opklappen {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .opklappen:hover {
+  background-color: lightgrey;
+}
+
+.inhoud {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: lightgrey;
 }
