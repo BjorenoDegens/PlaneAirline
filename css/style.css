@@ -330,10 +330,6 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
   text-decoration: none;
 }
 
@@ -341,10 +337,6 @@ main .container .box-main-up .box-up-right p {
   transform: scale(1.025);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
@@ -464,13 +456,8 @@ main .container .box-main-up .box-up-right p {
   display: inline-block;
   color: #fff;
   margin: 5px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   background-color: gray;
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
->>>>>>> 431f4e2b89b2b68ec68f1c0b03b161ed8740fa5d
+  background-color: gray;
   font-weight: 700;
   font-size: 55px;
   padding: 14px 30px;
@@ -479,20 +466,12 @@ main .container .box-main-up .box-up-right p {
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-<<<<<<< HEAD
   text-decoration: none;
-  
-=======
-<<<<<<< HEAD
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   border: 1px solid white;
-=======
   text-decoration: none;
-  
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
->>>>>>> 431f4e2b89b2b68ec68f1c0b03b161ed8740fa5d
 }
 
 
@@ -1153,8 +1132,6 @@ input.input-login {
 .input-login::placeholder {
   color: grey;
 }
-<<<<<<< HEAD
-=======
 
 button.button-login {
   margin-top: 50px;
@@ -1347,7 +1324,6 @@ block1.a {
   align-items: center;
   margin-left: 600px;
 }
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 
 button.button-login {
   margin-top: 50px;
@@ -1529,9 +1505,6 @@ block1.a {
   margin-left: 600px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .opklappen {
   background-color: lightgrey;
   color: white;
@@ -1553,8 +1526,7 @@ block1.a {
   display: none;
   overflow: hidden;
   background-color: lightgrey;
-=======
->>>>>>> 431f4e2b89b2b68ec68f1c0b03b161ed8740fa5d
+}
 
 .rate {
   float: right;
@@ -1649,8 +1621,4 @@ block1.a {
   margin: 20px;
   display: inline-block;
   font-weight: bold;
-<<<<<<< HEAD
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
->>>>>>> 431f4e2b89b2b68ec68f1c0b03b161ed8740fa5d
 }
