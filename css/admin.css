@@ -265,6 +265,8 @@ nav .profile-details i {
 /* left box */
 .home-content .sales-boxes .recent-sales {
   width: 65%;
+  overflow: auto;
+  max-height: 250px;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
@@ -441,3 +443,8 @@ nav .profile-details i {
   }
 }
 
+th,
+td {
+  border: 1px solid black;
+  width: auto;
+}

@@ -204,7 +204,7 @@ main .container .box-main-up .box-up-left {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    flex-direction: column;
+  flex-direction: column;
 }
 
 main .container .box-main-up .box-up-right {
@@ -330,10 +330,6 @@ main .container .box-main-up .box-up-right p {
   transition: all 0.4s;
   cursor: pointer;
   margin: 5px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
   text-decoration: none;
 }
 
@@ -341,10 +337,6 @@ main .container .box-main-up .box-up-right p {
   transform: scale(1.025);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
@@ -464,10 +456,6 @@ main .container .box-main-up .box-up-right p {
   display: inline-block;
   color: #fff;
   margin: 5px;
-<<<<<<< HEAD
-  background-color: gray;
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
   font-weight: 700;
   font-size: 55px;
   padding: 14px 30px;
@@ -476,17 +464,8 @@ main .container .box-main-up .box-up-right p {
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-<<<<<<< HEAD
-  width: 250px;
-  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
-  border: 1px solid white;
-=======
-  text-decoration: none;
-  
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 }
-
 
 .pijltje-terug:hover {
   transition: 0.2s;
@@ -508,15 +487,12 @@ main .container .box-main-up .box-up-right p {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
   text-decoration: none;
-  
 }
-
 
 .pijltje-terug1:hover {
   transition: 0.2s;
   color: blue;
 }
-
 
 .submit-btn1 {
   color: black;
@@ -1145,8 +1121,6 @@ input.input-login {
 .input-login::placeholder {
   color: grey;
 }
-<<<<<<< HEAD
-=======
 
 button.button-login {
   margin-top: 50px;
@@ -1339,7 +1313,6 @@ block1.a {
   align-items: center;
   margin-left: 600px;
 }
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 
 button.button-login {
   margin-top: 50px;
@@ -1368,8 +1341,6 @@ button.button-login {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .button-show button {
   margin-left: 670px;
@@ -1521,57 +1492,33 @@ block1.a {
   margin-left: 600px;
 }
 
-<<<<<<< HEAD
-.opklappen {
-  background-color: lightgrey;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .opklappen:hover {
-  background-color: lightgrey;
-}
-
-.inhoud {
-  padding: 0 10px;
-  display: none;
-  overflow: hidden;
-  background-color: lightgrey;
-=======
-
 .rate {
   float: right;
   height: 46px;
   padding: 0 10px;
 }
 .rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:20px;
-  color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
 }
 .rate:not(:checked) > label:before {
-  content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-  color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-  color: #deb217;  
+  color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -1581,23 +1528,21 @@ block1.a {
   color: #c59b08;
 }
 
-
-
-.hover_bkgr_fricc{
-  background:rgba(0,0,0,.4);
-  cursor:pointer;
-  display:none;
-  height:100%;
-  position:fixed;
-  text-align:center;
-  top:0;
-  width:100%;
-  z-index:10000;
+.hover_bkgr_fricc {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
-.hover_bkgr_fricc .helper{
-  display:inline-block;
-  height:100%;
-  vertical-align:middle;
+.hover_bkgr_fricc .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .hover_bkgr_fricc > div {
   background-color: #fff;
@@ -1638,5 +1583,4 @@ block1.a {
   margin: 20px;
   display: inline-block;
   font-weight: bold;
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 }
