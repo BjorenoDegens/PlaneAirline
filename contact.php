@@ -65,7 +65,7 @@
   <div class="container-contact">
     <div id="contact" class="section1">
       <div class="form-btn2">
-            <a class="submit-btn2" href="index.php" target="_parent" rel="nofollow">Vlieg Terug Naar HomePage</a>
+      <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
               <div class="fcf-body">
                   <div id="fcf-form">
                     <h3 class="fcf-h3">Contacteer ons</h3>

@@ -85,9 +85,7 @@
     </header>
     <main>
       <div class="form-btn">
-        <a class="submit-btn" href="index.php" target="_parent" rel="nofollow"
-          >Vlieg Terug Naar HomePage</a
-        >
+      <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
       </div>
       
 
