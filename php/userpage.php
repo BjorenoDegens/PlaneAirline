@@ -55,17 +55,43 @@ session_start();
         </li>
         <li>
           <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">UserPage</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
             <i class='bx bx-cog' ></i>
             <span class="links_name">Instellingen</span>
           </a>
         </li>
         <li class="log_out">
-          <a href="../inlog.php">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Uitloggen</span>
-          </a>
-        </li>
-      </ul>
+          <span><a href="javascript:AlertIt();">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Uitloggen</span>
+              </li>
+            </a></span>
+            </ul>
+            
+          </div>
   </div>
   <section class="home-section">
     <nav>
@@ -253,5 +279,12 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
+ <script type="text/javascript">
+  function AlertIt() {
+  var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
+  if (answer)
+  window.location.href="uitlog.php";
+  }
+  </script>
     </body>
 </html>

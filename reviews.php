@@ -7,7 +7,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="./css/reviews.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="php/admin.php">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -38,19 +38,19 @@
           </a>
         </li>
         <li>
-          <a href="../reviews.php">
+        <a href="#" class="active">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
           </a>
         </li>
         <li>
-          <a href="../vluchten.php">
+          <a href="#">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
         </li>
         <li>
-          <a href="#">
+            <a href="#">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">UserPage</span>
           </a>
@@ -156,71 +156,73 @@
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recente Boekingen</div>
+          <div class="title">Reviews</div>
           <div class="sales-details">
             <ul class="details">
-              <li class="topic">Datum</li>
-              <li><a href="#">"Datum wanneer gereserveerd"</a></li>
-              <!-- <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li> -->
+                <div class="rate">
+                    <div class="rate-box">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                    
+                    <br>
+                    
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                    <br>
+                    
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                        <br>
+                        
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                            <br>
+                            
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
             </ul>
-            <ul class="details">
-            <li class="topic">Klant</li>
-            <li><a href="#">"Naam Klant"</a></li>
-            <!-- <li><a href="#">Margriet Amalia</a></li>
-            <li><a href="#">Dora de Jong</a></li>
-            <li><a href="#">Diana van der Vliet</a></li>
-            <li><a href="#">Peter Jansen</a></li>
-            <li><a href="#">Alex Sloot</a></li>
-            <li><a href="#">Hans Rongen</a></li>
-            <li><a href="#">Koen van Dijk</a></li>
-             <li><a href="#">Tim Janssen</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Verkocht</li>
-            <li><a href="#">"Status Bestelling"</a></li>
-            <!-- <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Bestellingen</li>
-            <li><a href="#">"Info bestelling"</a></li>
-            <!-- <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li> -->
-          </ul>
-          </div>
-          <div class="button">
-            <a href="#">Zie alle bestellingen</a>
-          </div>
+            
         </div>
-        <div class="top-sales box">
-          <div class="title">Meest verkochte vlucht</div>
-          <ul class="top-sales-details">
-            <li>
+        <div class="rate-summary">
+        <div class="reviews-summary__bar-inner" style="width: 85%;"></div>
+        </div>
+    </ul>
+    
+    <div class="button">
+        <a href="#">Zie alle reviews</a>
+    </div>
+</div>
+<!-- <div class="top-sales box">
+    <div class="title">Meest verkochte vlucht</div>
+    <ul class="top-sales-details">
+        <li>
             <a href="#">
-              <!-- <img src="images/sunglasses.jpg" alt=""> -->
+              
               <span class="product">"Vluchtbestemming"</span>
             </a>
             <span class="price">"Prijs vlucht"</span>
-          </li>
+          </li> -->
           <!-- <li>
             <a href="#">
               <img src="images/jeans.jpg" alt="">

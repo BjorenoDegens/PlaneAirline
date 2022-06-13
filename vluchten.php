@@ -7,7 +7,7 @@
   <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="./css/vluchten.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="php/admin.php">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -38,19 +38,19 @@
           </a>
         </li>
         <li>
-          <a href="../reviews.php">
+          <a href="./reviews.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
           </a>
         </li>
         <li>
-          <a href="../vluchten.php">
+            <a href="#" class="active">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
         </li>
         <li>
-          <a href="#">
+            <a href="#">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">UserPage</span>
           </a>
@@ -156,19 +156,12 @@
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recente Boekingen</div>
+          <div class="title">Vluchten</div>
           <div class="sales-details">
             <ul class="details">
               <li class="topic">Datum</li>
               <li><a href="#">"Datum wanneer gereserveerd"</a></li>
-              <!-- <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li> -->
+              
             </ul>
             <ul class="details">
             <li class="topic">Klant</li>
