@@ -443,12 +443,16 @@ nav .profile-details i {
   }
 }
 
+<<<<<<< HEAD
 /* admin.php table */
+=======
+>>>>>>> 4073129120367b777544a4a82006b05ad985db43
 th,
 td {
   border: 1px solid black;
   width: auto;
 }
+<<<<<<< HEAD
 
 /* vluchtenadd.php card */
 .card-grid {
@@ -518,3 +522,5 @@ td {
   padding: var(--padding);
   padding-top: 0;
 }
+=======
+>>>>>>> 4073129120367b777544a4a82006b05ad985db43

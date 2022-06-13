@@ -36,6 +36,7 @@ else if(isset($_POST['registeer'])) {
 
     header('Location: ../inlog.php');
     exit();
+<<<<<<< HEAD
 }
 
 else if(isset( $_POST['forgot'])) {
@@ -52,3 +53,8 @@ else if(isset( $_POST['forgot'])) {
         header('Location: ../wachtwoordvergeten.php');
     }
 }
+=======
+} else
+    header('Location: ../registeer.php');
+    exit();
+>>>>>>> 4073129120367b777544a4a82006b05ad985db43
