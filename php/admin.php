@@ -29,7 +29,7 @@ if($_SESSION["name"]) {
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="#" class="active" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -53,7 +53,7 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="vluchtenadd.php">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
