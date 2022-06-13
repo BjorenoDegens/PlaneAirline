@@ -74,18 +74,17 @@
                 <i class="fas fa-graduation-cap"></i>
                 
               </div>
-              <form action="/">
+              <form action="php/crud.php" method="post">
                 <div class="title">
                   <i class="fas fa-pencil-alt"></i> 
                   <h2>Wachtwoord vergeten</h2>
                 </div>
                 <div class="info">
-                  <input type="text" name="name" placeholder="E-mail">
-                  <input type="password" name="name" placeholder="Wachtwoord">
-                  <input type="password" name="name" placeholder="Herhaal wachtwoord">
+                  <input type="text" name="email" placeholder="E-mail">
+                  <input type="password" name="password" placeholder="Wachtwoord">
+                  <input type="password" name="password" placeholder="Herhaal wachtwoord">
                 </div>
-              
-                <button type="submit" href="/inlog.php">Wachtwoord bevestigen</button>
+                <button type="submit" name="forgot">Wachtwoord bevestigen</button>
               </form>
             </div>
     </main>

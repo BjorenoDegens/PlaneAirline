@@ -116,7 +116,7 @@
               ></span
             >
           </div>
-          <input type="submit" name="registeer">Submit</input>
+          <button type="submit" name="registeer">Submit</button>
         </form>
       </div>
     </main>
