@@ -1,5 +1,12 @@
 <?php
 session_start();
+require_once('connect.php');
+
+$sql = "SELECT * FROM user";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+
 if($_SESSION["name"]) {
 }else header('Location: inlog.php');
 ?>
@@ -163,60 +170,36 @@ if($_SESSION["name"]) {
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recente Boekingen</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Datum</li>
-              <li><a href="#">30 Jun 2022</a></li>
-              <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li>
-            </ul>
-            <ul class="details">
-            <li class="topic">Klant</li>
-            <li><a href="#">Henk Pietersen</a></li>
-            <li><a href="#">Margriet Amalia</a></li>
-            <li><a href="#">Dora de Jong</a></li>
-            <li><a href="#">Diana van der Vliet</a></li>
-            <li><a href="#">Peter Jansen</a></li>
-            <li><a href="#">Alex Sloot</a></li>
-            <li><a href="#">Hans Rongen</a></li>
-            <li><a href="#">Koen van Dijk</a></li>
-             <li><a href="#">Tim Janssen</a></li>
-          </ul>
-          <ul class="details">
-            <li class="topic">Verkocht</li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li>
-          </ul>
-          <ul class="details">
-            <li class="topic">Bestellingen</li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-          </ul>
-          </div>
-          <div class="button">
-            <a href="#">Zie alle bestellingen</a>
-          </div>
+          <div class="title">Klanten</div>
+          <table style="width:100%">
+              <tr>
+                <th>Naam</th>
+                <th>Gebruikersnaam</th>
+                <th>Email</th>
+                <th>Admin</th>
+            </tr>
+            <?php 
+              foreach($result as $user){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="UserID" value="<?php echo $user['UserID']; ?>"></td>
+                <td><input type="text" name="name" value="<?php echo $user['name']; ?>"></td>
+                <td><input type="text" name="gebruikersnaam" value="<?php echo $user['gebruikersnaam']; ?>"></td>
+                <td><input type="text" name="email" value="<?php echo $user['email']; ?>"></td>
+                <td><select name="admin">
+                <option selected ="selected" style="display:none"><?php echo $user['admin']; ?></option>
+                <option >0</option>
+                <option >1</option>
+                </select></td>
+                <td><input type="submit"name="update" value="Update"></td>
+                <td><input type="submit"name="delete" value="Delete"></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
         </div>
         <div class="top-sales box">
           <div class="title">Meest verkochte vlucht</div>
