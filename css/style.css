@@ -341,10 +341,6 @@ main .container .box-main-up .box-up-right p {
   transform: scale(1.025);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 .button-hover-reserveer:hover {
   transform: scale(1.025);
 }
@@ -464,10 +460,7 @@ main .container .box-main-up .box-up-right p {
   display: inline-block;
   color: #fff;
   margin: 5px;
-<<<<<<< HEAD
   background-color: gray;
-=======
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
   font-weight: 700;
   font-size: 55px;
   padding: 14px 30px;
@@ -476,15 +469,10 @@ main .container .box-main-up .box-up-right p {
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-<<<<<<< HEAD
   width: 250px;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   border: 1px solid white;
-=======
-  text-decoration: none;
-  
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 }
 
 
@@ -1145,8 +1133,6 @@ input.input-login {
 .input-login::placeholder {
   color: grey;
 }
-<<<<<<< HEAD
-=======
 
 button.button-login {
   margin-top: 50px;
@@ -1339,7 +1325,6 @@ block1.a {
   align-items: center;
   margin-left: 600px;
 }
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 
 button.button-login {
   margin-top: 50px;
@@ -1521,7 +1506,6 @@ block1.a {
   margin-left: 600px;
 }
 
-<<<<<<< HEAD
 .opklappen {
   background-color: lightgrey;
   color: white;
@@ -1542,8 +1526,7 @@ block1.a {
   padding: 0 10px;
   display: none;
   overflow: hidden;
-  background-color: lightgrey;
-=======
+  background-color: lightgrey;}
 
 .rate {
   float: right;
@@ -1638,5 +1621,4 @@ block1.a {
   margin: 20px;
   display: inline-block;
   font-weight: bold;
->>>>>>> 8948876c5d31e59bc2a26089e878785ab722801a
 }
