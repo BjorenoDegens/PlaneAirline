@@ -92,7 +92,7 @@
         <div class="left-part">
           <i class="fas fa-graduation-cap"></i>
         </div>
-        <form action="/">
+        <form action="php/crud.php" method="post">
           <div class="title">
             <i class="fas fa-pencil-alt"></i>
             <h2>Registeer hier</h2>
@@ -104,19 +104,9 @@
               name="name"
               placeholder="Volledige naam"
             />
-            <input type="text" name="name" placeholder="E-mail" />
-            <input type="text" name="name" placeholder="Telefoonnummer" />
-            <input type="password" name="name" placeholder="Wachtwoord" />
-            <!-- <select>
-              <option value="course-type" selected>Course type*</option>
-              <option value="short-courses">Short courses</option>
-              <option value="featured-courses">Featured courses</option>
-              <option value="undergraduate">Undergraduate</option>
-              <option value="diploma">Diploma</option>
-              <option value="certificate">Certificate</option>
-              <option value="masters-degree">Masters degree</option>
-              <option value="postgraduate">Postgraduate</option>
-            </select> -->
+            <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam"/>
+            <input type="text" name="email" placeholder="E-mail" />
+            <input type="password" name="password" placeholder="Wachtwoord" />
           </div>
           <div class="checkbox">
             <input type="checkbox" name="checkbox" /><span
@@ -126,7 +116,11 @@
               ></span
             >
           </div>
-          <button type="submit" href="/">Submit</button>
+<<<<<<< HEAD
+          <button type="submit" name="registeer">Submit</button>
+=======
+          <input type="submit" name="registeer">Submit</input>
+>>>>>>> 4073129120367b777544a4a82006b05ad985db43
         </form>
       </div>
     </main>

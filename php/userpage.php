@@ -1,8 +1,6 @@
 <?php
 session_start();
-    if($_SESSION["name"]) {
-        ?>
-<?php
+  if($_SESSION["name"]) {
 }else header('Location: inlog.php');
 ?>
 <!DOCTYPE html>
