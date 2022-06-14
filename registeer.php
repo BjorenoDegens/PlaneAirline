@@ -38,15 +38,8 @@
               </a>
             </div>
             <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="contact.php"
-                target="_parent"
-                rel="nofollow"
-              >
-                Informatie over locaties
-              </a>
-            </div>
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+          </div>
             <div class="form-btn">
               <a
                 class="submit-btn1"
@@ -122,11 +115,11 @@
             <input type="checkbox" name="checkbox" /><span
               >Ik ga akkoord met de
               <a href="https://www.w3docs.com/privacy-policy"
-                >Privacy Poalicy van PlaneAirline.</a
+                >Privacy Policy van PlaneAirline.</a
               ></span
             >
           </div>
-          <button type="submit" href="/">Submit</button>
+          <button type="submit" href="/">Registreren</button>
         </form>
       </div>
     </main>
