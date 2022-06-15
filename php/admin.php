@@ -1,5 +1,14 @@
 <?php
+session_start();
+require_once('connect.php');
 
+$sql = "SELECT * FROM user";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+
+if($_SESSION["name"]) {
+}else header('Location: inlog.php');
 ?>
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
@@ -20,7 +29,7 @@
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="#" class="active" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -44,7 +53,11 @@
           </a>
         </li>
         <li>
+<<<<<<< HEAD
           <a href="../vluchten.php">
+=======
+          <a href="vluchtenadd.php">
+>>>>>>> c9c184985b93c15496deef28f34a6f798409e372
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
@@ -102,7 +115,6 @@
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
         <span class="admin_name"><?php echo $_SESSION["name"]?></span>
-        <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
 
@@ -156,6 +168,7 @@
 
       <div class="sales-boxes">
         <div class="recent-sales box">
+<<<<<<< HEAD
           <div class="title">Recente Boekingen</div>
           <div class="sales-details">
             <ul class="details">
@@ -210,6 +223,38 @@
           <div class="button">
             <a href="#">Zie alle bestellingen</a>
           </div>
+=======
+          <div class="title">Klanten</div>
+          <table style="width:100%">
+              <tr>
+                <th>Naam</th>
+                <th>Gebruikersnaam</th>
+                <th>Email</th>
+                <th>Admin</th>
+            </tr>
+            <?php 
+              foreach($result as $user){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="UserID" value="<?php echo $user['UserID']; ?>"></td>
+                <td><input type="text" name="name" value="<?php echo $user['name']; ?>"></td>
+                <td><input type="text" name="gebruikersnaam" value="<?php echo $user['gebruikersnaam']; ?>"></td>
+                <td><input type="text" name="email" value="<?php echo $user['email']; ?>"></td>
+                <td><select name="admin">
+                <option selected ="selected" style="display:none"><?php echo $user['admin']; ?></option>
+                <option >0</option>
+                <option >1</option>
+                </select></td>
+                <td><input type="submit"name="update" value="Update"></td>
+                <td><input type="submit"name="delete" value="Delete"></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
+>>>>>>> c9c184985b93c15496deef28f34a6f798409e372
         </div>
         <div class="top-sales box">
           <div class="title">Meest verkochte vlucht</div>
