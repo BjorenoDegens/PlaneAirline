@@ -116,11 +116,7 @@
               ></span
             >
           </div>
-<<<<<<< HEAD
           <button type="submit" name="registeer">Submit</button>
-=======
-          <input type="submit" name="registeer">Submit</input>
->>>>>>> 4073129120367b777544a4a82006b05ad985db43
         </form>
       </div>
     </main>

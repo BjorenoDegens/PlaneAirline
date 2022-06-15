@@ -1,4 +1,10 @@
-<?php session_start();?>
+<?php session_start();
+require_once('php/connect.php');
+$sql = "SELECT * FROM bestemmingen";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,30 +104,35 @@
 							<form action="php/inlogcheck.php" method="post">
 								<div class="form-group">
 									<span class="form-label">Uw bestemming</span>
-									<input class="form-control" type="text" placeholder="Voer uw vliegbestemming in">
+									<select class="form-control" name="bestemming" type="text" placeholder="Geef uw vliegbestemming aan...">
+										<?php foreach ($result as $bestemmingen){?>
+										<option><?php echo $bestemmingen['bestemming']; ?></option>
+										<?php }?>
+									</select>
 								</div>
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group">
 											<span class="form-label">Vertrek</span>
-											<input class="form-control" type="date" required>
+											<input name="vertrek" class="form-control" type="date" required>
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group">
 											<span class="form-label">Aankomst terug</span>
-											<input class="form-control" type="date" required>
+											<input name="aankomst_terug" class="form-control" type="date" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="form-group">
-											<span class="form-label">Vliegveld</span>
-											<select class="form-control">
-												<option>Schiphol</option>
-												<option>Eindhoven</option>
-												<option>Rotterdam</option>
+											<span class="form-label" >Vliegveld</span>
+											<select name="vliegveld" class="form-control">
+												<option value=""></option>
+												<?php foreach ($result as $bestemmingen){?>
+												<option><?php echo $bestemmingen['vliegveld']; ?></option>
+												<?php }?>
 											</select>
 											<span class="select-arrow"></span>
 										</div>
@@ -129,14 +140,14 @@
 									<div class="col-sm-4">
 										<div class="form-group">
 											<span class="form-label">Volwassenen</span>
-											<input class="form-control"></input>
+											<input type="number" name="volwassenen" class="form-control"></input>
 											<span class="select-arrow"></span>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="form-group">
 											<span class="form-label">Kinderen</span>
-											<input class="form-control"></input>
+											<input type="number" name="kinderen" class="form-control"></input>
 											<span class="select-arrow"></span>
 										</div>
 									</div>
