@@ -1,4 +1,4 @@
-<?php 
+<?php
     require_once('connect.php');
     session_start();
     
@@ -26,15 +26,29 @@
         header("Location:../inlog.php");
     }
 
-    // Registeer
+    // Registeer link to
     if (isset($_POST['registeer']))
     {
         header("Location:../registeer.php");
     }
-
+    // wachtwoordvergeten link to
+    if (isset($_POST['wwforgot']))
+    {
+        header("Location:../wachtwoordvergeten.php");
+    }
     // reserveer
     if (isset($_POST['reserveer'])){
         if($_SESSION["name"]) {
+            $sql = "INSERT INTO user (bestemming,vertrek,aankomst_terug,vliegveld, volwassenen,kinderen)
+            VALUES (:bestemming,:vertrek,:aankomst_terug, :vliegveld,:volwassenen,:kinderen)";
+            $stmt = $connect->prepare($sql);
+            $stmt->bindParam(":bestemming", $_POST['bestemming']);
+            $stmt->bindParam(":vertrek", $_POST['vertrek']);
+            $stmt->bindParam(":aankomst_terug", $_POST['aankomst_terug']);
+            $stmt->bindParam(":vliegveld", $_POST['vliegveld']);
+            $stmt->bindParam(":volwassenen", $_POST['volwassenen']);
+            $stmt->bindParam(":kinderen", $_POST['kinderen']);
+            $stmt->execute();
             header("Location:../reserveer.php");
         }else {
             header("Location:../inlog.php");
