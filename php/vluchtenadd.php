@@ -2,7 +2,7 @@
 session_start();
 require_once('connect.php');
 
-$sql = "SELECT * FROM reizen JOIN bestemmingen";
+$sql = "SELECT * FROM user";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -99,6 +99,7 @@ if($_SESSION["name"]) {
                 </script>
                 
                 <span><a href="javascript:AlertIt();">Uitloggen</a></span>
+            
         </li>
       </ul>
       
@@ -123,36 +124,6 @@ if($_SESSION["name"]) {
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Vluchten bewerken</div>
-          <table style="width:100%">
-              <tr>
-                <th>bestemming</th>
-                <th>vertrek</th>
-                <th>aankomst_terug</th>
-                <th>vliegveld</th>
-                <th>volwassenen</th>
-                <th>kinderen</th>
-
-            </tr>
-            <?php 
-              foreach($result as $reizen){
-              ?>
-            <tr>
-              <form action ="crud.php" method="post">
-                <td style="display:none"><input type="text" name="reisID" value="<?php echo $reizen['reisID']; ?>"></td>
-                <td><input type="text" name="eindbestemming" value="<?php echo $reizen['eindbestemming']; ?>"></td>
-                <td><input type="text" name="vertrek" value="<?php echo $reizen['vertrek']; ?>"></td>
-                <td><input type="text" name="aankomst_terug" value="<?php echo $reizen['aankomst_terug']; ?>"></td>
-                <td><input type="text" name="vliegveld" value="<?php echo $reizen['vliegveld']; ?>"></td>
-                <td><input type="text" name="volwassenen" value="<?php echo $reizen['volwassenen']; ?>"></td>
-                <td><input type="text" name="kinderen" value="<?php echo $reizen['kinderen']; ?>"></td>
-                <td><input type="submit"name="updatevluchten" value="Update"></td>
-                <td><input type="submit"name="deletevluchten" value="Delete"></td>
-              </form>
-            </tr>
-            <?php 
-              }
-            ?>
-          </table>
         </div>
         <div class="top-sales box">
           <div class="title">Vluchten toevoegen</div>
@@ -175,48 +146,9 @@ if($_SESSION["name"]) {
                 </form>
               </div>
             </div>
-            </div>
-            <div class="sales-boxes">
-            <div class="recent-sales box">
-          <div class="title">Vlieg bestemmingen bewerken</div>
-          <table style="width:100%">
-              <tr>
-                <th>Bestemmingen</th>
-                <th>vliegvelden</th>
-                <th>Email</th>
-                <th>Admin</th>
-            </tr>
-            <?php 
-              foreach($result as $bestemmingen){
-              ?>
-            <tr>
-              <form action ="crud.php" method="post">
-                <td style="display:none"><input type="text" name="bestemmingID" value="<?php echo $bestemmingen['bestemmingID']; ?>"></td>
-                <td><input type="text" name="bestemming" value="<?php echo $bestemmingen['bestemming']; ?>"></td>
-                <td><input type="text" name="vliegvelden" value="<?php echo $bestemmingen['vliegvelden']; ?>"></td>
-                <td><input type="submit"name="updatebestemmingen" value="Update"></td>
-                <td><input type="submit"name="deletebestemmingen" value="Delete"></td>
-              </form>
-            </tr>
-            <?php 
-              }
-            ?>
-          </table>
-        </div>
-        <br>
-        <br>
-            <div class="top-sales box">
-              <div class="title">Vlieg bestemmingen toevoegen</div>
-            <div class="card card-shadow">
-              <form action="crud.php" method="post">
-                <input type="text" name="bestemming" placeholder="Bestemmingen...">
-                <input type="text" name="vliegveld" placeholder="vliegveld...">
-                <button class="btn" name="addvliegbestemming">toevoegen</button>
-                </form>
-              </div>
-            </div>
-            </div>
           <ul class="top-sales-details">
+            <li>
+            <a href="#">
   <script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
