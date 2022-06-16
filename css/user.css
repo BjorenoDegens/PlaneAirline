@@ -11,7 +11,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0056b3;
+  background: #7C00FF;
   transition: all 0.5s ease;
 }
 .sidebar.active {
@@ -20,8 +20,8 @@
 
 .sidebar .logo-details {
   height: 80px;
-  display: flex;
-  align-items: center;
+  margin-left: 45px;
+  margin-top: 20px;
 }
 .sidebar .logo-details i {
   font-size: 28px;
@@ -53,7 +53,7 @@
   margin-top: 15px;
 }
 .sidebar .nav-links li a.active {
-  background: #081d45;
+  background: #7C00FF;
 }
 .sidebar .nav-links li a:hover {
   background: #081d45;
@@ -138,7 +138,7 @@ nav .search-box .bx-search {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #2697ff;
+  background: #7C00FF;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
@@ -305,7 +305,7 @@ nav .profile-details i {
 }
 .sales-boxes .box .button a {
   color: #fff;
-  background: #0a2558;
+  background: #7C00FF;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -314,7 +314,7 @@ nav .profile-details i {
   transition: all 0.3s ease;
 }
 .sales-boxes .box .button a:hover {
-  background: #0d3073;
+  background: #6719BA;
 }
 
 /* Right box */
@@ -444,78 +444,8 @@ nav .profile-details i {
   }
 }
 
-/* admin.php table */
 th,
 td {
   border: 1px solid black;
   width: auto;
-}
-
-/* vluchtenadd.php card */
-.card-grid {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  align-items: center;
-}
-
-.card {
-  --padding: 1rem;
-  background: white;
-  border: 1px solid #777;
-  border-radius: 0.25rem;
-  max-width: 300px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-.card-body p {
-  font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.card.card-shadow {
-  border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
-  font-size: 1.5rem;
-  padding: var(--padding);
-  padding-bottom: 0;
-  margin-bottom: 0.5rem;
-}
-
-.card-header.card-image {
-  padding: 0;
-  overflow: hidden;
-}
-
-.card-header.card-image > img {
-  display: block;
-  width: 100%;
-  max-height: 200px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
-  transition: 200ms transform ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.025);
-}
-
-.card-body {
-  font-size: 0.9rem;
-  padding: 0 var(--padding);
-}
-
-.card-footer {
-  margin-top: 1rem;
-  padding: var(--padding);
-  padding-top: 0;
 }

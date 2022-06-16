@@ -36,14 +36,7 @@
               </a>
             </div>
             <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="contact.php"
-                target="_parent"
-                rel="nofollow"
-              >
-                Informatie over locaties
-              </a>
+              <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
             </div>
             <div class="form-btn">
               <a
@@ -91,79 +84,132 @@
 
       <h2 style="text-align: center">Ons Team</h2>
       <div class="row-overons">
-        <div class="column">
-          <div class="card-overons">
-            <img
-              src="Afbeeldingen/IMG_20210504_1012521542.jpg"
-              alt="Jane"
-              style="width: 100%"
-            />
-            <div class="container-overons">
-              <h2>Bjoreno Degens</h2>
-              <p class="title">Software Developer Backend</p>
-              <p>Info over persoon</p>
-              <p>bjoreno@gmail.com</p>
-              <div class="button-overons">
-                <button
-                  type="submit"
-                  id="fcf-button"
-                  class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                >
-                  Verstuur Bericht
-                </button>
-              </div>
-            </div>
+        <div class="card-flip">
+          <div class="front">
+              <div class="box-up-moreright">
+                  <div class="card card-shadow">
+                    <div class="card-header card-image">
+                      <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
+                    </div>
+                    <div class="card-footer">
+                      <a
+                        class="btn btn-outline"
+                        href="reserveer.php"
+                        target="_parent"
+                        >Contacteren</a>
+                    </div>
+                  </div>
+                </div>
           </div>
-        </div>
-
-        <div class="column">
-          <div class="card-overons">
-            <img
-              src="Afbeeldingen/IMG_4262.jpg"
-              alt="Mike"
-              style="width: 100%"
-            />
-            <div class="container-overons">
-              <h2>Gavin Tetteroo</h2>
-              <p class="title">Software Developer Frontend</p>
-              <p>Info over persoon.</p>
-              <p>gavin@gmail.com</p>
-              <div class="button-overons">
-                <button
-                  type="submit"
-                  id="fcf-button"
-                  class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                >
-                  Verstuur Bericht
-                </button>
-              </div>
-            </div>
+          
+          <div class="back">
+              <div class="box-up-moreright">
+                  <div class="card card-shadow-back">
+                    <div class="card-header card-image">
+                      <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
+                    </div>
+                    <div class="card-body-back">
+                      <h1>Bjoreno Degens</h1>
+                      <h2>Software Developer</h2>
+                      <h3>Back-end Developer op ROC Nijmegen</h3>
+                    </div>
+  
+                      <div class="card-footer-back">
+                          <a
+                            class="btn btn-outline"
+                            href="reserveer.php"
+                            target="_parent"
+                            >Contacteren</a>
+                        </div>
+                    </div>
           </div>
-        </div>
-
-        <div class="column">
-          <div class="card-overons">
-            <img
-              src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg"
-              alt="John"
-              style="width: 100%"
-            />
-            <div class="container-overons">
-              <h2>Suhaayb Ahmed</h2>
-              <p class="title">Software Developer Frontend</p>
-              <p>Info over persoon.</p>
-              <p>suhaayb@gmail.com</p>
-              <div class="button-overons">
-                <button
-                  type="submit"
-                  id="fcf-button"
-                  class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                >
-                  Verstuur Bericht
-                </button>
-              </div>
+       </div>
+       </div>
+          <div class="card-flip">
+            <div class="front">
+                <div class="box-up-moreright">
+                    <div class="card card-shadow">
+                      <div class="card-header card-image">
+                        <img src="Afbeeldingen/IMG_4262.jpg" />
+                      </div>
+                      <div class="card-footer">
+                        <a
+                          class="btn btn-outline"
+                          href="reserveer.php"
+                          target="_parent"
+                          >Contacteren</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
+            
+            <div class="back">
+                <div class="box-up-moreright">
+                    <div class="card card-shadow-back">
+                      <div class="card-header card-image">
+                        <img src="Afbeeldingen/IMG_4262.jpg" />
+                      </div>
+                      <div class="card-body-back">
+                        <h1>Gavin Tetteroo</h1>
+                        <h2>Software Developer</h2>
+                        <h3>Front-end Developer op ROC Nijmegen</h3>
+                      </div>
+    
+                        <div class="card-footer-back">
+                            <a
+                              class="btn btn-outline"
+                              href="reserveer.php"
+                              target="_parent"
+                              >Contacteren</a>
+                          </div>
+                      </div>
+            </div>
+         </div>
+         </div>
+  
+        
+          <div class="card-flip">
+            <div class="front">
+                <div class="box-up-moreright">
+                    <div class="card card-shadow">
+                      <div class="card-header card-image">
+                        <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                      </div>
+                      <div class="card-footer">
+                        <a
+                          class="btn btn-outline"
+                          href="reserveer.php"
+                          target="_parent"
+                          >Contacteren</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="back">
+                <div class="box-up-moreright">
+                    <div class="card card-shadow-back">
+                      <div class="card-header card-image">
+                        <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                      </div>
+                      <div class="card-body-back">
+                        <h1>Bjoreno Degens</h1>
+                        <h2>Software Developer</h2>
+                        <h3>Back-end Developer op ROC Nijmegen</h3>
+                      </div>
+    
+                        <div class="card-footer-back">
+                            <a
+                              class="btn btn-outline"
+                              href="reserveer.php"
+                              target="_parent"
+                              >Contacteren</a>
+                          </div>
+                      </div>
+            </div>
+         </div>
+         </div>
+  
         </div>
       </div>
       <div class="row-tussen">
