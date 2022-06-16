@@ -111,7 +111,7 @@
           <div class="checkbox">
             <input type="checkbox" name="checkbox" /><span
               >Ik ga akkoord met de
-              <a href="https://www.w3docs.com/privacy-policy"
+              <a href="privacypolicy.php"
                 >Privacy Poalicy van PlaneAirline.</a
               ></span
             >

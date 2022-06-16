@@ -456,6 +456,7 @@ main .container .box-main-up .box-up-right p {
   display: inline-block;
   color: #fff;
   margin: 5px;
+  background-color: gray;
   font-weight: 700;
   font-size: 55px;
   padding: 14px 30px;
@@ -464,7 +465,10 @@ main .container .box-main-up .box-up-right p {
   border: none;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  width: 250px;
+  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
+  border: 1px solid white;
 }
 
 .pijltje-terug:hover {
@@ -1491,6 +1495,28 @@ block1.a {
   align-items: center;
   margin-left: 600px;
 }
+
+.opklappen {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .opklappen:hover {
+  background-color: lightgrey;
+}
+
+.inhoud {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: lightgrey;}
 
 .rate {
   float: right;
