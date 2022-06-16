@@ -51,8 +51,8 @@ $result = $stmt->fetchAll();
 				<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">Over ons </a>
 			</div>
 			<div class="form-btn">
-				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-			</div>
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+          </div>
 		  <div class="form-btn">
 			<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 		</div>
@@ -131,7 +131,11 @@ $result = $stmt->fetchAll();
 											<select name="vliegveld" class="form-control">
 												<option value=""></option>
 												<?php foreach ($result as $bestemmingen){?>
+<<<<<<< HEAD
 												<option><?php echo $bestemmingen['vliegvelden']; ?></option>
+=======
+												<option><?php echo $bestemmingen['vliegveld']; ?></option>
+>>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
 												<?php }?>
 											</select>
 											<span class="select-arrow"></span>

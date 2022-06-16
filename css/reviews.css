@@ -50,7 +50,6 @@
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  margin-top: 15px;
 }
 .sidebar .nav-links li a.active {
   background: #081d45;
@@ -265,9 +264,8 @@ nav .profile-details i {
 
 /* left box */
 .home-content .sales-boxes .recent-sales {
-  width: 65%;
-  overflow: auto;
-  max-height: 250px;
+  width: 50%;
+  height: 300px;
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
@@ -285,7 +283,7 @@ nav .profile-details i {
   /* margin-bottom: 10px; */
 }
 .sales-boxes .sales-details li.topic {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
 }
 .sales-boxes .sales-details li {
@@ -318,7 +316,7 @@ nav .profile-details i {
 }
 
 /* Right box */
-.home-content .sales-boxes .top-sales {
+/* .home-content .sales-boxes .top-sales {
   width: 35%;
   background: #fff;
   padding: 20px 30px;
@@ -350,7 +348,7 @@ nav .profile-details i {
   font-size: 17px;
   font-weight: 400;
   color: #333;
-}
+} */
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar {
@@ -444,78 +442,65 @@ nav .profile-details i {
   }
 }
 
-/* admin.php table */
-th,
-td {
-  border: 1px solid black;
-  width: auto;
-}
+.rate {
+    margin-top: 10px;
+    height: 46px;
+    justify-self: end;
+  }
+  .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+  }
+  .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    color:#ccc;
+  }
+  .rate:not(:checked) > label:before {
+    content: '★ ';
+  }
+  .rate > input:checked ~ label {
+    color: #ffc700;    
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+  }
+  
 
-/* vluchtenadd.php card */
-.card-grid {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  align-items: center;
-}
+  .reviews-summary__bar-inner {
+    height: 0.5rem;
+    background-color: #febd00;
+    border-radius: 0.5em;
+    width: 85%;
+  }
 
-.card {
-  --padding: 1rem;
-  background: white;
-  border: 1px solid #777;
-  border-radius: 0.25rem;
-  max-width: 300px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 50px;
-}
+  .rate-box {
+      display: flex;
+      height: 200px;
+      width: 200px;
+  }
 
-.card-body p {
-  font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
-}
+  .rate-summary {
+      display: flex;
+      height: 200px;
+      width: 200px;
+  }
 
-.card.card-shadow {
-  border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-header {
-  font-size: 1.5rem;
-  padding: var(--padding);
-  padding-bottom: 0;
-  margin-bottom: 0.5rem;
-}
-
-.card-header.card-image {
-  padding: 0;
-  overflow: hidden;
-}
-
-.card-header.card-image > img {
-  display: block;
-  width: 100%;
-  max-height: 200px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
-  transition: 200ms transform ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.025);
-}
-
-.card-body {
-  font-size: 0.9rem;
-  padding: 0 var(--padding);
-}
-
-.card-footer {
-  margin-top: 1rem;
-  padding: var(--padding);
-  padding-top: 0;
+  .reviews-summary-container {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+    grid-auto-rows: auto;
+    justify-content: stretch;
 }

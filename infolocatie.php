@@ -57,20 +57,24 @@
         </div>
       </div>
     </header>
+  <div class="container-info">
+    <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
     <div class="card-grid">
           <div class="box-up-moreleft">
             <div class="card card-shadow">
               <div class="card-header card-image">
-              <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=nijmegen%20heyendaalseweg%2098&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-              </iframe><a href="https://2piratebay.org"></a><br>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=pisa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br>
+                </div>
+              </div>
               </div>
               <div class="card-body">
-                <p>heyendaalseweg 98</p>
+                <p>Italië</p>
               </div>
               <div class="card-footer">
                 <button type="button" class="opklappen">Meer informatie</button>
                 <div class="inhoud" style="display:none;">
-                <p>Dit is het hoofdkantoor van onze organisatie, je kan ons bereiken via de contact pagina op dit website. als u vragen heeft kunt u ze daar stellen en we zullen zo snel mogelijk u terug mailen.</p>
+                <p>De klokkentoren van Pisa
+                  Deze toren kennen we allemaal wel, van horen of van zien. De toren van Pisa in het plaatsje Pisa! Kenmerkend aan deze vrijstaande klokkentoren is de scheefstand. Het blijft een wonderlijke beleving zo'n grote, scheve toren. Altijd leuk dus om hier een grappig kiekje van te schieten! </p>
               </div>
               </div>
             </div>
@@ -112,24 +116,26 @@
               </div>
             </div>
           </div>
-          <div class="card-grid">
-          <div class="box-up-left"style="display: flex;">
-            <div class="card card-shadow">
-              <div class="card-header card-image">
-              <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=vliegveld%20eindhoven&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br>
-              </div></div>
-              </div>
-              <div class="card-body">
-                <p>Eindhoven Airport</p>
-              </div>
-              <div class="card-footer">
-              <button type="button" class="opklappen">Meer informatie</button>
-                <div class="inhoud" style="display:none;">
-                <p>Dit is de #15 meest bezochte vliegveld in Nederland. De adress ervan is Luchthavenweg 25, 5657 EA Eindhoven.</p>
-              </div>
-            </div>
-            </div>
           </div>
+          <div class="card-grid">
+            <div class="box-up-left" style="display: flex;">
+              <div class="card card-shadow">
+                <div class="card-header card-image">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=lelystad%20airport&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br>
+                </div></div> </div>
+                
+                <div class="card-body">
+                  <p>Lelystad Airport</p>
+                 
+                </div>
+                <div class="card-footer" >
+                <button type="button" class="opklappen">Meer informatie</button>
+                  <div class="inhoud" style="display:none;">
+                  <p> Dit is de #25ste meest bezochte vliegveld in Nederland. De adress ervan is Arendweg 7, 8218 PE Lelystad.</p>
+                </div>
+                </div>
+              </div>
+            </div>
 <script>
   var coll = document.getElementsByClassName("opklappen");
 var i;
