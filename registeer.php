@@ -104,20 +104,26 @@
           <div class="checkbox">
             <input type="checkbox" name="checkbox" /><span
               >Ik ga akkoord met de
+
               <a href="https://www.w3docs.com/privacy-policy"
                 >Privacy Policy van PlaneAirline.</a
               ></span
             >
           </div>
-<<<<<<< HEAD
+
           <button type="submit" href="/">Registreren</button>
-=======
-<<<<<<< HEAD
+
           <button type="submit" name="registeer">Submit</button>
-=======
+
           <input type="submit" name="registeer">Submit</input>
->>>>>>> 4073129120367b777544a4a82006b05ad985db43
->>>>>>> c9c184985b93c15496deef28f34a6f798409e372
+
+              <a href="privacypolicy.php"
+                >Privacy Poalicy van PlaneAirline.</a
+              ></span
+            >
+          </div>
+          <button type="submit" name="registeer">Submit</button>
+
         </form>
       </div>
     </main>
