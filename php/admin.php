@@ -23,10 +23,6 @@ if($_SESSION["name"]) {
    </head>
 <body>
   <div class="sidebar">
-    <div class="logo-details">
-      <i></i>
-      <span class="logo_name">PlaneAirline</span>
-    </div>
       <ul class="nav-links">
         <li>
           <a href="#" class="active" >
@@ -53,11 +49,7 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-<<<<<<< HEAD
-          <a href="../vluchten.php">
-=======
           <a href="vluchtenadd.php">
->>>>>>> c9c184985b93c15496deef28f34a6f798409e372
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
@@ -168,62 +160,6 @@ if($_SESSION["name"]) {
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-<<<<<<< HEAD
-          <div class="title">Recente Boekingen</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Datum</li>
-              <li><a href="#">"Datum wanneer gereserveerd"</a></li>
-              <!-- <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li> -->
-            </ul>
-            <ul class="details">
-            <li class="topic">Klant</li>
-            <li><a href="#">"Naam Klant"</a></li>
-            <!-- <li><a href="#">Margriet Amalia</a></li>
-            <li><a href="#">Dora de Jong</a></li>
-            <li><a href="#">Diana van der Vliet</a></li>
-            <li><a href="#">Peter Jansen</a></li>
-            <li><a href="#">Alex Sloot</a></li>
-            <li><a href="#">Hans Rongen</a></li>
-            <li><a href="#">Koen van Dijk</a></li>
-             <li><a href="#">Tim Janssen</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Verkocht</li>
-            <li><a href="#">"Status Bestelling"</a></li>
-            <!-- <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-            <li><a href="#">Pending</a></li>
-            <li><a href="#">Returned</a></li>
-            <li><a href="#">Delivered</a></li>
-             <li><a href="#">Pending</a></li>
-            <li><a href="#">Delivered</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Bestellingen</li>
-            <li><a href="#">"Info bestelling"</a></li>
-            <!-- <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li> -->
-          </ul>
-          </div>
-          <div class="button">
-            <a href="#">Zie alle bestellingen</a>
-          </div>
-=======
           <div class="title">Klanten</div>
           <table style="width:100%">
               <tr>
@@ -254,7 +190,6 @@ if($_SESSION["name"]) {
               }
             ?>
           </table>
->>>>>>> c9c184985b93c15496deef28f34a6f798409e372
         </div>
         <div class="top-sales box">
           <div class="title">Meest verkochte vlucht</div>

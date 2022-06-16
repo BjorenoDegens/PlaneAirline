@@ -36,25 +36,6 @@ else if(isset($_POST['registeer'])) {
 
     header('Location: ../inlog.php');
     exit();
-<<<<<<< HEAD
-}
-
-else if(isset( $_POST['forgot'])) {
-    $sql = "UPDATE user SET password = :password
-    WHERE email = :email";
-        $stmt = $connect->prepare($sql);
-        $stmt->bindParam(":email", $_POST['email']);
-        $stmt->bindParam(":password", $_POST['password']);
-        $stmt->execute();
-        if (":email" == "email"){
-            header('Location: ../inlog.php');
-            exit();
-    } else {
-        header('Location: ../wachtwoordvergeten.php');
-    }
-}
-=======
 } else
     header('Location: ../registeer.php');
     exit();
->>>>>>> 4073129120367b777544a4a82006b05ad985db43

@@ -4,22 +4,18 @@ session_start();
 }else header('Location: inlog.php');
 ?>
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
-    <link rel="stylesheet" href="../css/admin.css">
-    <!-- Boxicons CDN Link -->
+
+    <link rel="stylesheet" href="../css/user.css">
+ 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
     <body>
     <div class="sidebar">
-    <div class="logo-details">
-      <i></i>
-      <span class="logo_name">PlaneAirline</span>
-    </div>
       <ul class="nav-links">
         <li>
           <a href="#" class="active">
@@ -102,7 +98,7 @@ session_start();
         <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
-        <!--<img src="images/profile.jpg" alt="">-->
+
         <span class="admin_name"><?php echo $_SESSION["name"]?></span>
         <i class='bx bx-chevron-down' ></i>
       </div>
@@ -207,59 +203,12 @@ session_start();
           <div class="title">Meest verkochte vlucht</div>
           <ul class="top-sales-details">
             <li>
-              <!-- <img src="images/sunglasses.jpg" alt=""> -->
+
               <span class="product">Italië</span>
             </a>
             <span class="price">€206,99</span>
           </li>
-          <!-- <li>
-            <a href="#">
-               <img src="images/jeans.jpg" alt="">
-              <span class="product">Hourglass Jeans </span>
-            </a>
-            <span class="price">$1567</span>
-          </li>
-          <li>
-            <a href="#">
-             <img src="images/nike.jpg" alt="">
-              <span class="product">Nike Sport Shoe</span>
-            </a>
-            <span class="price">$1234</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/scarves.jpg" alt="">
-              <span class="product">Hermes Silk Scarves.</span>
-            </a>
-            <span class="price">$2312</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/blueBag.jpg" alt="">
-              <span class="product">Succi Ladies Bag</span>
-            </a>
-            <span class="price">$1456</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/bag.jpg" alt="">
-              <span class="product">Gucci Womens's Bags</span>
-            </a>
-            <span class="price">$2345</span>
-          <li>
-            <a href="#">
-              <img src="images/addidas.jpg" alt="">
-              <span class="product">Addidas Running Shoe</span>
-            </a>
-            <span class="price">$2345</span>
-          </li>
-<li>
-            <a href="#">
-             <img src="images/shirt.jpg" alt="">
-              <span class="product">Bilack Wear's Shirt</span>
-            </a>
-            <span class="price">$1245</span>
-          </li> -->
+
           </ul>
         </div>
       </div>

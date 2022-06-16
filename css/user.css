@@ -11,7 +11,7 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0056b3;
+  background: #7C00FF;
   transition: all 0.5s ease;
 }
 .sidebar.active {
@@ -20,8 +20,8 @@
 
 .sidebar .logo-details {
   height: 80px;
-  display: flex;
-  align-items: center;
+  margin-left: 45px;
+  margin-top: 20px;
 }
 .sidebar .logo-details i {
   font-size: 28px;
@@ -53,7 +53,7 @@
   margin-top: 15px;
 }
 .sidebar .nav-links li a.active {
-  background: #081d45;
+  background: #7C00FF;
 }
 .sidebar .nav-links li a:hover {
   background: #081d45;
@@ -138,7 +138,7 @@ nav .search-box .bx-search {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #2697ff;
+  background: #7C00FF;
   right: 5px;
   top: 50%;
   transform: translateY(-50%);
@@ -305,7 +305,7 @@ nav .profile-details i {
 }
 .sales-boxes .box .button a {
   color: #fff;
-  background: #0a2558;
+  background: #7C00FF;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -314,7 +314,7 @@ nav .profile-details i {
   transition: all 0.3s ease;
 }
 .sales-boxes .box .button a:hover {
-  background: #0d3073;
+  background: #6719BA;
 }
 
 /* Right box */
