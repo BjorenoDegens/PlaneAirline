@@ -90,7 +90,7 @@ if (isset($_GET['message'])) {
             <input class="input-login" type="password" name="password" placeholder="Voer hier uw Wachtwoord in" id="password">
 
             <button class="button-login" type="submit" name="inloggen">Inloggen</button>
-            <button class="button-vergeten" name="registeer" href="/wachtwoordvergeten.php">Wachtwoord vergeten?</button>
+            <button class="button-vergeten" name="wwforgot" href="/wachtwoordvergeten.php">Wachtwoord vergeten?</button>
             <button class="button-registreer" name="registeer" href="/registeer.php">Registreer hier</button>
         </form>
       </div>
