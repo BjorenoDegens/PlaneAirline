@@ -59,7 +59,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"];?></a>	
           </div>
         </div>
       </div>
@@ -96,10 +96,6 @@
             style="width: 100%"
           />
         </div>
-
-
-
-
       <div class="container">
         <div class="box-main-up">
           <div class="box-up-left">

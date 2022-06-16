@@ -6,9 +6,9 @@ $sql = "SELECT * FROM user";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
-
 if($_SESSION["name"]) {
-}else header('Location: inlog.php');
+  if($_SESSION['admin'] == 1){
+
 ?>
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
@@ -35,12 +35,6 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
-          </a>
-        </li>
-        <li>
           <a href="review.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
@@ -62,6 +56,12 @@ if($_SESSION["name"]) {
           <a href="berichten.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
           </a>
         </li>
         <li class="log_out">
@@ -255,6 +255,11 @@ sidebarBtn.onclick = function() {
 
 </body>
 </html>
-
-
+<?php
+  }
+else header('Location: userpage.php');
+  exit();
+}else header('Location: inlog.php');
+exit();
+?>
 

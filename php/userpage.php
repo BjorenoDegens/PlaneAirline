@@ -58,7 +58,7 @@ session_start();
           </a>
         </li>
         <li class="log_out">
-          <a href="../inlog.php">
+          <a href="../php/uitlog.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Uitloggen</span>
           </a>

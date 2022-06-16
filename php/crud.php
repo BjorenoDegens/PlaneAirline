@@ -82,7 +82,7 @@ else if(isset( $_POST['updatevluchten'])) {
     exit();
 }
 else if(isset($_POST['deletevluchten'])) {
-    $sql = "DELETE FROM reizen 
+    $sql = "DELETE FROM boeking 
 	 WHERE reisID = :reisID";
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(":reisID", $_POST['reisID']);
@@ -121,4 +121,5 @@ else if(isset($_POST['deletebestemmingen'])) {
     $stmt->execute();
     header('Location: vluchtenadd.php');
     exit();
-}
+}else header('Location: ../login.php');
+exit();

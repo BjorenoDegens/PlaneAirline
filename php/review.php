@@ -35,12 +35,6 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
-          </a>
-        </li>
-        <li>
           <a href="review.php"  class="active">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
@@ -62,6 +56,12 @@ if($_SESSION["name"]) {
           <a href="berichten.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
           </a>
         </li>
         <li class="log_out">

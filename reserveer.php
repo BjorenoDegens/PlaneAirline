@@ -48,7 +48,7 @@ $result = $stmt->fetchAll();
 	  <div class="box">
 		<div class="text">
 			<div class="form-btn">
-				<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
+				<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">Over ons </a>
 			</div>
 			<div class="form-btn">
 				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
@@ -74,7 +74,7 @@ $result = $stmt->fetchAll();
   </div>
   <div class="box"> 
 	<div class="box-logo-login">
-	 <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
+	 <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""><?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
 	</div>
   </div>
 </div>
@@ -131,7 +131,7 @@ $result = $stmt->fetchAll();
 											<select name="vliegveld" class="form-control">
 												<option value=""></option>
 												<?php foreach ($result as $bestemmingen){?>
-												<option><?php echo $bestemmingen['vliegveld']; ?></option>
+												<option><?php echo $bestemmingen['vliegvelden']; ?></option>
 												<?php }?>
 											</select>
 											<span class="select-arrow"></span>
