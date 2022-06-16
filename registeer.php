@@ -73,7 +73,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
           </div>
         </div>
       </div>
@@ -123,7 +123,10 @@
             >
           </div>
           <button type="submit" name="registeer">Submit</button>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
         </form>
       </div>
     </main>

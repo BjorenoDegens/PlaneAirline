@@ -59,7 +59,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
           </div>
         </div>
       </div>
@@ -80,9 +80,10 @@
                   <h2>Wachtwoord vergeten</h2>
                 </div>
                 <div class="info">
-                  <input type="text" name="email" placeholder="E-mail">
-                  <input type="password" name="password" placeholder="Wachtwoord">
-                  <input type="password" name="password" placeholder="Herhaal wachtwoord">
+                  <input type="text" name="email" placeholder="E-mail..">
+                  <input type="text" name="gebruikersnaam" placeholder="Gebruikersnaam..">
+                  <input type="password" name="password" placeholder="Wachtwoord..">
+                  <input type="password" name="password" placeholder="Herhaal wachtwoord..">
                 </div>
                 <button type="submit" name="forgot">Wachtwoord bevestigen</button>
               </form>

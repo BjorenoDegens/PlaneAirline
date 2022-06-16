@@ -78,6 +78,14 @@ session_start();
           </a>
         </li>
         <li class="log_out">
+<<<<<<< HEAD
+          <a href="../php/uitlog.php">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Uitloggen</span>
+          </a>
+        </li>
+      </ul>
+=======
           <span><a href="javascript:AlertIt();">
           <i class="bx bx-log-out"></i>
           <span class="links_name">Uitloggen</span>
@@ -86,6 +94,7 @@ session_start();
             </ul>
             
           </div>
+>>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
   </div>
   <section class="home-section">
     <nav>
