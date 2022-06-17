@@ -123,10 +123,6 @@
             >
           </div>
           <button type="submit" name="registeer">Submit</button>
-<<<<<<< HEAD
-=======
-
->>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
         </form>
       </div>
     </main>
