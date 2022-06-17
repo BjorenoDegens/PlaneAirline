@@ -131,11 +131,7 @@ $result = $stmt->fetchAll();
 											<select name="vliegveld" class="form-control">
 												<option value=""></option>
 												<?php foreach ($result as $bestemmingen){?>
-<<<<<<< HEAD
 												<option><?php echo $bestemmingen['vliegvelden']; ?></option>
-=======
-												<option><?php echo $bestemmingen['vliegveld']; ?></option>
->>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
 												<?php }?>
 											</select>
 											<span class="select-arrow"></span>

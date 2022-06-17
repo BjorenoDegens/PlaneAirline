@@ -137,27 +137,6 @@ if($_SESSION["name"]) {
             ?>
           </table>
         </div>
-        <div class="top-sales box">
-          <div class="title">Vluchten toevoegen</div>
-            <div class="card card-shadow">
-              <form action="">
-                <div class="card-header card-image">
-                    <img src="../afbeeldingen/placeholder.jpg">
-                </div>
-                <div class="card-body">
-                    <input type="text"name="name"placeholder="Name..">
-                    <br>
-                    <p>
-                    €<input type="number" name="price" placeholder="Price..">
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn">Info</button>
-                    <a class="btn btn-outline" href="reserveer.php" target="_parent">Reserveren</a>
-                    </div>
-                </form>
-              </div>
-            </div>
             </div>
             <div class="sales-boxes">
             <div class="recent-sales box">

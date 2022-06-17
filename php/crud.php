@@ -82,11 +82,7 @@ else if(isset( $_POST['updatevluchten'])) {
     exit();
 }
 else if(isset($_POST['deletevluchten'])) {
-<<<<<<< HEAD
     $sql = "DELETE FROM boeking 
-=======
-    $sql = "DELETE FROM reizen 
->>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
 	 WHERE reisID = :reisID";
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(":reisID", $_POST['reisID']);
@@ -125,9 +121,24 @@ else if(isset($_POST['deletebestemmingen'])) {
     $stmt->execute();
     header('Location: vluchtenadd.php');
     exit();
-<<<<<<< HEAD
-}else header('Location: ../login.php');
-exit();
-=======
 }
->>>>>>> 29ad7b8dd6cb027caef22770b5c522244b25aaae
+else if(isset($_POST['contact'])) {
+    $sql = "INSERT INTO contact (naam,email,message)
+	 VALUES (:naam,:email,:message)";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":naam", $_POST['naam']);
+    $stmt->bindParam(":email", $_POST['email']);
+    $stmt->bindParam(":message", $_POST['message']);
+    $stmt->execute();
+    header('Location: ../contact.php');
+    exit();
+}
+else if(isset($_POST['contactdelete'])) {
+    $sql = "DELETE FROM contact 
+	 WHERE contactID = :contactID";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":contactID", $_POST['contactID']);
+    $stmt->execute();
+    header('Location: berichten.php');
+    exit();}else header('Location: ../inlog.php');
+exit();
