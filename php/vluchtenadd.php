@@ -22,14 +22,10 @@ if($_SESSION["name"]) {
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <div class="sidebar">
-    <div class="logo-details">
-      <i></i>
-      <span class="logo_name">PlaneAirline</span>
-    </div>
+<div class="sidebar">
       <ul class="nav-links">
         <li>
-          <a href="admin.php">
+          <a href="admin.php" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -41,78 +37,45 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Bestel lijst</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="review.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
           </a>
         </li>
         <li>
-          <a href="#"class="active">
-            <i class='bx bx-coin-stack'></i>
-            <span class="links_name" >Vluchten</span>
+          <a href="vluchtenadd.php"  class="active">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Vluchten</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="userpage.php">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">UserPage</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="berichten.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Instellingen</span>
-          </a>
-        </li>
         <li class="log_out">
-          
-              <script type="text/javascript">
-                function AlertIt() {
-                var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
-                if (answer)
-                window.location="http://www.continue.com";
-                }
-                </script>
-                
-                <span><a href="javascript:AlertIt();">Uitloggen</a></span>
+          <span><a href="javascript:AlertIt();">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Uitloggen</span>
+              </li>
+            </a></span>
+            </ul>
             
-        </li>
-      </ul>
-      
+            
+          </div>
   </div>
   <section class="home-section">
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Zoeken...">
-        <i class='bx bx-search' ></i>
+        <span class="dashboard">Vluchten</span>
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
@@ -136,7 +99,7 @@ if($_SESSION["name"]) {
                     <input type="text"name="name"placeholder="Name..">
                     <br>
                     <p>
-                    €<input type="number" name="price" placeholder="Price..">
+                    <input type="number" name="price" placeholder="Price..">
                     </p>
                 </div>
                 <div class="card-footer">
@@ -160,6 +123,13 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
+ <script type="text/javascript">
+  function AlertIt() {
+  var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
+  if (answer)
+  window.location.href="uitlog.php";
+  }
+  </script>
 
 </body>
 </html>

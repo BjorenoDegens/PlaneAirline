@@ -77,103 +77,21 @@
       </div>
     </header>
     <main>
-      <div class="form-btn">
-      <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
-      </div>
-      
+      <div class="body-overons">
 
-      <h2 style="text-align: center">Ons Team</h2>
-      <div class="row-overons">
-        <div class="card-flip">
-          <div class="front">
-              <div class="box-up-moreright">
-                  <div class="card card-shadow">
-                    <div class="card-header card-image">
-                      <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
-                    </div>
-                    <div class="card-footer">
-                      <a
-                        class="btn btn-outline"
-                        href="reserveer.php"
-                        target="_parent"
-                        >Contacteren</a>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          
-          <div class="back">
-              <div class="box-up-moreright">
-                  <div class="card card-shadow-back">
-                    <div class="card-header card-image">
-                      <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
-                    </div>
-                    <div class="card-body-back">
-                      <h1>Bjoreno Degens</h1>
-                      <h2>Software Developer</h2>
-                      <h3>Back-end Developer op ROC Nijmegen</h3>
-                    </div>
-  
-                      <div class="card-footer-back">
-                          <a
-                            class="btn btn-outline"
-                            href="reserveer.php"
-                            target="_parent"
-                            >Contacteren</a>
-                        </div>
-                    </div>
-          </div>
-       </div>
-       </div>
-          <div class="card-flip">
-            <div class="front">
-                <div class="box-up-moreright">
-                    <div class="card card-shadow">
-                      <div class="card-header card-image">
-                        <img src="Afbeeldingen/IMG_4262.jpg" />
-                      </div>
-                      <div class="card-footer">
-                        <a
-                          class="btn btn-outline"
-                          href="reserveer.php"
-                          target="_parent"
-                          >Contacteren</a>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="back">
-                <div class="box-up-moreright">
-                    <div class="card card-shadow-back">
-                      <div class="card-header card-image">
-                        <img src="Afbeeldingen/IMG_4262.jpg" />
-                      </div>
-                      <div class="card-body-back">
-                        <h1>Gavin Tetteroo</h1>
-                        <h2>Software Developer</h2>
-                        <h3>Front-end Developer op ROC Nijmegen</h3>
-                      </div>
-    
-                        <div class="card-footer-back">
-                            <a
-                              class="btn btn-outline"
-                              href="reserveer.php"
-                              target="_parent"
-                              >Contacteren</a>
-                          </div>
-                      </div>
-            </div>
-         </div>
-         </div>
-  
+        <div class="form-btn">
+        <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
+        </div>
         
+  
+        <h2 style="text-align: center">Ons Team</h2>
+        <div class="row-overons">
           <div class="card-flip">
             <div class="front">
                 <div class="box-up-moreright">
                     <div class="card card-shadow">
                       <div class="card-header card-image">
-                        <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                        <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
                       </div>
                       <div class="card-footer">
                         <a
@@ -190,7 +108,7 @@
                 <div class="box-up-moreright">
                     <div class="card card-shadow-back">
                       <div class="card-header card-image">
-                        <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                        <img src="Afbeeldingen/IMG_20210504_1012521542.jpg" />
                       </div>
                       <div class="card-body-back">
                         <h1>Bjoreno Degens</h1>
@@ -209,35 +127,120 @@
             </div>
          </div>
          </div>
-  
+            <div class="card-flip">
+              <div class="front">
+                  <div class="box-up-moreright">
+                      <div class="card card-shadow">
+                        <div class="card-header card-image">
+                          <img src="Afbeeldingen/IMG_4262.jpg" />
+                        </div>
+                        <div class="card-footer">
+                          <a
+                            class="btn btn-outline"
+                            href="reserveer.php"
+                            target="_parent"
+                            >Contacteren</a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              
+              <div class="back">
+                  <div class="box-up-moreright">
+                      <div class="card card-shadow-back">
+                        <div class="card-header card-image">
+                          <img src="Afbeeldingen/IMG_4262.jpg" />
+                        </div>
+                        <div class="card-body-back">
+                          <h1>Gavin Tetteroo</h1>
+                          <h2>Software Developer</h2>
+                          <h3>Front-end Developer op ROC Nijmegen</h3>
+                        </div>
+      
+                          <div class="card-footer-back">
+                              <a
+                                class="btn btn-outline"
+                                href="reserveer.php"
+                                target="_parent"
+                                >Contacteren</a>
+                            </div>
+                        </div>
+              </div>
+           </div>
+           </div>
+    
+          
+            <div class="card-flip">
+              <div class="front">
+                  <div class="box-up-moreright">
+                      <div class="card card-shadow">
+                        <div class="card-header card-image">
+                          <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                        </div>
+                        <div class="card-footer">
+                          <a
+                            class="btn btn-outline"
+                            href="reserveer.php"
+                            target="_parent"
+                            >Contacteren</a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              
+              <div class="back">
+                  <div class="box-up-moreright">
+                      <div class="card card-shadow-back">
+                        <div class="card-header card-image">
+                          <img src="Afbeeldingen/79DB0451-617E-454E-AFF8-7FD73E92F3F9.jpg" />
+                        </div>
+                        <div class="card-body-back">
+                          <h1>Bjoreno Degens</h1>
+                          <h2>Software Developer</h2>
+                          <h3>Back-end Developer op ROC Nijmegen</h3>
+                        </div>
+      
+                          <div class="card-footer-back">
+                              <a
+                                class="btn btn-outline"
+                                href="reserveer.php"
+                                target="_parent"
+                                >Contacteren</a>
+                            </div>
+                        </div>
+              </div>
+           </div>
+           </div>
+    
+          </div>
         </div>
-      </div>
-      <div class="row-tussen">
+        <div class="row-tussen">
+          <br />
+        </div>
         <br />
-      </div>
-      <br />
-      <h2 style="text-align: center">Ons Bedrijf</h2>
-      <br />
-      <div class="bedrijfs-image">
-        <img
-          src="Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png"
-          alt=""
-        />
-      </div>
-
-      <div class="overons-text">
-        <h2 style="text-align: center">
-          PlaneAirline
-          <br />
-          <br />
-          Is opgericht door Gavin Tetteroo, Bjoreno Degens & Suhaayb Ahmed.
-          <br />
-          <br />
-          PlaneAirline beschikt u van de beste, veiligste en goedkoopste
-          vluchten in Nederland. Onze Luchtmachtmaatschappij beschikt over
-          topklasse personeel en hoog getrainde piloten en stewardessen die u
-          uiterste service kunnen dienen tijdens uw vlucht.
-        </h2>
+        <h2 style="text-align: center">Ons Bedrijf</h2>
+        <br />
+        <div class="bedrijfs-image">
+          <img
+            src="Afbeeldingen/Officieel_logo_CRUD_-removebg-preview.png"
+            alt=""
+          />
+        </div>
+  
+        <div class="overons-text">
+          <h2 style="text-align: center">
+            PlaneAirline
+            <br />
+            <br />
+            Is opgericht door Gavin Tetteroo, Bjoreno Degens & Suhaayb Ahmed.
+            <br />
+            <br />
+            PlaneAirline beschikt u van de beste, veiligste en goedkoopste
+            vluchten in Nederland. Onze Luchtmachtmaatschappij beschikt over
+            topklasse personeel en hoog getrainde piloten en stewardessen die u
+            uiterste service kunnen dienen tijdens uw vlucht.
+          </h2>
+        </div>
       </div>
     </main>
   </body>

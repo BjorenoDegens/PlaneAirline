@@ -55,26 +55,8 @@ session_start();
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-user' ></i>
-            <span class="links_name">Team</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart' ></i>
-            <span class="links_name">Favrorites</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog' ></i>
-            <span class="links_name">Instellingen</span>
           </a>
         </li>
         <li class="log_out">
@@ -92,10 +74,6 @@ session_start();
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Zoeken...">
-        <i class='bx bx-search' ></i>
       </div>
       <div class="profile-details">
 

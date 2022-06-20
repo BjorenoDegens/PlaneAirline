@@ -23,10 +23,7 @@ if($_SESSION["name"]) {
    </head>
 <body>
   <div class="sidebar">
-    <div class="logo-details">
-      <i></i>
-      <span class="logo_name">PlaneAirline</span>
-    </div>
+     
       <ul class="nav-links">
         <li>
           <a href="admin.php" >
@@ -84,11 +81,7 @@ if($_SESSION["name"]) {
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Zoeken...">
-        <i class='bx bx-search' ></i>
+        <span class="dashboard">Reviews beoordelen</span>
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
