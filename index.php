@@ -30,7 +30,7 @@
             <a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
           </div>
           <div class="form-btn">
-            <a class="submit-btn1" href="php/infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
           </div>
           <div class="form-btn">
           <a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
@@ -59,7 +59,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"];?></a>	
           </div>
         </div>
       </div>
@@ -96,10 +96,6 @@
             style="width: 100%"
           />
         </div>
-
-
-
-
       <div class="container">
         <div class="box-main-up">
           <div class="box-up-left">
@@ -127,7 +123,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <button class="btn">Info</button>
+                <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
                   href="reserveer.php"
@@ -165,7 +161,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <button class="btn">Info</button>
+                <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
                   href="reserveer.php"
@@ -204,7 +200,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <button class="btn">Info</button>
+                <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
                   href="reserveer.php"
@@ -239,7 +235,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <button class="btn">Info</button>
+                <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
                   href="reserveer.php"
@@ -279,7 +275,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <button class="btn">Info</button>
+            <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
               href="/reserveer.php"
@@ -316,7 +312,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <button class="btn">Info</button>
+            <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
               href="reserveer.php"
@@ -353,7 +349,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <button class="btn">Info</button>
+            <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
               href="reserveer.php"
@@ -388,7 +384,7 @@
             </p>
           </div>
           <div class="card-footer">
-            <button class="btn">Info</button>
+            <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
               href="reserveer.php"

@@ -25,9 +25,9 @@
 				<div class="form-btn">
 					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
-				<div class="form-btn">
-					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-				</div>
+        <div class="form-btn">
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+          </div>
 			  <div class="form-btn">
 				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 			</div>
@@ -56,7 +56,7 @@
       </div>
       <div class="box"> 
         <div class="box-logo-login">
-          <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt=""></a>
+          <a href = "inlog.php"> <img src="Afbeeldingen/user-icon-png-transparent-17.jpg"  target="_parent" alt="">	<?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
            </div>
       </div>
     </div>
@@ -70,31 +70,31 @@
                   <div id="fcf-form">
                     <h3 class="fcf-h3">Contacteer ons</h3>
 
-                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/crud.php">
                       
                       <div class="fcf-form-group">
                           <label for="Name" class="fcf-label">Uw Voornaam en Achternaam</label>
                           <div class="fcf-input-group">
-                              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                              <input type="text" id="Name" name="naam" class="fcf-form-control" required>
                           </div>
                       </div>
 
                       <div class="fcf-form-group">
                           <label for="Email" class="fcf-label">Uw E-Mail Adres</label>
                           <div class="fcf-input-group">
-                              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                              <input type="email" id="Email" name="email" class="fcf-form-control" required>
                           </div>
                       </div>
 
                       <div class="fcf-form-group">
                           <label for="Message" class="fcf-label">Type hier uw bericht</label>
                           <div class="fcf-input-group">
-                              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                              <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                           </div>
                       </div>
 
                       <div class="fcf-form-group">
-                          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Verstuur Bericht</button>
+                          <button type="submit" name="contact" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Verstuur Bericht</button>
                       </div>
                   </form>
                 </div>

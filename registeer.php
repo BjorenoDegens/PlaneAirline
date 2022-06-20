@@ -38,15 +38,8 @@
               </a>
             </div>
             <div class="form-btn">
-              <a
-                class="submit-btn1"
-                href="contact.php"
-                target="_parent"
-                rel="nofollow"
-              >
-                Informatie over locaties
-              </a>
-            </div>
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+          </div>
             <div class="form-btn">
               <a
                 class="submit-btn1"
@@ -80,7 +73,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
           </div>
         </div>
       </div>
@@ -111,6 +104,19 @@
           <div class="checkbox">
             <input type="checkbox" name="checkbox" /><span
               >Ik ga akkoord met de
+
+              <a href="https://www.w3docs.com/privacy-policy"
+                >Privacy Policy van PlaneAirline.</a
+              ></span
+            >
+          </div>
+
+          <button type="submit" href="/">Registreren</button>
+
+          <button type="submit" name="registeer">Submit</button>
+
+          <input type="submit" name="registeer">Submit</input>
+
               <a href="privacypolicy.php"
                 >Privacy Poalicy van PlaneAirline.</a
               ></span

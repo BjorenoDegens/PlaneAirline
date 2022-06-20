@@ -12,7 +12,9 @@ if (isset($_GET['message'])) {
     $message="Onjuiste gebruikersnaam en/of wachtwoord!";
   }
 }
-
+if(isset($_SESSION["name"])) {
+  header("Location: ./php/admin.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,9 +46,9 @@ if (isset($_GET['message'])) {
 				<div class="form-btn">
 					<a class="submit-btn1" href="overons.php" target="_parent" rel="nofollow">	Over ons </a>
 				</div>
-				<div class="form-btn">
-					<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
-				</div>
+        <div class="form-btn">
+            <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+          </div>
 			  <div class="form-btn">
 				<a class="submit-btn1" href="contact.php" target="_parent" rel="nofollow">Contact</a>
 			</div>
