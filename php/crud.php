@@ -140,5 +140,26 @@ else if(isset($_POST['contactdelete'])) {
     $stmt->bindParam(":contactID", $_POST['contactID']);
     $stmt->execute();
     header('Location: berichten.php');
-    exit();}else header('Location: ../inlog.php');
-exit();
+    exit();
+}
+
+else if(isset( $_POST['recentieupdate'])) {
+    $sql = "UPDATE recensies SET gevalideerd = :gevalideerd
+    WHERE reisID = :reisID";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":reisID", $_POST['reisID']);
+    $stmt->bindParam(":gevalideerd", $_POST['gevalideerd']);
+    $stmt->execute();
+    header('Location: review.php');
+    exit();
+}
+else if(isset($_POST['recentiedelete'])) {
+    $sql = "DELETE FROM recensies 
+	 WHERE reisID = :reisID";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":reisID", $_POST['reisID']);
+    $stmt->execute();
+    header('Location: review.php');
+    exit();
+}else header('Location: ../login.php');
+    exit();
