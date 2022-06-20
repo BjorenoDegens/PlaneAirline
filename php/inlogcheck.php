@@ -11,19 +11,21 @@
         $result = $stmt->fetch();
 
         if($result) {
-            $_SESSION["UserID"] = $result['UserID'];
+            $_SESSION["userID"] = $result['UserID'];
             $_SESSION["name"] = $result['name'];
             $_SESSION['admin'] = $result['admin'];
             if ($result['admin'] === 0){
                 header("Location:userpage.php");
+                exit();
             }else if ($result['admin'] === 1){
                 header("Location:admin.php");
+                exit();
             }else header("Location:../inlog.php?message=problem");
+            exit();
         } else {
             header("Location:../inlog.php?message=invalid");
+            exit();
         }
-    } else { 
-        header("Location:../inlog.php");
     }
 
     // Registeer link to
@@ -38,22 +40,36 @@
     }
     // reserveer
     if (isset($_POST['reserveer'])){
-        if($_SESSION["name"]) {
-            $sql = "INSERT INTO user (bestemming,vertrek,aankomst_terug,vliegveld, volwassenen,kinderen)
-            VALUES (:bestemming,:vertrek,:aankomst_terug, :vliegveld,:volwassenen,:kinderen)";
+        if($_SESSION["userID"]) {
+            $sql = "INSERT INTO reizen (eindbestemming,vertrek,aankomst_terug,vliegveld, volwassenen,kinderen)
+            VALUES (:eindbestemming,:vertrek,:aankomst_terug, :vliegveld,:volwassenen,:kinderen)";
             $stmt = $connect->prepare($sql);
-            $stmt->bindParam(":bestemming", $_POST['bestemming']);
+            $stmt->bindParam(":eindbestemming", $_POST['bestemming']);
             $stmt->bindParam(":vertrek", $_POST['vertrek']);
             $stmt->bindParam(":aankomst_terug", $_POST['aankomst_terug']);
             $stmt->bindParam(":vliegveld", $_POST['vliegveld']);
             $stmt->bindParam(":volwassenen", $_POST['volwassenen']);
             $stmt->bindParam(":kinderen", $_POST['kinderen']);
             $stmt->execute();
+
+            $reisID = $connect->lastInsertId();
+
+            $sql = "INSERT INTO boeking (userID, reisID)
+            VALUES (:userID, :reisID)";
+            $stmt = $connect->prepare($sql);
+            $stmt->bindParam(":userID", $_SESSION['userID']);
+            $stmt->bindParam(":reisID", $reisID);
+            $stmt->execute();
+
             header("Location:../reserveer.php");
+            exit();
         }else {
             header("Location:../inlog.php");
+            exit();
         }
     }
-?>
 
-ingelogt verder naar  niet inlogt naar inlogpage
+    
+    header("Location:../inlog.php");
+    exit();
+?>

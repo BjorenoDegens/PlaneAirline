@@ -1,71 +1,74 @@
 <?php
 session_start();
-  if($_SESSION["name"]) {
-}else header('Location: inlog.php');
+require_once('connect.php');
+
+$sql = "SELECT * FROM contact";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+if($_SESSION["name"]) {
+  if($_SESSION['admin'] == 1){
+
 ?>
 <!DOCTYPE html>
-
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="../css/user.css">
- 
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="../css/admin.css">
+    <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-    <body>
-    <div class="sidebar">
+<body>
+  <div class="sidebar">
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="#"  >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-list-ul' ></i>
-            <span class="links_name">Bestel lijst</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <a href="review.php">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="vluchtenadd.php">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="userpage.php">
             <i class='bx bx-book-alt' ></i>
             <span class="links_name">UserPage</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="berichten.php"class="active">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>
         </li>
-        <li class="log_out">
-          <a href="../php/uitlog.php">
-            <i class='bx bx-log-out'></i>
-            <span class="links_name">Uitloggen</span>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
           </a>
         </li>
-      </ul>
+        <li class="log_out">
+          <span><a href="javascript:AlertIt();">
+          <i class="bx bx-log-out"></i>
+          <span class="links_name">Uitloggen</span>
+              </li>
+            </a></span>
+            </ul>
+            
+          </div>
   </div>
   <section class="home-section">
     <nav>
@@ -73,10 +76,13 @@ session_start();
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
+      <div class="search-box">
+        <input type="text" placeholder="Zoeken...">
+        <i class='bx bx-search' ></i>
+      </div>
       <div class="profile-details">
-
+        <!--<img src="images/profile.jpg" alt="">-->
         <span class="admin_name"><?php echo $_SESSION["name"]?></span>
-        <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
 
@@ -130,84 +136,60 @@ session_start();
 
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Recente Boekingen</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Datum</li>
-              <li><a href="#">30 Jun 2022</a></li>
-              <!-- <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li> -->
-            </ul>
-            <ul class="details">
-            <li class="topic">Klant</li>
-            <li><a href="#"><?php echo $_SESSION["name"]?></a></li>
-            <!-- <li><a href="#">Margriet Amalia</a></li>
-            <li><a href="#">Dora de Jong</a></li>
-            <li><a href="#">Diana van der Vliet</a></li>
-            <li><a href="#">Peter Jansen</a></li>
-            <li><a href="#">Alex Sloot</a></li>
-            <li><a href="#">Hans Rongen</a></li>
-            <li><a href="#">Koen van Dijk</a></li>
-             <li><a href="#">Tim Janssen</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Bestellingen</li>
-            <li><a href="#">€</a></li>
-            <!--<li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-          </ul> -->
-          </div>
-          <div class="button">
-            <a href="#">Zie alle bestellingen</a>
-          </div>
-        </div>
-        <div class="top-sales box">
-          <div class="title">Meest verkochte vlucht</div>
-          <ul class="top-sales-details">
-            <li>
-
-              <span class="product">Italië</span>
-            </a>
-            <span class="price">€206,99</span>
-          </li>
-
-          </ul>
+          <div class="title">Klanten</div>
+          <table style="width:100%">
+              <tr>
+                <th>Naam</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+            <?php 
+              foreach($result as $contact){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="contactID" value="<?php echo $contact['contactID']; ?>"></td>
+                <td><p name="naam"><?php echo $contact['naam']; ?></p></td>
+                <td><p name="email"><?php echo $contact['email']; ?></p></td>
+                <td><p name="message"> <?php echo $contact['message']; ?></p></td>
+                <td><input type="submit"name="contactdelete" value="Delete"></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
   <script>
-   let sidebar = document.querySelector(".sidebar");
+    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
   sidebar.classList.toggle("active");
   if(sidebar.classList.contains("active")){
-  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
-}else
+    sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+  }else
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
- <script type="text/javascript">
+<script type="text/javascript">
   function AlertIt() {
   var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
   if (answer)
   window.location.href="uitlog.php";
   }
   </script>
-    </body>
+
+</body>
 </html>
+<?php
+  }
+else header('Location: userpage.php');
+  exit();
+}else header('Location: inlog.php');
+exit();
+?>
+

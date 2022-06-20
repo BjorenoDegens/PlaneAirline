@@ -2,10 +2,15 @@
 session_start();
 require_once('connect.php');
 
-$sql = "SELECT * FROM user";
+$sql = "SELECT user.name, reizen.* FROM boeking JOIN user ON boeking.userID = user.UserID JOIN reizen ON boeking.reisID = reizen.reisID  WHERE user.userID = 3";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
+
+$sql = "SELECT * FROM  bestemmingen";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$resultbestemmingen = $stmt->fetchAll();
 
 if($_SESSION["name"]) {
 }else header('Location: inlog.php');
@@ -23,17 +28,15 @@ if($_SESSION["name"]) {
    </head>
 <body>
 <div class="sidebar">
+    <div class="logo-details">
+      <i></i>
+      <span class="logo_name">PlaneAirline</span>
+    </div>
       <ul class="nav-links">
         <li>
-          <a href="admin.php" >
+          <a href="admin.php"  >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
           </a>
         </li>
         <li>
@@ -43,7 +46,7 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="vluchtenadd.php"  class="active">
+          <a href=""class="active">
             <i class='bx bx-coin-stack' ></i>
             <span class="links_name">Vluchten</span>
           </a>
@@ -60,16 +63,26 @@ if($_SESSION["name"]) {
             <span class="links_name">Messages</span>
           </a>
         </li>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
+          </a>
+        </li>
         <li class="log_out">
-          <span><a href="javascript:AlertIt();">
-          <i class="bx bx-log-out"></i>
-          <span class="links_name">Uitloggen</span>
-              </li>
-            </a></span>
-            </ul>
-            
-            
-          </div>
+          
+              <script type="text/javascript">
+                function AlertIt() {
+                var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
+                if (answer)
+                window.location="http://www.continue.com";
+                }
+                </script>
+                
+                <span><a href="javascript:AlertIt();">Uitloggen</a></span>
+        </li>
+      </ul>
+      
   </div>
   <section class="home-section">
     <nav>
@@ -87,31 +100,81 @@ if($_SESSION["name"]) {
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Vluchten bewerken</div>
+          <table style="width:100%">
+              <tr>
+                <th>name</th>
+                <th>bestemming</th>
+                <th>vertrek</th>
+                <th>aankomst_terug</th>
+                <th>vliegveld</th>
+                <th>volwassenen</th>
+                <th>kinderen</th>
+
+            </tr>
+            <?php 
+              foreach($result as $reizen){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="reisID" value="<?php echo $reizen['reisID']; ?>"></td>
+                <td><input type="text" name="eindbestemming" value="<?php echo $reizen['name']; ?>"></td>
+                <td><input type="text" name="eindbestemming" value="<?php echo $reizen['eindbestemming']; ?>"></td>
+                <td><input type="text" name="vertrek" value="<?php echo $reizen['vertrek']; ?>"></td>
+                <td><input type="text" name="aankomst_terug" value="<?php echo $reizen['aankomst_terug']; ?>"></td>
+                <td><input type="text" name="vliegveld" value="<?php echo $reizen['vliegveld']; ?>"></td>
+                <td><input type="text" name="volwassenen" value="<?php echo $reizen['volwassenen']; ?>"></td>
+                <td><input type="text" name="kinderen" value="<?php echo $reizen['kinderen']; ?>"></td>
+                <td><input type="submit"name="updatevluchten" value="Update"></td>
+                <td><input type="submit"name="deletevluchten" value="Delete"></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
         </div>
-        <div class="top-sales box">
-          <div class="title">Vluchten toevoegen</div>
+            </div>
+            <div class="sales-boxes">
+            <div class="recent-sales box">
+          <div class="title">Vlieg bestemmingen bewerken</div>
+          <table style="width:100%">
+              <tr>
+                <th>Bestemmingen</th>
+                <th>vliegvelden</th>
+                <th>Email</th>
+                <th>Admin</th>
+            </tr>
+            <?php 
+              foreach($resultbestemmingen as $bestemmingen){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="bestemmingID" value="<?php echo $bestemmingen['bestemmingID']; ?>"></td>
+                <td><input type="text" name="bestemming" value="<?php echo $bestemmingen['bestemming']; ?>"></td>
+                <td><input type="text" name="vliegvelden" value="<?php echo $bestemmingen['vliegvelden']; ?>"></td>
+                <td><input type="submit"name="updatebestemmingen" value="Update"></td>
+                <td><input type="submit"name="deletebestemmingen" value="Delete"></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
+        </div>
+        <br>
+        <br>
+            <div class="top-sales box">
+              <div class="title">Vlieg bestemmingen toevoegen</div>
             <div class="card card-shadow">
-              <form action="">
-                <div class="card-header card-image">
-                    <img src="../afbeeldingen/placeholder.jpg">
-                </div>
-                <div class="card-body">
-                    <input type="text"name="name"placeholder="Name..">
-                    <br>
-                    <p>
-                    <input type="number" name="price" placeholder="Price..">
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn">Info</button>
-                    <a class="btn btn-outline" href="reserveer.php" target="_parent">Reserveren</a>
-                    </div>
+              <form action="crud.php" method="post">
+                <input type="text" name="bestemming" placeholder="Bestemmingen...">
+                <input type="text" name="vliegveld" placeholder="vliegveld...">
+                <button class="btn" name="addvliegbestemming">toevoegen</button>
                 </form>
               </div>
             </div>
+            </div>
           <ul class="top-sales-details">
-            <li>
-            <a href="#">
   <script>
    let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");

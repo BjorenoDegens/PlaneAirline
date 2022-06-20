@@ -73,7 +73,7 @@
                 src="Afbeeldingen/user-icon-png-transparent-17.jpg"
                 target="_parent"
                 alt=""
-            /></a>
+            /><?php if(isset($_POST['name'])) echo $_SESSION["name"]?></a>
           </div>
         </div>
       </div>
@@ -123,7 +123,6 @@
             >
           </div>
           <button type="submit" name="registeer">Submit</button>
-
         </form>
       </div>
     </main>

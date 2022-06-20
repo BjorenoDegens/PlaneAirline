@@ -6,9 +6,9 @@ $sql = "SELECT * FROM user";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
-
 if($_SESSION["name"]) {
-}else header('Location: inlog.php');
+  if($_SESSION['admin'] == 1){
+
 ?>
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
@@ -28,12 +28,6 @@ if($_SESSION["name"]) {
           <a href="#" class="active" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
           </a>
         </li>
         <li>
@@ -58,6 +52,12 @@ if($_SESSION["name"]) {
           <a href="berichten.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
           </a>
         </li>
         <li class="log_out">
@@ -85,53 +85,6 @@ if($_SESSION["name"]) {
     </nav>
 
     <div class="home-content">
-      <!-- <div class="overview-boxes">
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Order</div>
-            <div class="number">40,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bx-cart-alt cart'></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Sales</div>
-            <div class="number">38,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-add cart two' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Profit</div>
-            <div class="number">$12,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bx-cart cart three' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">11,086</div>
-            <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-download cart four' ></i>
-        </div>
-      </div> -->
-
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Klanten</div>
@@ -165,66 +118,6 @@ if($_SESSION["name"]) {
             ?>
           </table>
         </div>
-        <div class="top-sales box">
-          <div class="title">Meest verkochte vlucht</div>
-          <ul class="top-sales-details">
-            <li>
-            <a href="#">
-              <!-- <img src="images/sunglasses.jpg" alt=""> -->
-              <span class="product">"Vluchtbestemming"</span>
-            </a>
-            <span class="price">"Prijs vlucht"</span>
-          </li>
-          <!-- <li>
-            <a href="#">
-              <img src="images/jeans.jpg" alt="">
-              <span class="product">Hourglass Jeans </span>
-            </a>
-            <span class="price">$1567</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/nike.jpg" alt="">
-              <span class="product">Nike Sport Shoe</span>
-            </a>
-            <span class="price">$1234</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/scarves.jpg" alt="">
-              <span class="product">Hermes Silk Scarves.</span>
-            </a>
-            <span class="price">$2312</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/blueBag.jpg" alt="">
-              <span class="product">Succi Ladies Bag</span>
-            </a>
-            <span class="price">$1456</span>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/bag.jpg" alt="">
-              <span class="product">Gucci Womens's Bags</span>
-            </a>
-            <span class="price">$2345</span>
-            <li>
-              <a href="#">
-                <img src="images/addidas.jpg" alt="">
-              <span class="product">Addidas Running Shoe</span>
-            </a>
-            <span class="price">$2345</span>
-          </li>
-<li>
-            <a href="#">
-              <img src="images/shirt.jpg" alt="">
-              <span class="product">Bilack Wear's Shirt</span>
-            </a>
-            <span class="price">$1245</span>
-          </li> -->
-          </ul>
-        </div>
       </div>
     </div>
   </section>
@@ -250,6 +143,11 @@ sidebarBtn.onclick = function() {
 
 </body>
 </html>
-
-
+<?php
+  }
+else header('Location: userpage.php');
+  exit();
+}else header('Location: inlog.php');
+exit();
+?>
 

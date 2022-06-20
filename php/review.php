@@ -2,7 +2,7 @@
 session_start();
 require_once('connect.php');
 
-$sql = "SELECT * FROM user";
+$sql = "SELECT r.* , reis.eindbestemming, u.name FROM recensies r JOIN user u ON r.recensieID = u.UserID JOIN reizen reis ON r.recensieID = reis.reisID";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -32,12 +32,6 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class='bx bx-box' ></i>
-            <span class="links_name">Bestellingen</span>
-          </a>
-        </li>
-        <li>
           <a href="review.php"  class="active">
             <i class='bx bx-pie-chart-alt-2' ></i>
             <span class="links_name">Reviews beoordelen</span>
@@ -59,6 +53,12 @@ if($_SESSION["name"]) {
           <a href="berichten.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="../index.php">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Main page</span>
           </a>
         </li>
         <li class="log_out">
@@ -92,48 +92,36 @@ if($_SESSION["name"]) {
     <div class="home-content">
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Klanten</div>
+          <div class="title">Reviews</div>
           <table style="width:100%">
               <tr>
                 <th>Naam</th>
-                <th>Gebruikersnaam</th>
-                <th>Email</th>
-                <th>Admin</th>
+                <th>Vakantie</th>
+                <th>bericht</th>
+                <th>Openbaar</th>
             </tr>
             <?php 
-              foreach($result as $user){
+              foreach($result as $recensies){
               ?>
             <tr>
               <form action ="crud.php" method="post">
-                <td style="display:none"><input type="text" name="UserID" value="<?php echo $user['UserID']; ?>"></td>
-                <td><input type="text" name="name" value="<?php echo $user['name']; ?>"></td>
-                <td><input type="text" name="gebruikersnaam" value="<?php echo $user['gebruikersnaam']; ?>"></td>
-                <td><input type="text" name="email" value="<?php echo $user['email']; ?>"></td>
-                <td><select name="admin">
-                <option selected ="selected" style="display:none"><?php echo $user['admin']; ?></option>
+                <td style="display:none"><input type="text" name="reisID" value="<?php echo $recensies['reisID']; ?>"></td>
+                <td><p type="text" name="name" value=""><?php echo $recensies['name']; ?></p></td>
+                <td><p type="text" name="eindbestemming" value=""><?php echo $recensies['eindbestemming']; ?></p></td>
+                <td><p type="text" name="bericht" value=""><?php echo $recensies['bericht']; ?></p></td>
+                <td><select name="gevalideerd">
+                <option selected ="selected" style="display:none"><?php echo $recensies['gevalideerd']; ?></option>
                 <option >0</option>
                 <option >1</option>
                 </select></td>
-                <td><input type="submit"name="update" value="Update"></td>
-                <td><input type="submit"name="delete" value="Delete"></td>
+                <td><input type="submit"name="recentieupdate" value="Update"></td>
+                <td><input type="submit"name="recentiedelete" value="Delete"></td>
               </form>
             </tr>
             <?php 
               }
             ?>
           </table>
-        </div>
-        <div class="top-sales box">
-          <div class="title">Meest verkochte vlucht</div>
-          <ul class="top-sales-details">
-            <li>
-            <a href="#">
-              <!-- <img src="images/sunglasses.jpg" alt=""> -->
-              <span class="product">Italië</span>
-            </a>
-            <span class="price">€206,99</span>
-          </li>
-          </ul>
         </div>
       </div>
     </div>

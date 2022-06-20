@@ -12,7 +12,9 @@ if (isset($_GET['message'])) {
     $message="Onjuiste gebruikersnaam en/of wachtwoord!";
   }
 }
-
+if(isset($_SESSION["name"])) {
+  header("Location: ./php/admin.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
