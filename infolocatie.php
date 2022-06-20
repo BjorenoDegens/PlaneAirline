@@ -57,17 +57,16 @@
         </div>
       </div>
     </header>
-    <div class="card-grid">
+    <div class="kaart-grid">
           <div class="box-up-moreleft">
-            <div class="card card-shadow">
-              <div class="card-header card-image">
-              <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=nijmegen%20heyendaalseweg%2098&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-              </iframe><a href="https://2piratebay.org"></a><br>
+            <div class="kaart kaart-shadow">
+              <div class="kaart-header kaart-image">
+              <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=rome&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"><a><br>  
               </div>
-              <div class="card-body">
-                <p>heyendaalseweg 98</p>
+              <div class="kaart-body">
+                <p>Rome, Italy</p>
               </div>
-              <div class="card-footer">
+              <div class="kaart-footer">
                 <button type="button" class="opklappen">Meer informatie</button>
                 <div class="inhoud" style="display:none;">
                 <p>Dit is het hoofdkantoor van onze organisatie, je kan ons bereiken via de contact pagina op dit website. als u vragen heeft kunt u ze daar stellen en we zullen zo snel mogelijk u terug mailen.</p>
@@ -129,7 +128,7 @@
               </div>
             </div>
             </div>
-          </div>
+          </div>  
 <script>
   var coll = document.getElementsByClassName("opklappen");
 var i;
