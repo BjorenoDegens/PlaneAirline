@@ -57,20 +57,16 @@
         </div>
       </div>
     </header>
-  <div class="container-info">
-    <a class="pijltje-terug" href="index.php" target="_parent" rel="nofollow">	&#8617;</a>
-    <div class="card-grid">
+    <div class="kaart-grid">
           <div class="box-up-moreleft">
-            <div class="card card-shadow">
-              <div class="card-header card-image">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=pisa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br>
-                </div>
+            <div class="kaart kaart-shadow">
+              <div class="kaart-header kaart-image">
+              <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=rome&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"><a><br>  
               </div>
+              <div class="kaart-body">
+                <p>Rome, Italy</p>
               </div>
-              <div class="card-body">
-                <p>Italië</p>
-              </div>
-              <div class="card-footer">
+              <div class="kaart-footer">
                 <button type="button" class="opklappen">Meer informatie</button>
                 <div class="inhoud" style="display:none;">
                 <p>De klokkentoren van Pisa
