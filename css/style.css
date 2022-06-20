@@ -21,9 +21,7 @@ header {
 header .box-left {
   background-color: aliceblue;
   width: 20%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
 }
 
 header .box-main {
@@ -31,9 +29,7 @@ header .box-main {
   justify-content: center;
   background-color: aliceblue;
   width: 60%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
 }
 
 header .box-main .box {
@@ -55,9 +51,6 @@ header .box-right {
   display: flex;
   background-color: aliceblue;
   width: 20%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 header .box-left .logo {
@@ -452,23 +445,20 @@ main .container .box-main-up .box-up-right p {
 }
 
 .pijltje-terug {
-  color: #fff;
+  color: #007bff;
   margin: 5px;
-  background-color: gray;
   font-weight: 700;
   font-size: 55px;
   padding: 14px 30px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-  width: 250px;
+  width: 1450px;
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
-  border: 1px solid white;
 }
 
 .pijltje-terug:hover {
   transition: 0.2s;
-  color: blue;
 }
 
 .pijltje-terug1 {
@@ -624,6 +614,10 @@ input .form-control ::placeholder {
 
 .section1 {
   position: relative;
+}
+
+body .body-overons {
+  background-color: aliceblue;
 }
 
 body .container-contact {
@@ -851,7 +845,6 @@ input[type="button"].fcf-btn-block {
 
 .card.card-shadow {
   border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -1212,12 +1205,19 @@ block1.a {
   display: none;
 }
 
+.overons-text{
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
 .row-overons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 100px;
   margin-left: 35px;
+  background-color: aliceblue;
 }
 
 .row-tussen {
@@ -1499,7 +1499,7 @@ block1.a {
 }
 
 .opklappen {
-  background-color: lightgrey;
+  background-color: #007bff;
   color: white;
   cursor: pointer;
   padding: 10px;
@@ -1511,7 +1511,7 @@ block1.a {
 }
 
 .active, .opklappen:hover {
-  background-color: lightgrey;
+  background-color: #0056b3;
 }
 
 .inhoud {
@@ -1612,3 +1612,212 @@ block1.a {
   display: inline-block;
   font-weight: bold;
 }
+
+<<<<<<< HEAD
+.kaart-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.kaart {
+=======
+
+.card-flip{
+  cursor: pointer;
+  width: 340px;
+  height:480px;
+}
+.front, .back{
+  width:340px;
+  height: 480px;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+.card-flip:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card-flip:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  transform:rotateY(180deg);
+}
+
+
+
+.card {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  --padding: 1rem;
+  background: white;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+  max-width: 300px;
+  overflow: hidden;
+<<<<<<< HEAD
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.kaart-body p {
+=======
+  margin-left: 50px;
+}
+
+.card-body p {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+<<<<<<< HEAD
+.kaart .kaart-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.kaart-header {
+=======
+.card.card-shadow {
+  border: none;
+}
+
+.card-header {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  font-size: 1.5rem;
+  padding: var(--padding);
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+<<<<<<< HEAD
+.kaart-header .kaart-image {
+=======
+.card-header.card-image {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  padding: 0;
+  overflow: hidden;
+}
+
+<<<<<<< HEAD
+.kaart-header .kaart-image > img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  aspect-ratio: 16 / 9;
+=======
+.card-header.card-image > img {
+  display: block;
+  width: 100%;
+  height: 300px;
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  object-fit: cover;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+
+<<<<<<< HEAD
+.kaart-body {
+=======
+
+.card-body {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  font-size: 0.9rem;
+  padding: 0 var(--padding);
+}
+
+<<<<<<< HEAD
+.kaart-footer {
+=======
+.card-footer {
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
+  margin-top: 1rem;
+  padding: var(--padding);
+  padding-top: 0;
+}
+
+<<<<<<< HEAD
+.opklappen {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .opklappen:hover {
+  background-color: lightgrey;
+}
+
+.inhoud {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: lightgrey;}
+=======
+.card-body-body {
+  font-size: 0.9rem;
+  padding: 0 var(--padding);
+}
+
+
+.card-footer-back {
+  margin-top: 1rem;
+  padding: var(--padding);
+  padding-top: 0;
+}
+
+
+.card.card-shadow-back {
+  border: none;
+}
+
+.card-body-back h1 {
+  font-size: 25px;
+  font-weight: normal;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20px;
+}
+
+.card-body-back h2 {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20px;
+}
+
+.card-body-back h3 {
+  font-size: 10px;
+  font-weight: normal;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20px;
+}
+
+
+.card-body h1 {
+  font-size: 25px;
+  font-weight: normal;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card-body h2 {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card-body h3 {
+  font-size: 10px;
+  font-weight: normal;
+  font-family: "Josefin Sans", sans-serif;
+}
+>>>>>>> b5aba2d858baa7e712734b086872545319abe760
