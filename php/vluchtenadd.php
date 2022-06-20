@@ -88,11 +88,7 @@ if($_SESSION["name"]) {
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Zoeken...">
-        <i class='bx bx-search' ></i>
+        <span class="dashboard">Vluchten</span>
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
@@ -190,6 +186,13 @@ sidebarBtn.onclick = function() {
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
  </script>
+ <script type="text/javascript">
+  function AlertIt() {
+  var answer = confirm ("Weet u zeker dat u wilt uitloggen?")
+  if (answer)
+  window.location.href="uitlog.php";
+  }
+  </script>
 
 </body>
 </html>
