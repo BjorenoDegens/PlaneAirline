@@ -68,6 +68,7 @@ if($_SESSION["name"]) {
             </a></span>
             </ul>
             
+            
           </div>
   </div>
   <section class="home-section">
@@ -76,10 +77,7 @@ if($_SESSION["name"]) {
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Zoeken...">
-        <i class='bx bx-search' ></i>
-      </div>
+      
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
         <span class="admin_name"><?php echo $_SESSION["name"]?></span>
