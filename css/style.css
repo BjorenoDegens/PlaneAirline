@@ -1613,7 +1613,6 @@ block1.a {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 .kaart-grid {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1624,8 +1623,6 @@ block1.a {
   align-items: center;
 }
 
-.kaart {
-=======
 
 .card-flip{
   cursor: pointer;
@@ -1652,96 +1649,70 @@ block1.a {
 
 
 .card {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
   --padding: 1rem;
   background: white;
   border: 1px solid #777;
   border-radius: 0.25rem;
   max-width: 300px;
   overflow: hidden;
-<<<<<<< HEAD
   margin-top: 20px;
   margin-left: 50px;
 }
 
 .kaart-body p {
-=======
+  margin-top: 20px;
   margin-left: 50px;
 }
 
-.card-body p {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
-  font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
-}
 
-<<<<<<< HEAD
 .kaart .kaart-shadow {
   border: none;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .kaart-header {
-=======
-.card.card-shadow {
   border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-header {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
+.kaart-header {
   font-size: 1.5rem;
   padding: var(--padding);
   padding-bottom: 0;
   margin-bottom: 0.5rem;
 }
 
-<<<<<<< HEAD
 .kaart-header .kaart-image {
-=======
-.card-header.card-image {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
   padding: 0;
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .kaart-header .kaart-image > img {
   display: block;
   width: 100%;
   max-height: 200px;
   aspect-ratio: 16 / 9;
-=======
-.card-header.card-image > img {
-  display: block;
-  width: 100%;
-  height: 300px;
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
   object-fit: cover;
   object-position: center;
   transition: 200ms transform ease-in-out;
 }
 
-<<<<<<< HEAD
-.kaart-body {
-=======
+
 
 .card-body {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
   font-size: 0.9rem;
   padding: 0 var(--padding);
 }
 
-<<<<<<< HEAD
+
 .kaart-footer {
-=======
-.card-footer {
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
   margin-top: 1rem;
   padding: var(--padding);
   padding-top: 0;
 }
 
-<<<<<<< HEAD
+
+
 .opklappen {
   background-color: lightgrey;
   color: white;
@@ -1763,61 +1734,3 @@ block1.a {
   display: none;
   overflow: hidden;
   background-color: lightgrey;}
-=======
-.card-body-body {
-  font-size: 0.9rem;
-  padding: 0 var(--padding);
-}
-
-
-.card-footer-back {
-  margin-top: 1rem;
-  padding: var(--padding);
-  padding-top: 0;
-}
-
-
-.card.card-shadow-back {
-  border: none;
-}
-
-.card-body-back h1 {
-  font-size: 25px;
-  font-weight: normal;
-  font-family: "Josefin Sans", sans-serif;
-  margin-left: 20px;
-}
-
-.card-body-back h2 {
-  font-weight: normal;
-  font-size: 15px;
-  font-family: "Josefin Sans", sans-serif;
-  margin-left: 20px;
-}
-
-.card-body-back h3 {
-  font-size: 10px;
-  font-weight: normal;
-  font-family: "Josefin Sans", sans-serif;
-  margin-left: 20px;
-}
-
-
-.card-body h1 {
-  font-size: 25px;
-  font-weight: normal;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.card-body h2 {
-  font-weight: normal;
-  font-size: 15px;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.card-body h3 {
-  font-size: 10px;
-  font-weight: normal;
-  font-family: "Josefin Sans", sans-serif;
-}
->>>>>>> b5aba2d858baa7e712734b086872545319abe760
