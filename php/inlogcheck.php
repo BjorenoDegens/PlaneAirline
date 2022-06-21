@@ -29,17 +29,17 @@
     }
 
     // Registeer link to
-    if (isset($_POST['registeer']))
+    else if (isset($_POST['registeer']))
     {
         header("Location:../registeer.php");
     }
     // wachtwoordvergeten link to
-    if (isset($_POST['wwforgot']))
+    else if (isset($_POST['wwforgot']))
     {
         header("Location:../wachtwoordvergeten.php");
     }
     // reserveer
-    if (isset($_POST['reserveer'])){
+    else if (isset($_POST['reserveer'])){
         if($_SESSION["userID"]) {
             $sql = "INSERT INTO reizen (eindbestemming,vertrek,aankomst_terug,vliegveld, volwassenen,kinderen)
             VALUES (:eindbestemming,:vertrek,:aankomst_terug, :vliegveld,:volwassenen,:kinderen)";
@@ -70,6 +70,6 @@
     }
 
     
-    header("Location:../inlog.php");
+    else header("Location:../inlog.php");
     exit();
 ?>

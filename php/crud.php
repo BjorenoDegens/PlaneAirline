@@ -122,6 +122,7 @@ else if(isset($_POST['deletebestemmingen'])) {
     header('Location: vluchtenadd.php');
     exit();
 }
+// CRUD contact.php Database contact
 else if(isset($_POST['contact'])) {
     $sql = "INSERT INTO contact (naam,email,message)
 	 VALUES (:naam,:email,:message)";
@@ -142,7 +143,7 @@ else if(isset($_POST['contactdelete'])) {
     header('Location: berichten.php');
     exit();
 }
-
+// CRUD review.php Database recentie
 else if(isset( $_POST['recentieupdate'])) {
     $sql = "UPDATE recensies SET gevalideerd = :gevalideerd
     WHERE reisID = :reisID";
@@ -161,5 +162,18 @@ else if(isset($_POST['recentiedelete'])) {
     $stmt->execute();
     header('Location: review.php');
     exit();
-}else header('Location: ../login.php');
+}
+// CRUD recensie.php Database recensie
+else if(isset($_POST['recensiesubmit'])) {
+    $sql = "INSERT INTO recensies (userID,reisID,bericht)
+	 VALUES (:userID,:reisID,:bericht)";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":userID", $_POST['name']);
+    $stmt->bindParam(":reisID", $_POST['eindbestemming']);
+    $stmt->bindParam(":bericht", $_POST['bericht']);
+    $stmt->execute();
+    header('Location: ../recensie.php');
+    exit();
+}
+else header('Location: ../login.php');
     exit();
