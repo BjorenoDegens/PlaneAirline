@@ -8,7 +8,6 @@ $stmt->execute();
 $result = $stmt->fetchAll();
 if($_SESSION["name"]) {
   if($_SESSION['admin'] == 1){
-
 ?>
 <!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->

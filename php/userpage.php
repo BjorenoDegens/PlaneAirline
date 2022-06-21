@@ -1,10 +1,15 @@
 <?php
 session_start();
-  if($_SESSION["name"]) {
+  if($_SESSION["userID"]) {
 }else header('Location: inlog.php');
+require_once('connect.php');
+$sql = "SELECT * FROM boeking b JOIN user u ON b.userID = u.UserID JOIN reizen r ON b.reisID = r.reisID WHERE u.userID = :userID";
+$stmt = $connect->prepare($sql);
+$stmt->bindParam(':userID', $_SESSION['userID']);
+$stmt->execute();
+$result = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
@@ -81,111 +86,38 @@ session_start();
     </nav>
 
     <div class="home-content">
-      <!-- <div class="overview-boxes">
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Order</div>
-            <div class="number">40,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bx-cart-alt cart'></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Sales</div>
-            <div class="number">38,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-add cart two' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Profit</div>
-            <div class="number">$12,876</div>
-            <div class="indicator">
-              <i class='bx bx-up-arrow-alt'></i>
-              <span class="text">Up from yesterday</span>
-            </div>
-          </div>
-          <i class='bx bx-cart cart three' ></i>
-        </div>
-        <div class="box">
-          <div class="right-side">
-            <div class="box-topic">Total Return</div>
-            <div class="number">11,086</div>
-            <div class="indicator">
-              <i class='bx bx-down-arrow-alt down'></i>
-              <span class="text">Down From Today</span>
-            </div>
-          </div>
-          <i class='bx bxs-cart-download cart four' ></i>
-        </div>
-      </div> -->
-
       <div class="sales-boxes">
         <div class="recent-sales box">
           <div class="title">Recente Boekingen</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Datum</li>
-              <li><a href="#">30 Jun 2022</a></li>
-              <!-- <li><a href="#">09 Mei 2022</a></li>
-              <li><a href="#">05 Apr 2022</a></li>
-              <li><a href="#">17 Mei 2022</a></li>
-              <li><a href="#">26 Feb 2022</a></li>
-              <li><a href="#">12 Jan 2022</a></li>
-              <li><a href="#">02 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li>
-              <li><a href="#">15 Jan 2022</a></li>
-              <li><a href="#">07 Mei 2022</a></li> -->
-            </ul>
-            <ul class="details">
-            <li class="topic">Klant</li>
-            <li><a href="#"><?php echo $_SESSION["name"]?></a></li>
-            <!-- <li><a href="#">Margriet Amalia</a></li>
-            <li><a href="#">Dora de Jong</a></li>
-            <li><a href="#">Diana van der Vliet</a></li>
-            <li><a href="#">Peter Jansen</a></li>
-            <li><a href="#">Alex Sloot</a></li>
-            <li><a href="#">Hans Rongen</a></li>
-            <li><a href="#">Koen van Dijk</a></li>
-             <li><a href="#">Tim Janssen</a></li> -->
-          </ul>
-          <ul class="details">
-            <li class="topic">Bestellingen</li>
-            <li><a href="#">€</a></li>
-            <!--<li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-            <li><a href="#">€</a></li>
-          </ul> -->
-          </div>
-          <div class="button">
-            <a href="#">Zie alle bestellingen</a>
-          </div>
-        </div>
-        <div class="top-sales box">
-          <div class="title">Meest verkochte vlucht</div>
-          <ul class="top-sales-details">
-            <li>
-
-              <span class="product">Italië</span>
-            </a>
-            <span class="price">€206,99</span>
-          </li>
-
-          </ul>
+          <table style="width:100%">
+              <tr>
+                <th>Naam</th>
+                <th>Bestemming</th>
+                <th>Vliegveld</th>
+                <th>Vertrek heen</th>
+                <th>Vertrek terug</th>
+                <th>Volwassenen</th>
+                <th>Kinderen</th>
+            </tr>
+            <?php 
+              foreach($result as $user){
+              ?>
+            <tr>
+              <form action ="crud.php" method="post">
+                <td style="display:none"><input type="text" name="UserID" value="<?php echo $user['UserID']; ?>"></td>
+                <td><p type="text" name="name"><?php echo $user['name']; ?></p></td>
+                <td><p type="text" name="gebruikersnaam"><?php echo $user['eindbestemming']; ?></p></td>
+                <td><p type="text" name="email"><?php echo $user['vliegveld']; ?></p></td>
+                <td><p type="text" name="email"><?php echo $user['vertrek']; ?></p></td>
+                <td><p type="text" name="email"><?php echo $user['aankomst_terug']; ?></p></td>
+                <td><p type="text" name="email"><?php echo $user['volwassenen']; ?></p></td>
+                <td><p type="text" name="email"><?php echo $user['kinderen']; ?></p></td>
+              </form>
+            </tr>
+            <?php 
+              }
+            ?>
+          </table>
         </div>
       </div>
     </div>
