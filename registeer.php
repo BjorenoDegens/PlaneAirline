@@ -110,19 +110,7 @@
               ></span
             >
           </div>
-
-          <button type="submit" href="/">Registreren</button>
-
-          <button type="submit" name="registeer">Submit</button>
-
-          <input type="submit" name="registeer">Submit</input>
-
-              <a href="privacypolicy.php"
-                >Privacy Poalicy van PlaneAirline.</a
-              ></span
-            >
-          </div>
-          <button type="submit" name="registeer">Submit</button>
+          <button type="submit" name="registeer">Registeer</button>
         </form>
       </div>
     </main>

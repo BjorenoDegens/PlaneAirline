@@ -2,7 +2,7 @@
 session_start();
 require_once('connect.php');
 
-$sql = "SELECT user.name, reizen.* FROM boeking JOIN user ON boeking.userID = user.UserID JOIN reizen ON boeking.reisID = reizen.reisID  WHERE user.userID = 3";
+$sql = "SELECT user.name, reizen.* FROM boeking JOIN user ON boeking.userID = user.UserID JOIN reizen ON boeking.reisID = reizen.reisID";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();
@@ -28,10 +28,6 @@ if($_SESSION["name"]) {
    </head>
 <body>
 <div class="sidebar">
-    <div class="logo-details">
-      <i></i>
-      <span class="logo_name">PlaneAirline</span>
-    </div>
       <ul class="nav-links">
         <li>
           <a href="admin.php"  >
