@@ -1623,7 +1623,32 @@ block1.a {
   align-items: center;
 }
 
-.kaart {
+
+.card-flip{
+  cursor: pointer;
+  width: 340px;
+  height:480px;
+}
+.front, .back{
+  width:340px;
+  height: 480px;
+  backface-visibility:hidden;
+  position:absolute;
+  transition: transform .5s linear;
+}
+.card-flip:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card-flip:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  transform:rotateY(180deg);
+}
+
+
+
+.card {
   --padding: 1rem;
   background: white;
   border: 1px solid #777;
@@ -1635,11 +1660,17 @@ block1.a {
 }
 
 .kaart-body p {
-  font-size: 25px;
-  font-family: "Josefin Sans", sans-serif;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
+
 .kaart .kaart-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.kaart-header {
   border: none;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1666,16 +1697,21 @@ block1.a {
   transition: 200ms transform ease-in-out;
 }
 
-.kaart-body {
+
+
+.card-body {
   font-size: 0.9rem;
   padding: 0 var(--padding);
 }
+
 
 .kaart-footer {
   margin-top: 1rem;
   padding: var(--padding);
   padding-top: 0;
 }
+
+
 
 .opklappen {
   background-color: lightgrey;
