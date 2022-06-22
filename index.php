@@ -126,9 +126,9 @@
                 <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.php"
+                  href="recensie.php"
                   target="_parent"
-                  >Reserveren</a
+                  >Recensie</a
                 >
                   <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
@@ -164,9 +164,9 @@
                 <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.php"
+                  href="recensie.php"
                   target="_parent"
-                  >Reserveren</a
+                  >Recensie</a
                 >
                 <div class="rate">
                   <input type="radio" id="star5" name="rate" value="5" />
@@ -203,9 +203,9 @@
                 <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.php"
+                  href="recensie.php"
                   target="_parent"
-                  >Reserveren</a
+                  >Recensie</a
                 >
                 <div class="rate">
                   <input type="radio" id="star5" name="rate" value="5" />
@@ -238,9 +238,9 @@
                 <a href="infolocatie.php" class="btn">Info</a>
                 <a
                   class="btn btn-outline"
-                  href="reserveer.php"
+                  href="recensie.php"
                   target="_parent"
-                  >Reserveren</a>
+                  >Recensie</a>
                   <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
@@ -278,9 +278,9 @@
             <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
-              href="/reserveer.php"
+              href="recensie.php"
               target="_parent"
-              >Reserveren</a
+              >Recensie</a
             >
             <div class="rate">
               <input type="radio" id="star5" name="rate" value="5" />
@@ -315,9 +315,9 @@
             <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
-              href="reserveer.php"
+              href="recensie.php"
               target="_parent"
-              >Reserveren</a
+              >Recensie</a
             >
             <div class="rate">
               <input type="radio" id="star5" name="rate" value="5" />
@@ -352,9 +352,9 @@
             <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
-              href="reserveer.php"
+              href="recensie.php"
               target="_parent"
-              >Reserveren</a
+              >Recensie</a
             >
             <div class="rate">
               <input type="radio" id="star5" name="rate" value="5" />
@@ -387,9 +387,9 @@
             <a href="infolocatie.php" class="btn">Info</a>
             <a
               class="btn btn-outline"
-              href="reserveer.php"
+              href="recensie.php"
               target="_parent"
-              >Reserveren</a>
+              >Recensie</a>
               <div class="rate">
                 <input type="radio" id="star5" name="rate" value="5" />
                 <label for="star5" title="text">5 stars</label>
