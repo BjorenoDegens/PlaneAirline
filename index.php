@@ -99,7 +99,7 @@
       <div class="container">
         <div class="box-main-up">
           <div class="box-up-left">
-            <p>Reserveringen</p>
+            <p></p>
             <div class="button-hover-reserveer" align="center">
               <a class="button-reserveer" href="reserveer.php" target="_parent"
                 >Reserveren</a
