@@ -175,5 +175,19 @@ else if(isset($_POST['recensiesubmit'])) {
     header('Location: ../recensie.php');
     exit();
 }
+// CRUD usersettings.php Database user
+else if(isset( $_POST['updatemyself'])) {
+    $sql = "UPDATE user SET name = :name, gebruikersnaam = :gebruikersnaam, password = :password, email = :email
+    WHERE UserID = :UserID";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(":UserID", $_POST['UserID']);
+    $stmt->bindParam(":name", $_POST['name']);
+    $stmt->bindParam(":gebruikersnaam", $_POST['gebruikersnaam']);
+    $stmt->bindParam(":password", $_POST['password']);
+    $stmt->bindParam(":email", $_POST['email']);
+    $stmt->execute();
+    header('Location: usersettings.php');
+    exit();
+}
 else header('Location: ../login.php');
     exit();

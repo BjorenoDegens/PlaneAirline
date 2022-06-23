@@ -3,7 +3,7 @@ session_start();
   if($_SESSION["userID"]) {
 }else header('Location: inlog.php');
 require_once('connect.php');
-$sql = "SELECT * FROM boeking b JOIN user u ON b.userID = u.UserID JOIN reizen r ON b.reisID = r.reisID WHERE u.userID = :userID";
+$sql = "SELECT * FROM user u WHERE u.userID = :userID";
 $stmt = $connect->prepare($sql);
 $stmt->bindParam(':userID', $_SESSION['userID']);
 $stmt->execute();
@@ -23,13 +23,13 @@ $result = $stmt->fetchAll();
     <div class="sidebar">
       <ul class="nav-links">
         <li>
-          <a href="#" class="active">
+          <a href="userpage.php" >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="usersettings.php">
+          <a href="#" class="active">
             <i class='bx bx-box' ></i>
             <span class="links_name">User settings</span>
           </a>
@@ -64,16 +64,13 @@ $result = $stmt->fetchAll();
     <div class="home-content">
       <div class="sales-boxes">
         <div class="recent-sales box">
-          <div class="title">Uw Recente Boekingen</div>
+          <div class="title">Uw Account</div>
           <table style="width:100%">
               <tr>
                 <th>Naam</th>
-                <th>Bestemming</th>
-                <th>Vliegveld</th>
-                <th>Vertrek heen</th>
-                <th>Vertrek terug</th>
-                <th>Volwassenen</th>
-                <th>Kinderen</th>
+                <th>Gebruikersnaam</th>
+                <th>Password</th>
+                <th>Email</th>
             </tr>
             <?php 
               foreach($result as $user){
@@ -81,13 +78,11 @@ $result = $stmt->fetchAll();
             <tr>
               <form action ="crud.php" method="post">
                 <td style="display:none"><input type="text" name="UserID" value="<?php echo $user['UserID']; ?>"></td>
-                <td><p type="text" name="name"><?php echo $user['name']; ?></p></td>
-                <td><p type="text" name="gebruikersnaam"><?php echo $user['eindbestemming']; ?></p></td>
-                <td><p type="text" name="email"><?php echo $user['vliegveld']; ?></p></td>
-                <td><p type="text" name="email"><?php echo $user['vertrek']; ?></p></td>
-                <td><p type="text" name="email"><?php echo $user['aankomst_terug']; ?></p></td>
-                <td><p type="text" name="email"><?php echo $user['volwassenen']; ?></p></td>
-                <td><p type="text" name="email"><?php echo $user['kinderen']; ?></p></td>
+                <td><input type="text" name="name" value="<?php echo $user['name']; ?>"></td>
+                <td><input type="text" name="gebruikersnaam" value="<?php echo $user['gebruikersnaam']; ?>"></td>
+                <td><input type="text" name="password"value="<?php echo $user['password']; ?>"></td>
+                <td><input type="text" name="email" value="<?php echo $user['email']; ?>"></td>
+                <td><input type="submit"name="updatemyself" value="Update"></td>
               </form>
             </tr>
             <?php 
