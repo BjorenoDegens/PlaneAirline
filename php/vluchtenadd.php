@@ -164,7 +164,7 @@ if($_SESSION["name"]) {
             <div class="card card-shadow">
               <form action="crud.php" method="post">
                 <input type="text" name="bestemming" placeholder="Bestemmingen...">
-                <input type="text" name="vliegveld" placeholder="vliegveld...">
+                <input type="text" name="vliegvelden" placeholder="vliegveld...">
                 <button class="btn" name="addvliegbestemming">toevoegen</button>
                 </form>
               </div>

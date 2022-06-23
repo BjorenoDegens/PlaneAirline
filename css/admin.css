@@ -519,3 +519,6 @@ td {
   padding: var(--padding);
   padding-top: 0;
 }
+.infobestand {
+  color: gray;
+}
