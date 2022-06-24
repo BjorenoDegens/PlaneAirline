@@ -16,6 +16,7 @@ header {
   flex-direction: row;
   height: 70px;
   width: 100%;
+  border-bottom: 1px solid #007bff;
 }
 
 header .box-left {
@@ -191,25 +192,22 @@ main .container .box-main-up {
 }
 main .container .box-main-up .box-up-left {
   display: flex;
-  background-color: white;
-  width: 33%;
+  /* background-color: white; */
+  width: 50%;
   border-radius: 5px;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   flex-direction: column;
 }
 
 main .container .box-main-up .box-up-right {
   display: flex;
-  background-color: white;
   width: 33%;
   border-radius: 5px;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-top: 100px;
 }
 main .container .box-main-down {
   display: flex;
@@ -318,21 +316,38 @@ main .container .box-main-up .box-up-right p {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 26px;
   padding: 20px;
   width: 100px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: 5px;
+  margin-left: 25px;
   text-decoration: none;
 }
 
 .button-hover-reserveer:hover {
   transform: scale(1.025);
+ 
 }
 
-.button-hover-reserveer:hover {
+.button-reviews {
+  border-radius: 4px;
+  background: linear-gradient(to right, #287dfc, #287dfc) !important;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-hover-reviews:hover {
   transform: scale(1.025);
+ 
 }
 
 .form-btn {
@@ -489,6 +504,8 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   font-size: 25px;
   font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  padding: 0px 30px;
 }
 
 .submit-btn2 {
@@ -823,7 +840,7 @@ input[type="button"].fcf-btn-block {
   gap: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 95%;
   align-items: center;
 }
 
@@ -835,7 +852,6 @@ input[type="button"].fcf-btn-block {
   max-width: 300px;
   overflow: hidden;
   margin-top: 20px;
-  margin-left: 50px;
 }
 
 .card-body p {
@@ -855,6 +871,7 @@ input[type="button"].fcf-btn-block {
 }
 
 .card-header.card-image {
+  height: 300px;
   padding: 0;
   overflow: hidden;
 }
@@ -862,7 +879,7 @@ input[type="button"].fcf-btn-block {
 .card-header.card-image > img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 285px;
   object-fit: cover;
   object-position: center;
   transition: 200ms transform ease-in-out;
@@ -919,6 +936,9 @@ input[type="button"].fcf-btn-block {
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 25px;
+  width: 97.5%;
+  border-radius: 20px;
 }
 
 /* Next & previous buttons */
@@ -1013,10 +1033,11 @@ input[type="button"].fcf-btn-block {
 
 .image-slideshow {
   height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 54px 55px,
+    rgba(0, 0, 0, 0.17) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+  border-radius: 10px;
+  }
 
 *,
 *:before,
@@ -1696,7 +1717,6 @@ block1.a {
   object-position: center;
   transition: 200ms transform ease-in-out;
 }
-
 
 
 .card-body {
