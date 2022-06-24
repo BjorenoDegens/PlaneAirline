@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #007bff;
+  }
+  
+  header .box-left {
+    background-color: aliceblue;
+    width: 20%;
+    
+  }
+  
+  header .box-main {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 60%;
+    
+  }
+  
+  header .box-main .box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header .box-main .box .text {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+  }
+  
+  header .box-right {
+    display: flex;
+    background-color: aliceblue;
+    width: 20%;
+  }
+  
+  header .box-left .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  
+  header .box .box-logo-login a {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 40px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .search {
+    margin-top: 25px;
+    position: relative;
+    border-radius: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    width: 250px;
+    background-color: aliceblue;
+  }
+  
+  .search .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 30px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .search .icon::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #287dfc;
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
+  }
+  
+  .search .icon::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 6px;
+    background: #287dfc;
+    transform: translate(3px, 3px) rotate(315deg);
+  }
+  
+  .search .input {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+  }
+  
+  .search .input input {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 0;
+    background-color: aliceblue;
+  }
+  
+  .clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clear::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: black;
+  }
+  
+  .clear::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    transform: rotate(315deg);
+    background-color: black;
+  }
+  
+  .input ::placeholder {
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+    color: black;
+  }
+  
+
+  .form-btn {
+    display: flex;
+    margin: 10px;
+  }
+
+  .submit-btn1 {
+    color: black;
+    left: 0;
+    top: 0;
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    padding: 0px 30px;
+  }
+
+  
+
+
+  body .container-reviews {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-width: 100%;
+  }
+
+  body .container-reviews-onder{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+
+  .container-reviews-main {
+    width: 100px;
+    word-break: break-word;
+  }
+
+  .container-reviews-main p{
+    margin-top: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    background: rgba(240, 248, 255, 0.455);
+    width: 340px;
+  }
+
+  .reviewbox{
+    margin: 20px;
+    height: 200px;
+    width:  400px;
+    background-color: black;
+    border-radius: 10px ;
+    background-image: url("../Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.reviewbox img {
+  background-size: cover;
+  background-position: center;
+}
+
+.reviewbox-onder{
+  margin: 20px;
+  height: 200px;
+  width:  400px;
+  background-color: black;
+  border-radius: 10px ;
+  background-image: url("../Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+  .reviewbox-onder{
+    margin: 20px;
+    height: 200px;
+    width:400px;
+    background-color: blue;
+    border-radius: 10px ;
+  }
+
+.pijltje-terug {
+    color: #007bff;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 55px;
+    padding: 14px 30px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    width: 1450px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+  }
+  
+  .pijltje-terug:hover {
+    transition: 0.2s;
+  }
+
+  .datum  {
+    float: right;
+    margin: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;   
+  }
+

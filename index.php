@@ -99,14 +99,21 @@
       <div class="container">
         <div class="box-main-up">
           <div class="box-up-left">
-            <p>Reserveringen</p>
+            <p></p>
             <div class="button-hover-reserveer" align="center">
               <a class="button-reserveer" href="reserveer.php" target="_parent"
                 >Reserveren</a
               >
             </div>
           </div>
+          <div class="box-up-right">
+          <div class="button-hover-reviews" align="center">
+            <a class="button-reviews" href="reviewsbekijken.php" target="_parent"
+              >Reviews bekijken</a
+            >
+          </div>
         </div>
+      </div>
         <div class="card-grid">
           <div class="box-up-moreleft">
             <div class="card card-shadow">
