@@ -193,7 +193,7 @@ main .container .box-main-up {
 main .container .box-main-up .box-up-left {
   display: flex;
   /* background-color: white; */
-  width: 33%;
+  width: 50%;
   border-radius: 5px;
   height: 200px;
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -204,13 +204,10 @@ main .container .box-main-up .box-up-left {
 
 main .container .box-main-up .box-up-right {
   display: flex;
-  background-color: white;
   width: 33%;
   border-radius: 5px;
   height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-top: 100px;
 }
 main .container .box-main-down {
   display: flex;
@@ -333,6 +330,25 @@ main .container .box-main-up .box-up-right p {
  
 }
 
+.button-reviews {
+  border-radius: 4px;
+  background: linear-gradient(to right, #287dfc, #287dfc) !important;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-hover-reviews:hover {
+  transform: scale(1.025);
+ 
+}
 
 .form-btn {
   display: flex;
@@ -488,6 +504,8 @@ main .container .box-main-up .box-up-right p {
   top: 0;
   font-size: 25px;
   font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  padding: 0px 30px;
 }
 
 .submit-btn2 {
@@ -853,6 +871,7 @@ input[type="button"].fcf-btn-block {
 }
 
 .card-header.card-image {
+  height: 300px;
   padding: 0;
   overflow: hidden;
 }
@@ -860,7 +879,7 @@ input[type="button"].fcf-btn-block {
 .card-header.card-image > img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 285px;
   object-fit: cover;
   object-position: center;
   transition: 200ms transform ease-in-out;
