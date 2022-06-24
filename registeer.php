@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style="background-image: url('Afbeeldingen\ss-rating-review-stars-800x450.jpg')">
     <header>
       <div class="box-left">
         <img
