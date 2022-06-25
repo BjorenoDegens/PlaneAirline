@@ -100,6 +100,10 @@ if($_SESSION["name"]) {
                 <th>bericht</th>
                 <th>Openbaar</th>
             </tr>
+            <div class="infobestand">
+            <p>Ontzichtbaar = 0</p>
+            <p>Openbaar = 1</p>
+            </div>
             <?php 
               foreach($result as $recensies){
               ?>

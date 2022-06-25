@@ -96,7 +96,7 @@
                       <div class="card-footer">
                         <a
                           class="btn btn-outline"
-                          href="reserveer.php"
+                          href="contact.php"
                           target="_parent"
                           >Contacteren</a>
                       </div>
@@ -119,7 +119,7 @@
                         <div class="card-footer-back">
                             <a
                               class="btn btn-outline"
-                              href="reserveer.php"
+                              href="contact.php"
                               target="_parent"
                               >Contacteren</a>
                           </div>
@@ -137,7 +137,7 @@
                         <div class="card-footer">
                           <a
                             class="btn btn-outline"
-                            href="reserveer.php"
+                            href="contact.php"
                             target="_parent"
                             >Contacteren</a>
                         </div>
@@ -160,7 +160,7 @@
                           <div class="card-footer-back">
                               <a
                                 class="btn btn-outline"
-                                href="reserveer.php"
+                                href="contact.php"
                                 target="_parent"
                                 >Contacteren</a>
                             </div>
@@ -180,7 +180,7 @@
                         <div class="card-footer">
                           <a
                             class="btn btn-outline"
-                            href="reserveer.php"
+                            href="contact.php"
                             target="_parent"
                             >Contacteren</a>
                         </div>
@@ -203,7 +203,7 @@
                           <div class="card-footer-back">
                               <a
                                 class="btn btn-outline"
-                                href="reserveer.php"
+                                href="contact.php"
                                 target="_parent"
                                 >Contacteren</a>
                             </div>
