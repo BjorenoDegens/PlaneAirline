@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 760px;
+}
+
+
+.scroll-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 1000px;
+    scroll-behavior: smooth;
+   
+}
+.child-element {
+    width: 250px;
+    display: inline-block;
+    height: 550px;
+   
+}
+.child1 {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+.child2 {
+    background-color: orange;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child3 {
+    background-color: rgb(93, 154, 130);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child4 {
+    background-color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child5 {
+    background-color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child6 {
+    background-color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child7{
+    background-color:turquoise;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.child8{
+    background-color:yellow;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pijltje-terug1 {
+    font-size: 72px;
+      text-decoration: none;
+      color: rgb(20, 85, 86);
+      margin-right: 10px;
+      position: absolute;
+      left: 30px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+  }
+  
+  header .box-left {
+    background-color: aliceblue;
+    width: 20%;
+    
+  }
+  
+  header .box-main {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 60%;
+    
+  }
+  
+  header .box-main .box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header .box-main .box .text {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+  }
+  
+  header .box-right {
+    display: flex;
+    background-color: aliceblue;
+    width: 20%;
+  }
+  
+  header .box-left .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  
+  header .box .box-logo-login a {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 40px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .form-btn {
+    margin-right: 50px;
+  }
+
+ .form-btn2{
+  margin-right: 40px;
+ }
+
+.search {
+  margin-top: 25px;
+  position: relative;
+  border-radius: 60px;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 250px;
+  background-color: aliceblue;
+}
+
+.search .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 30px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #287dfc;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+}
+
+.search .icon::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  background: #287dfc;
+  transform: translate(3px, 3px) rotate(315deg);
+}
+
+.search .input {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.search .input input {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 0;
+  background-color: aliceblue;
+}
+
+.clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.clear::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  transform: rotate(315deg);
+  background-color: black;
+}
+
+.bottom-info{
+    height: 760px;
+    width: 100%;
+    background-color:rgb(192, 175, 175);
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+.scroll-tekst{
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 {
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 993px;
+    margin-top: 200px;
+    scroll-behavior: smooth;
+   
+}
+.kind-element {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+.kind1 {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+.kind2 {
+    background-color: orange;
+}
+.kind3 {
+    background-color: rgb(93, 154, 130);
+}
+.kind4 {
+    background-color: green;
+}
+.kind5 {
+    background-color: blue;
+}
+.kind6 {
+    background-color: red;
+}
+.kind7{
+    background-color:turquoise;
+}
+.kind8{
+    background-color:yellow;
+}

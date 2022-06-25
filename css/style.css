@@ -1648,7 +1648,7 @@ block1.a {
 
 
 
-.card {
+.kaart {
   --padding: 1rem;
   background: white;
   border: 1px solid #777;
@@ -1697,9 +1697,7 @@ block1.a {
   transition: 200ms transform ease-in-out;
 }
 
-
-
-.card-body {
+.kaart-body {
   font-size: 0.9rem;
   padding: 0 var(--padding);
 }
@@ -1734,3 +1732,14 @@ block1.a {
   display: none;
   overflow: hidden;
   background-color: lightgrey;}
+
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+   
+  }
+.kaart {
+      display: inline-block;
+    }
