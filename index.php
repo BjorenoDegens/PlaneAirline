@@ -194,11 +194,7 @@
             <img src="C:\xampp\htdocs\Crud\PlaneAirline\Afbeeldingen\Vakantiefoto1.jpg" alt="">
 
             <div class="card card-shadow">
-              <div class="card-header card-image">
-                <img
-                  src="Afbeeldingen/drew-dizzy-graham-cB4Uqoc9D9k-unsplash.jpg"
-                />
-              </div>
+              
               <div class="card-body">
                 <p>Turkije</p>
                 <br />
