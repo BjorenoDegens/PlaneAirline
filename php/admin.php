@@ -94,6 +94,10 @@ if($_SESSION["name"]) {
                 <th>Email</th>
                 <th>Admin</th>
             </tr>
+            <div class="infobestand">
+            <p>User = 0</p>
+            <p>Admin = 1</p>
+            </div>
             <?php 
               foreach($result as $user){
               ?>

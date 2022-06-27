@@ -200,8 +200,6 @@ header {
     flex-direction: row;
     height: auto;
     max-width: 100%;
-    justify-content: center;
-    align-items: center;
   }
 
   body .container-reviews-onder{
@@ -227,7 +225,7 @@ header {
   .reviewbox{
     margin: 20px;
     height: 200px;
-    width:  500px;
+    width:  400px;
     background-color: black;
     border-radius: 10px ;
     background-image: url("../Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg");
@@ -243,7 +241,7 @@ header {
 .reviewbox-onder{
   margin: 20px;
   height: 200px;
-  width:  600px;
+  width:  400px;
   background-color: black;
   border-radius: 10px ;
   background-image: url("../Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg");

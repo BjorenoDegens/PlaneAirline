@@ -70,7 +70,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- <div class="reviewbox">
+                <div class="reviewbox">
                   <div class="datum">19-06-2005</div>
                     <div class="container-reviews-main">
                         <p>Naam locatie: Portugal
@@ -99,6 +99,7 @@
                           Review: Hopelijk klopt deze tekst in het vakje hoe ik het wil hebben anders word ik boos :)
                       </p>
                   </div>
+<<<<<<< HEAD
                 </div> -->
                 
             
@@ -107,6 +108,16 @@
         
             
           <!-- <div class="container-reviews-onder">
+=======
+                </div>
+                
+            
+        </div>
+
+        
+            
+          <div class="container-reviews-onder">
+>>>>>>> f6dd907af83e24750ef1ccbb3147de6e3d80bf4c
                 <div class="reviewbox-onder">
                   <div class="datum">19-06-2005</div>
                   <div class="container-reviews-main">
@@ -147,6 +158,7 @@
                       </p>
                   </div>
                 </div>
+<<<<<<< HEAD
             </div> -->
           <!-- </div> -->
       
@@ -163,3 +175,10 @@
 
 
 
+=======
+            </div>
+          </div>
+    </main>
+</body>
+</html>
+>>>>>>> f6dd907af83e24750ef1ccbb3147de6e3d80bf4c
