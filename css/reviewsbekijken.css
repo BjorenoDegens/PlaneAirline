@@ -200,6 +200,8 @@ header {
     flex-direction: row;
     height: auto;
     max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   body .container-reviews-onder{
@@ -219,13 +221,13 @@ header {
     font-family: "Josefin Sans", sans-serif;
     font-size: 15px;
     background: rgba(240, 248, 255, 0.455);
-    width: 340px;
+    width: 600px;
   }
 
   .reviewbox{
     margin: 20px;
     height: 200px;
-    width:  400px;
+    width:  600px;
     background-color: black;
     border-radius: 10px ;
     background-image: url("../Afbeeldingen/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg");
