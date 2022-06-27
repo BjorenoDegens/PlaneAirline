@@ -260,12 +260,13 @@ nav .profile-details i {
 .home-content .sales-boxes {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
   /* padding: 0 20px; */
 }
 
 /* left box */
 .home-content .sales-boxes .recent-sales {
-  width: 65%;
+  width: 100%;
   overflow: auto;
   max-height: 250px;
   background: #fff;

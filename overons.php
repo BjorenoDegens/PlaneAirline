@@ -36,7 +36,7 @@
               </a>
             </div>
             <div class="form-btn">
-              <a class="submit-btn1" href="infolocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
+              <a class="submit-btn1" href="informatielocatie.php" target="_parent" rel="nofollow"> Informatie over locaties  </a>
             </div>
             <div class="form-btn">
               <a

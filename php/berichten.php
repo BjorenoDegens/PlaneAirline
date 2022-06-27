@@ -25,7 +25,7 @@ if($_SESSION["name"]) {
   <div class="sidebar">
       <ul class="nav-links">
         <li>
-          <a href="#"  >
+          <a href="admin.php"  >
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
@@ -49,7 +49,7 @@ if($_SESSION["name"]) {
           </a>
         </li>
         <li>
-          <a href="berichten.php"class="active">
+          <a href="#"class="active">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>

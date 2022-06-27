@@ -1,147 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 body {
   max-height: 100vh;
-    height: 97vh;
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: 'Manrope', sans-serif;
-    align-items: center; 
-    background-image: url('../PlaneAirline/Afbeeldingen/customer-reviews.webp');
-    background-position: center;
-   background-size: 100% 104vh;;
-    background-repeat: no-repeat;
+  height: 97vh;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Manrope", sans-serif;
+  align-items: center;
+  background-image: url("../PlaneAirline/Afbeeldingen/customer-reviews.webp");
+  background-position: center;
+  background-size: 100% 104vh;
+  background-repeat: no-repeat;
 }
 
 .pijltje-terug1 {
   font-size: 72px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-right: 10px;
-    position: absolute;
-    left: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  position: absolute;
+  left: 30px;
 }
-
 
 .card {
   position: relative;
-    display: flex;
-    min-width: 0;
-    padding: 20px;
-    height: 300px;
-    width: 500px;
-    word-wrap: break-word;
-    background-color: white;
-    background-clip: border-box;
-    border-radius: 6px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 150px;
+  display: flex;
+  min-width: 0;
+  padding: 20px;
+  height: 300px;
+  width: 500px;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border-radius: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
 }
-textarea{
-    width: 300px;
-    height: 130px;
+textarea {
+  width: 300px;
+  height: 130px;
 }
-input[type=submit] {
-    background-color:  #287dfc;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=reset] {
-    background-color: red;
-    color: white;
-    padding: 12px 20px;
-    margin-left: 88px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color:  #287dfc;
-    color: lightblue;
-  }
-  
-  input[type=reset]:hover {
-    background-color: white;
-    color: blue;
-  }
-  
-  
-  header {
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    width: 100%;
-  }
-  
-  header .box-left {
-    background-color: aliceblue;
-    width: 20%;
-    
-  }
-  
-  header .box-main {
-    display: flex;
-    justify-content: center;
-    background-color: aliceblue;
-    width: 60%;
-    
-  }
-  
-  header .box-main .box {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header .box-main .box .text {
-    display: flex;
-    width: 100%;
-    margin-top: 15px;
-    justify-content: center;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 25px;
-  }
-  
-  header .box-right {
-    display: flex;
-    background-color: aliceblue;
-    width: 20%;
-  }
-  
-  header .box-left .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    margin-left: 50px;
-    text-align: center;
-  }
-  
-  header .box .box-logo-login a {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 40px;
-    position: relative;
-    justify-content: center;
-  }
-  
-  .form-btn {
-    margin-right: 50px;
-  }
+input[type="submit"] {
+  background-color: #287dfc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
 
- .form-btn2{
+input[type="reset"] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 88px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #287dfc;
+  color: lightblue;
+}
+
+input[type="reset"]:hover {
+  background-color: white;
+  color: blue;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+}
+
+header .box-left {
+  background-color: aliceblue;
+  width: 20%;
+}
+
+header .box-main {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  width: 60%;
+}
+
+header .box-main .box {
+  display: flex;
+  flex-direction: column;
+}
+
+header .box-main .box .text {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+}
+
+header .box-right {
+  display: flex;
+  background-color: aliceblue;
+  width: 20%;
+}
+
+header .box-left .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+header .box .box-logo-login a {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  width: 40px;
+  position: relative;
+  justify-content: center;
+}
+
+.form-btn {
+  margin-right: 50px;
+}
+
+.form-btn2 {
   margin-right: 40px;
- }
+}
 
 .search {
   margin-top: 25px;
@@ -237,4 +233,12 @@ input[type=submit] {
   height: 15px;
   transform: rotate(315deg);
   background-color: black;
+}
+
+.submit-btn1 {
+  color: black;
+  left: 0;
+  top: 0;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
 }
