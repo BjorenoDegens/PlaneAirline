@@ -71,6 +71,17 @@
                     </div>
                   </div>
                 </div>
+                <div class="reviewbox">
+                  <div class="datum">19-06-2005</div>
+                  <div class="container-reviews-main">
+                      <p>Naam locatie: Spanje
+                          <br>
+                          <br>
+                          Review: Hopelijk klopt deze tekst in het vakje hoe ik het wil hebben anders word ik boos :)
+                      </p>
+                  </div>
+                </div>
+        </div>
     </main>
 </body>
 </html>
